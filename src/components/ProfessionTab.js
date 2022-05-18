@@ -1,6 +1,6 @@
 import React from 'react';
-import HomeTab from './HomeTab';
-import {Button, Divider, Tabs,Row,Col } from 'antd';
+// import HomeTab from './HomeTab';
+import {Button} from 'antd';
 import IconSave from "../assets/icon/IconSave.svg";
 import IconNextArrow from "../assets/icon/IconNextArrow.svg";
 import IconAddRound from "../assets/logo/IconAddRound.png";
@@ -11,7 +11,7 @@ function ProfessionTab() {
         <div className='home-tab'>
         <h1 className='profile-text'> Professionals Details</h1>
           <form>  
-              <p style={{color:"#702cc7"}}>Add education details form  <img src={ IconAddRound} style={{marginLeft:"146px"}}/> </p>  
+              <p style={{color:"#702cc7"}}>Add education details form  <img alt="" src={ IconAddRound} style={{marginLeft:"146px"}}/> </p>  
               <input  className='form-input-field' placeholder='Clinic Name'type="text" />
               <input  className='form-input-field' placeholder='Clinic license number' type="text" />
               <input  className='form-input-field' placeholder='clinic phone number' type="text" />

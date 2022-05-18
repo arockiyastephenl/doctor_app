@@ -11,13 +11,13 @@ function Header() {
     return(
          <div className='container'>
          <div className='bg-container'>
-             <img src={Backdrop} style={{position:'absolute'}}/>
+             <img alt="" src={Backdrop} style={{position:'absolute'}}/>
             <Row className='header-arrow'>
                 <ArrowLeftOutlined className='arrow-size'/>
                     <h1 className='header-title'>Doctor Profile Registration</h1>       
             </Row>
-            <img src= { DefaultAvatar} className="avatar"/>
-            <img src={ AvatarCamera } className="camera"/>
+            <img alt="" src= { DefaultAvatar} className="avatar"/>
+            <img alt="" src={ AvatarCamera } className="camera"/>
              </div>
              </div>
         
