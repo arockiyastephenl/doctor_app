@@ -1,23 +1,15 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import React from 'react';
 import './App.css';
-import { Tabs } from "antd";
+import Tabs from "./components/Tabs";
+import Header from "./components/Header";
 
-const { TabPane } = Tabs;
-
-function callback(key) {
-  console.log(key);
-}
 
 function App() {
   return (
     <div className="App">
-     
-
- <Tabs />
-
-
-     
+      <Header />
+      <Tabs /> 
     </div>
   );
 }

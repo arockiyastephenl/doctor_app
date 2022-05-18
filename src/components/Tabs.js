@@ -1,4 +1,13 @@
-import { Tabs } from 'antd';
+import React from 'react';
+
+import {Button, Divider, Tabs,Row,Col } from 'antd';
+import IconSave from "../assets/icon/IconSave.svg";
+import IconNextArrow from "../assets/icon/IconNextArrow.svg";
+import IconAddRound from "../assets/logo/IconAddRound.png";
+import EducationTab from './EducationTab';
+import ProfessionTab from './ProfessionTab';
+import HomeTab from './HomeTab';
+import AddressTab from './AddressTab';
 
 const { TabPane } = Tabs;
 
@@ -6,18 +15,29 @@ function callback(key) {
   console.log(key);
 }
 
-const Tabs = () => (
-  <Tabs defaultActiveKey="1" onChange={callback}>
-    <TabPane tab="Tab 1" key="1">
-      Content of Tab Pane 1
+export default () => (
+ <div className='tab-align'>
+ <div className='tab-bg' >
+  <Tabs  type="card" >
+   
+    <TabPane  tab="Home" key="1"  >
+       <HomeTab />
     </TabPane>
-    <TabPane tab="Tab 2" key="2">
-      Content of Tab Pane 2
+   
+    <TabPane tab="Education" key="2">
+      <EducationTab />
     </TabPane>
-    <TabPane tab="Tab 3" key="3">
-      Content of Tab Pane 3
+    
+    <TabPane tab="Profession" key="3">
+    <ProfessionTab />
     </TabPane>
-  </Tabs>
-);
+    <TabPane tab="Address" key="4">
+       <AddressTab />
+    </TabPane>
+    
 
-export default Tabs;
+  </Tabs>
+  </div> 
+  </div> 
+  
+);
