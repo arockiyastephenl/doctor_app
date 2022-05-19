@@ -1,5 +1,5 @@
 import React from 'react';
-import HomeTab from './HomeTab';
+
 import {Button, Divider, Tabs,Row,Col } from 'antd';
 import IconSave from "../assets/icon/IconSave.svg";
 import IconNextArrow from "../assets/icon/IconNextArrow.svg";
@@ -7,6 +7,7 @@ import IconAddRound from "../assets/logo/IconAddRound.png";
 
 
 function EducationTab() {  
+    
     return(
         <div className='home-tab'>
         <h1 className='profile-text'> Education Details</h1>

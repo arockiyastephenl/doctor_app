@@ -1,5 +1,5 @@
 import React from 'react';
-// import HomeTab from './HomeTab';
+
 import {Button} from 'antd';
 import IconSave from "../assets/icon/IconSave.svg";
 import IconNextArrow from "../assets/icon/IconNextArrow.svg";

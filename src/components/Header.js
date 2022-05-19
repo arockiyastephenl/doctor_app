@@ -8,6 +8,7 @@ import AvatarCamera from "../assets/icon/AvatarCamera.svg";
 
 
 function Header() {  
+    
     return(
          <div className='container'>
          <div className='bg-container'>

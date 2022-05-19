@@ -7,7 +7,9 @@ import IconAddRound from "../assets/logo/IconAddRound.png";
 
 import {Button, Divider, Tabs,Col } from 'antd';
 
-
+import EducationTab from './EducationTab';
+import ProfessionTab from './ProfessionTab';
+import AddressTab from './AddressTab';
 
 function HomeTab() {  
     return(
