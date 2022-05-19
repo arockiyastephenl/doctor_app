@@ -6,7 +6,7 @@
     display: flex;
     justify-content: center;
 }
-.bg-container {
+.bg-container1 {
     display: flex;
 
     background-color: #2ECC71;
@@ -167,4 +167,272 @@ ant-tabs-tab {
     border: 0;
     outline: none;
     cursor: pointer;
+}
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Oxygen&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,700;1,700&family=Oxygen:wght@300;400&display=swap");
+.App {
+  width: 100vw;
+  height: 100vh;
+}
+.bg-container {
+  background-color: rgb(46, 204, 113);
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.login_page_header {
+  font-family: "Oxygen", "sans-serif";
+  color: white;
+  position: absolute;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 31px;
+  line-height: 39px;
+  top: 108px;
+  left: 20px;
+}
+.para_content {
+  color: white;
+  font-size: 42px;
+  font-family: "Noto Sans", sans-serif;
+}
+.input-box {
+  width: 98%;
+  height: 124px;
+  border-radius: 10px;
+  font-family: "Noto Sans", sans-serif;
+  border: none;
+  font-size: 40px;
+  padding-left: 17px;
+}
+.button {
+  width: 100%;
+  height: 124px;
+  background-color: #703ccf;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-size: 28px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: bold;
+}
+.log-in-button {
+  width: 100%;
+  height: 124px;
+  background-color: white;
+  border-radius: 10px;
+  border: none;
+  color: black;
+  font-size: 28px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: bold;
+}
+.h_line {
+  background-color: white;
+  margin-top: 427px;
+}
+.homepagelogo {
+  width: 375px;
+  height: 151px;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 4.8%;
+  bottom: 72.56%;
+}
+
+.card-container {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 556px;
+  left: 0px;
+  top: 290px;
+  background: #ffffff;
+  border-radius: 12px 12px 0px 0px;
+  text-align: center;
+  padding-top: 64px;
+}
+.card-heading {
+  font-size: 18px;
+  padding-top: 108px;
+  text-align: center;
+}
+.para_content_mail {
+  font-size: 16px;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.button_mail {
+  width: 375px;
+  height: 50px;
+  background-color: #703ccf;
+  border-radius: 6px;
+  border: none;
+  margin-left: 8px;
+  margin-top: 18px;
+  margin-right: 30px;
+  padding-left: 20px;
+  padding-right: 10px;
+  /* font-family: "Noto Sans"; */
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: #ffffff;
+}
+.emailverificationimage {
+  position: absolute;
+  left: 32.53%;
+  right: 31.73%;
+  top: 8.39%;
+  bottom: 46.12%;
+  z-index: 1;
+}
+.skipfunction {
+  color: black;
+  text-align: end;
+  padding-right: 10px;
+  padding-top: 40px;
+  /* font-family: Noto Sans; */
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 18px;
+  letter-spacing: 0em;
+}
+.page_header {
+  font-family: Noto Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.rightarrow {
+  position: absolute;
+  height: 16.510801px;
+  width: 19px;
+  padding-left: 92px;
+}
+.emaildoctorlogo {
+  position: absolute;
+  width: 294px;
+  height: 479.45px;
+  left: 44px;
+  top: 87.07px;
+}
+.passcode_box {
+  width: 50px;
+  height: 50px;
+  border: none;
+  background: #f1ecfb;
+}
+.passcode_box_alignment {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 5px;
+  padding-left: 22px;
+}
+.Drop {
+  position: absolute;
+  top: -30px;
+  right: 132px;
+}
+.parahomepage {
+  position: absolute;
+  width: 296px;
+  height: 59px;
+  left: 20px;
+  top: 194px;
+  color: white;
+  font-family: sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 18px;
+}
+.namehomepage {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+  size: 16px;
+  line-height: 21.79px;
+}
+.input-box_home {
+  width: 335px;
+  height: 50px;
+  border-radius: 6px;
+  font-family: "Noto Sans", sans-serif;
+  border: none;
+  font-size: 10px;
+  padding-left: 9px;
+  margin: 22px;
+  position: absolute;
+  top: 269px;
+}
+.input-box_home_pwd {
+  position: absolute;
+  padding-left: 9px;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 10px;
+  top: 353px;
+  right: 108px;
+  height: 50px;
+  width: 338px;
+  left: 20px;
+  border-radius: 6px;
+  border: none;
+}
+.sign-in-button {
+  background-color: #703ccf;
+  border-radius: 6px;
+  border: none;
+  color: white;
+  width: 353px;
+  height: 50px;
+  top: 418px;
+  left: 17px;
+  position: absolute;
+  font-family: "Noto Sans", sans-serif;
+}
+.or-container {
+  color: #703ccf;
+  background-color: white;
+  font-size: 12px;
+  font-family: "Noto Sans", sans-serif;
+  width: 40px;
+  height: 40px;
+  border-radius: 24px;
+  position: absolute;
+  top: 494px;
+  left: 174px;
+}
+.rightarrowhome {
+  position: absolute;
+  height: 16.510801px;
+  width: 19px;
+  padding-left: 123px;
+}
+.buttongooglesignin {
+  width: 354px;
+  height: 50px;
+  position: absolute;
+  left: -155px;
+  top: 60px;
+  border-radius: 6px;
+  border: none;
+  color: black;
+  background-color: white;
+  font-family: "Noto Sans", sans-serif;
+}
+.rightarrowgoogle {
+  position: absolute;
+  height: 16.510801px;
+  width: 19px;
+  padding-left: 100px;
 }
