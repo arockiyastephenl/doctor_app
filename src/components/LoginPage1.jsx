@@ -6,9 +6,9 @@ import HomePageLogo from "../assets/logo/HomePageLogo.svg";
 import RightArrow from "../assets/icon/RightArrow.svg";
 import GoogleIconPurple from "../assets/icon/GoogleIconPurple.svg";
 import RightArrowBlack from "../assets/icon/RightArrowBlack.svg";
-import { useNavigate, useLocation } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
-function Login_Page1() {
+function LoginPage1() {
   const history = useNavigate();
   // const location = useLocation();
   return (
@@ -62,4 +62,4 @@ function Login_Page1() {
     </>
   );
 }
-export default Login_Page1;
+export default LoginPage1;

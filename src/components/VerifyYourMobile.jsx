@@ -4,7 +4,7 @@ import EmailVerification from "../assets/logo/EmailVerification.svg";
 import RightArrow from "../assets/icon/RightArrow.svg";
 import { useNavigate } from "react-router-dom";
 
-function Verify_Your_Mobile() {
+function VerifyYourMobile() {
   const history = useNavigate();
 //   const location = useLocation();
   return (
@@ -31,4 +31,4 @@ function Verify_Your_Mobile() {
     </>
   );
 }
-export default Verify_Your_Mobile;
+export default VerifyYourMobile;

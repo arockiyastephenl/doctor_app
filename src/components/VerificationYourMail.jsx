@@ -2,18 +2,19 @@ import React from "react";
 import EmailVerificationDoctorLogo from "../assets/logo/EmailVerificationDoctorLogo.svg";
 import Wave_Top from "../assets/logo/Wave_Top.svg";
 import RightArrow from "../assets/icon/RightArrow.svg";
+import { useNavigate } from "react-router-dom";
 
-function Verification_Your_Mobile() {
+function VerificationYourMail() {
+  const history = useNavigate();
+//   const location = useLocation();
   return (
     <>
       <div className="bg-container">
         <img alt="" src={Wave_Top} />
         <img alt="" src={EmailVerificationDoctorLogo} className="emaildoctorlogo" />
         <div className="card-container">
-          <h1>Verification your mobile</h1>
-          <p>
-            We sent you an SMS code <br></br> On number +91-XXXXX XXX68
-          </p>
+          <h1>Verification your email</h1>
+          <p>We sent you an code On your email william@gmail.com</p>
           <div className="passcode_box_alignment">
             <form>
               <input type="password" className="passcode_box" />
@@ -34,7 +35,10 @@ function Verification_Your_Mobile() {
               <input type="password" className="passcode_box" />
             </form>
           </div>
-          <button className="button_mail">
+          <button
+            onClick={() => history("/mobileverify")}
+            className="button_mail"
+          >
             Continue
             <img alt="" src={RightArrow} className="rightarrow" />
           </button>
@@ -43,4 +47,4 @@ function Verification_Your_Mobile() {
     </>
   );
 }
-export default Verification_Your_Mobile;
+export default VerificationYourMail;

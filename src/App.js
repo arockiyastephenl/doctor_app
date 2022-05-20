@@ -1,11 +1,11 @@
 import React from "react";
 import "./App.css";
 // import Login_Page from "./components/Login_Page";
-import Login_Page1 from "./components/Login_Page1";
-import Email_Verify_First_Page from "./components/Email_Verify_First_Page";
-import Verification_Your_Mail from "./components/Verification_Your_Mail";
-import Verify_Your_Mobile from "./components/Verify_Your_Mobile";
-import Verification_Your_Mobile from "./components/Verification_Your_Mobile";
+import LoginPage1 from "./components/LoginPage1";
+import EmailVerifyFirstPage from "./components/EmailVerifyFirstPage";
+import VerificationYourMail from "./components/VerificationYourMail";
+import VerifyYourMobile from "./components/VerifyYourMobile";
+import VerificationYourMobile from "./components/VerificationYourMobile";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import TabForm from "./components/TabForm";
 import Header from "./components/Header";
@@ -15,13 +15,13 @@ function App() {
     <>
       <Router forceRefresh={true}>
         <Routes>
-          <Route path="/home" element={<Login_Page1 />} />
-          <Route path="/emailverify" element={<Email_Verify_First_Page />} />
-          <Route path="/verifiedemail" element={<Verification_Your_Mail />} />
-          <Route path="/mobileverify" element={<Verify_Your_Mobile />} />
+          <Route path="/home" element={<LoginPage1 />} />
+          <Route path="/emailverify" element={<EmailVerifyFirstPage />} />
+          <Route path="/verifiedemail" element={<VerificationYourMail />} />
+          <Route path="/mobileverify" element={<VerifyYourMobile />} />
           <Route
             path="/verifiedmobile"
-            element={<Verification_Your_Mobile />}
+            element={<VerificationYourMobile />}
           />
         </Routes>
       </Router>
