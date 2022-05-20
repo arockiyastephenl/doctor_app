@@ -9,8 +9,11 @@ import VerificationYourMobile from "./components/VerificationYourMobile";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import TabForm from "./components/TabForm";
 import Header from "./components/Header";
+// import { useNavigate } from "react-router-dom";
 // import AddressTab from './components/AddressTab';
 function App() {
+  // const history = useNavigate();
+
   return (
     <>
       <Router forceRefresh={true}>
@@ -29,11 +32,16 @@ function App() {
       <div className="App">
       <Header />
       <TabForm /> 
-        {/* <Login_Page/> */}
+        {/* <LoginPage1/> */}
         {/* <Email_Verify_First_Page/>
       <Verification_Your_Mail/>
       <Verify_Your_Mobile/>
       <Verification_Your_Mobile/> */}
+
+
+
+
+      {/* <button onClick={()=>history("/home")}>mobile</button> */}
       </div>
     </>
   );
