@@ -22,6 +22,20 @@ function AddressTab() {
     setDescription(false);
     setReviews(true);
   }
+
+  // home address input field
+  const homeAddressInput = [];
+  const [homeAddressAddField, setHomeAddressAddField] = useState(homeAddressInput);
+  const addHomeAddressInput = () => {
+    setHomeAddressAddField(tabs => {
+        return [ ...tabs, "end"];});
+      };  
+  const workAddressInput = [];
+  const [workAddressAddField, setWorkAddressAddField] = useState(workAddressInput);
+  const addWorkAddressInput = () => {
+      setWorkAddressAddField(tabs => {
+            return [ ...tabs, "end"];});
+      };  
  
   
   return ( 
@@ -36,18 +50,29 @@ function AddressTab() {
    {description && (
     <div >
      <form>  
-         <p style={{color:"#702cc7"}}>Address<img alt="" src={ IconAddRound} style={{marginLeft:"264px", marginRight:"-4px"}}/> </p>  
+         <p style={{color:"#702cc7"}}>Address<img alt="" src={ IconAddRound} onClick={addHomeAddressInput} style={{marginLeft:"264px", marginRight:"-4px"}}/> </p>  
            <input  className='form-input-field' placeholder='Address 1'type="text" />
            <input  className='form-input-field' placeholder='Address 2' type="text" />
            <input  className='form-input-field' placeholder='City' type="text" />
            <input  className='form-input-field' placeholder='District' type="text" />
            <input  className='form-input-field' placeholder='State' type="text" />
-        
+           <div>
+                {homeAddressAddField.map((item, i) => {
+                  return (
+                    <input
+                      // value={item.value}
+                      // id={i}
+                      className="form-input-field"
+                      // type={item.type}  
+                       />
+                  );
+                })}
+           </div>
      </form>
      <form>  
          <p style={{color:"#702cc7",marginLeft:"-279px"}}>Country </p>  
            <input  className='form-input-field' placeholder='Country'type="text" />
-           <input  className='form-input-field' placeholder='Address 2' type="text" />     
+           <input  className='form-input-field' placeholder='Mobile number' type="number"  />     
      </form>
      <Button className='btn save-btn'>Save  <img src={ IconSave } alt="" style={{marginLeft:"80px"}} /></Button>
      <Button className='btn next-btn'>Next <img src={ IconNextArrow } alt="" style={{marginLeft:"80px"}}/></Button>
@@ -57,18 +82,29 @@ function AddressTab() {
      <div >
       
      <form>  
-          <p style={{color:"#702cc7"}}>Address < img alt='' src={ IconAddRound} style={{marginLeft:"264px", marginRight:"-4px"}}/> </p>  
+          <p style={{color:"#702cc7"}}>Address < img alt='' src={ IconAddRound} onClick={addWorkAddressInput} style={{marginLeft:"264px", marginRight:"-4px"}}/> </p>  
            <input  className='form-input-field' placeholder='Address 1'type="text" />
            <input  className='form-input-field' placeholder='Address 2' type="text" />
            <input  className='form-input-field' placeholder='City' type="text" />
            <input  className='form-input-field' placeholder='District' type="text" />
            <input  className='form-input-field' placeholder='State' type="text" />
-        
+           <div>
+                {workAddressAddField.map((item, i) => {
+                  return (
+                    <input
+                      // value={item.value}
+                      // id={i}
+                      className="form-input-field"
+                      // type={item.type}  
+                       />
+                  );
+                })}
+              </div>
      </form>
      <form>  
          <p style={{color:"#702cc7",marginLeft:"-279px"}}>Country </p>  
            <input  className='form-input-field' placeholder='Country'type="text" />
-           <input  className='form-input-field' placeholder='Address 2' type="text" />     
+           <input  className='form-input-field' placeholder='Mobile number' type="number" />     
      </form>
      <Button className='btn save-btn'>Save  <img src={ IconSave } alt="" style={{marginLeft:"80px"}} /></Button>
      <Button className='btn next-btn'>Next <img src={ IconNextArrow } alt="" style={{marginLeft:"80px"}}/></Button>

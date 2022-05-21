@@ -8,7 +8,6 @@
 }
 .bg-container1 {
     display: flex;
-
     background-color: #2ECC71;
     background-size: cover;
     width: 26rem;
@@ -48,7 +47,7 @@
 .tab-bg {
     width: 417px;
     height: 550px;
-    background-color: gainsboro;
+    background-color: #F1ECFB;
     padding-top: 14px;
     
     
@@ -57,13 +56,13 @@
 .avatar {
     position: absolute;
     top: 77px;
-    left: 137px;
-    width: 96px;
+    left: 150px;
+    width: 97px;
 }
 .camera {
     position: absolute;
     top: 142px;
-    right: 149px;
+    right: 133px;
     width: 50px;
 }
 .home-tab {
@@ -143,7 +142,7 @@ button:focus{
     border: 1px solid #f0f0f0;
     transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
     margin-right: 4px;
-    width: 105px;
+    /* width: 105px; */
 }
 .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
     color: white;
@@ -168,8 +167,12 @@ ant-tabs-tab {
     outline: none;
     cursor: pointer;
 }
-
-
+.ant-tabs-tab-btn {
+  outline: none;
+  transition: all 0.3s;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: bold;
+}
 
 @import url("https://fonts.googleapis.com/css2?family=Oxygen&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,700;1,700&family=Oxygen:wght@300;400&display=swap");
