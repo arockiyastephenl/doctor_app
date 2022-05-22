@@ -13,6 +13,13 @@
   width: 26rem;
   height: 14rem;
   position: relative;
+    display: flex;
+    background-color: #2ECC71;
+    background-size: cover;
+    width: 26rem;
+    height: 14rem;
+    position: relative;
+    
 }
 .header-arrow {
   display: flex;
@@ -57,6 +64,25 @@
   top: 142px;
   right: 149px;
   width: 50px;
+    width: 417px;
+    height: 550px;
+    background-color: #F1ECFB;
+    padding-top: 14px;
+    
+    
+
+}
+.avatar {
+    position: absolute;
+    top: 77px;
+    left: 150px;
+    width: 97px;
+}
+.camera {
+    position: absolute;
+    top: 142px;
+    right: 133px;
+    width: 50px;
 }
 .home-tab {
   background-color: #ffffff;
@@ -135,7 +161,16 @@ button:focus {
   border: 1px solid #f0f0f0;
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   margin-right: 4px;
-  width: 105px;
+  width: 105px;}
+  
+.ant-tabs-card > .ant-tabs-nav .ant-tabs-tab, .ant-tabs-card > div > .ant-tabs-nav .ant-tabs-tab {
+    /* margin: 0; */
+    /* padding: 8px 16px; */
+    /* background: #fafafa; */
+    border: 1px solid #f0f0f0;
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    margin-right: 4px;
+    /* width: 105px; */
 }
 .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
   color: white;
@@ -163,9 +198,19 @@ ant-tabs-tab {
   outline: none;
   cursor: pointer;
 }
+<<<<<<< HEAD
 
 /*Home Page CSS Properties*/
 /* "Oxygen" From Google Fonts */
+=======
+.ant-tabs-tab-btn {
+  outline: none;
+  transition: all 0.3s;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: bold;
+}
+
+>>>>>>> c92e1aa568b4b83908e0a29e995e49edd973bd32
 @import url("https://fonts.googleapis.com/css2?family=Oxygen&display=swap");
 
 /* "Noto Sans" From Google Fonts */
