@@ -3,7 +3,7 @@ import React from "react";
 // import { Button } from "antd";
 import BackDrop from "../assets/logo/BackDrop.svg";
 import HomePageLogo from "../assets/logo/HomePageLogo.svg";
-import RightArrow from "../assets/icon/RightArrow.svg";
+import IconNextArrow from "../assets/icon/IconNextArrow.svg";
 import GoogleIconPurple from "../assets/icon/GoogleIconPurple.svg";
 import RightArrowBlack from "../assets/icon/RightArrowBlack.svg";
 import { useNavigate } from "react-router-dom";
@@ -13,6 +13,7 @@ function LoginPage1() {
   // const location = useLocation();
   return (
     <>
+      
       <div className="bg-container">
         <h1 className="login_page_header">Wellyfe</h1>
         <img alt="" src={BackDrop} className="Drop" />
@@ -25,40 +26,44 @@ function LoginPage1() {
         </p>
         <input
           type="Email"
-          placeholder="Email Id                                                                                                    @"
+          placeholder="Email Id                                                                      @"
           className="input-box_home"
         />
         <br></br>
         <br></br>
         <input
           type="password"
-          placeholder="Password"
+          placeholder="Password                                                                    &#xF002;"
           className="input-box_home_pwd"
         />
+    
         <br></br>
         <br></br>
         <button className="sign-in-button">
-          Sign In <img src={RightArrow} alt="" className="rightarrowhome" />
+          Sign In <img src={IconNextArrow} alt="" style={{ position: "absolute", right: "17px", top: "18px" }}/>
         </button>
-        <hr className="h_line"></hr>
+        <hr className="h_line" style={{width:"327px",position:"absolute",top:"88px"}}></hr>
         <div className="or-container">
-          <p style={{ paddingLeft: "10px" }}>OR</p>
+          <p className = "or-font">OR</p>
           <button
             onClick={() => history("/emailverify")}
             className="buttongooglesignin"
           >
-            <img alt=""
+            <img
+              alt=""
               src={GoogleIconPurple}
               style={{ position: "absolute", left: "20px", top: "11px" }}
             />
             Login with Google
-            <img alt=""
+            <img
+              alt=""
               src={RightArrowBlack}
               style={{ position: "absolute", right: "17px", top: "18px" }}
             />
           </button>
         </div>
       </div>
+      
     </>
   );
 }

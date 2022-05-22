@@ -6,15 +6,19 @@ import { useNavigate } from "react-router-dom";
 
 function VerificationYourMail() {
   const history = useNavigate();
-//   const location = useLocation();
+  //   const location = useLocation();
   return (
     <>
       <div className="bg-container">
-        <img alt="" src={Wave_Top} />
-        <img alt="" src={EmailVerificationDoctorLogo} className="emaildoctorlogo" />
-        <div className="card-container">
-          <h1>Verification your email</h1>
-          <p>We sent you an code On your email william@gmail.com</p>
+        <img alt="" src={Wave_Top} style={{position: "absolute",top: "20px",left: "0px"}}/>
+        <img
+          alt=""
+          src={EmailVerificationDoctorLogo}
+          className="emaildoctorlogo"
+        />
+        <div className="cardcontainerverification ">
+          <h1 className="headingverification">Verification your email</h1>
+          <p className="paragraphmailverification">We sent you an code<br></br> On your email <span className="spancolor">william@gmail.com</span></p>
           <div className="passcode_box_alignment">
             <form>
               <input type="password" className="passcode_box" />
@@ -40,11 +44,11 @@ function VerificationYourMail() {
             className="button_mail"
           >
             Continue
-            <img alt="" src={RightArrow} className="rightarrow" />
+            <img alt="" src={RightArrow} style={{position: "absolute",top: "224px",right: "27px"}} className="rightarrow" />
           </button>
         </div>
       </div>
-    </>
+    </>    
   );
 }
 export default VerificationYourMail;

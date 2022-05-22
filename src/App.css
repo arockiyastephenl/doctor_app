@@ -1,190 +1,192 @@
-@import '~antd/dist/antd.css';
-
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
+@import "~antd/dist/antd.css";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap");
 
 .container {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 .bg-container1 {
-    display: flex;
+  display: flex;
 
-    background-color: #2ECC71;
-    background-size: cover;
-    width: 26rem;
-    height: 14rem;
-    position: relative;
-    
+  background-color: #2ecc71;
+  background-size: cover;
+  width: 26rem;
+  height: 14rem;
+  position: relative;
 }
 .header-arrow {
-    display: flex;
-    padding: 7px;
+  display: flex;
+  padding: 7px;
 }
 .arrow-size {
-    font-size: 30px;
-    font-family: 'Noto Sans', sans-serif;
-    color: white;
-    padding-right: 10px;
-    padding-top: 4px;
+  font-size: 30px;
+  font-family: "Noto Sans", sans-serif;
+  color: white;
+  padding-right: 10px;
+  padding-top: 4px;
 }
- 
 
 .header-title {
-    font-size: 18px;
-    font-family: 'Noto Sans', sans-serif;
-    font-weight: bold;
-    color: white;
-    position: absolute;
-    left: 49px;
-    top: 12px;
+  font-size: 18px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  left: 49px;
+  top: 12px;
 }
 .tab-align {
-    display: flex;
-    justify-content: center;
-    position: relative;
-   
-
+  display: flex;
+  justify-content: center;
+  position: relative;
 }
 .tab-bg {
-    width: 417px;
-    height: 550px;
-    background-color: gainsboro;
-    padding-top: 14px;
-    
-    
-
+  width: 417px;
+  height: 550px;
+  background-color: gainsboro;
+  padding-top: 14px;
 }
 .avatar {
-    position: absolute;
-    top: 77px;
-    left: 137px;
-    width: 96px;
+  position: absolute;
+  top: 77px;
+  left: 137px;
+  width: 96px;
 }
 .camera {
-    position: absolute;
-    top: 142px;
-    right: 149px;
-    width: 50px;
+  position: absolute;
+  top: 142px;
+  right: 149px;
+  width: 50px;
 }
 .home-tab {
-    background-color: #ffffff;
-    width: 26rem;
-    height: 36rem;
-    text-align: center;
-    padding: 14px;
+  background-color: #ffffff;
+  width: 26rem;
+  height: 36rem;
+  text-align: center;
+  padding: 14px;
 }
-button{
-    color: black;
-  }
-    
-button:focus{
-    color: #702cc7;
-  }
+.button {
+  color: black;
+}
+
+button:focus {
+  color: #702cc7;
+}
 .profile-text {
-    font-size: 18px;
-    font-family: 'Noto Sans', sans-serif;
-    font-weight: bold;
-    padding-bottom: 8px;
-    border:none;
+  font-size: 18px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: bold;
+  padding-bottom: 8px;
+  border: none;
 }
 ::after {
-    color: #702cc7;
+  color: #702cc7;
 }
 .form-input-field {
-    width: 355px;
-    height: 67px;
-    border-radius: 10px;
-    font-size: 17px;
-    font-family: 'Noto Sans', sans-serif;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-color: lightgray;
-    border-style: solid;
+  width: 355px;
+  height: 67px;
+  border-radius: 10px;
+  font-size: 17px;
+  font-family: "Noto Sans", sans-serif;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-color: lightgray;
+  border-style: solid;
 }
 .btn {
-    
-    color: white;
-    width: 171px;
-    height: 54px;
-    border-radius: 8px;
-    padding-right: 61px;
-    margin-right:  5px;
-    font-size: 16px;
-    font-family: 'Noto Sans', sans-serif;
+  color: white;
+  width: 171px;
+  height: 54px;
+  border-radius: 8px;
+  padding-right: 61px;
+  margin-right: 5px;
+  font-size: 16px;
+  font-family: "Noto Sans", sans-serif;
 }
 .save-btn {
-    background-color: #702cc7;
-
+  background-color: #702cc7;
 }
 .next-btn {
-    background-color: #2ecb71;
+  background-color: #2ecb71;
 }
-.ant-tabs > .ant-tabs-nav .ant-tabs-nav-wrap, .ant-tabs > div > .ant-tabs-nav .ant-tabs-nav-wrap {
-    position: relative;
-    display: inline-block;
-    display: flex;
-    flex: auto;
-    align-self: stretch;
-    overflow: hidden;
-    white-space: nowrap;
-    transform: translate(0);
-    margin-left: 5px;
-
+.ant-tabs > .ant-tabs-nav .ant-tabs-nav-wrap,
+.ant-tabs > div > .ant-tabs-nav .ant-tabs-nav-wrap {
+  position: relative;
+  display: inline-block;
+  display: flex;
+  flex: auto;
+  align-self: stretch;
+  overflow: hidden;
+  white-space: nowrap;
+  transform: translate(0);
+  margin-left: 5px;
 }
-.ant-tabs-card > .ant-tabs-nav .ant-tabs-tab-active, .ant-tabs-card > div > .ant-tabs-nav .ant-tabs-tab-active {
-    color: white;
-    background: #702cc7;
-    /* width: 82px; */
+.ant-tabs-card > .ant-tabs-nav .ant-tabs-tab-active,
+.ant-tabs-card > div > .ant-tabs-nav .ant-tabs-tab-active {
+  color: white;
+  background: #702cc7;
+  /* width: 82px; */
 }
-.ant-tabs-card > .ant-tabs-nav .ant-tabs-tab, .ant-tabs-card > div > .ant-tabs-nav .ant-tabs-tab {
-    /* margin: 0; */
-    /* padding: 8px 16px; */
-    /* background: #fafafa; */
-    border: 1px solid #f0f0f0;
-    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-    margin-right: 4px;
-    width: 105px;
+.ant-tabs-card > .ant-tabs-nav .ant-tabs-tab,
+.ant-tabs-card > div > .ant-tabs-nav .ant-tabs-tab {
+  /* margin: 0; */
+  /* padding: 8px 16px; */
+  /* background: #fafafa; */
+  border: 1px solid #f0f0f0;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  margin-right: 4px;
+  width: 105px;
 }
 .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
-    color: white;
-    text-shadow: 0 0 0.25px currentcolor;
+  color: white;
+  text-shadow: 0 0 0.25px currentcolor;
 }
-ant-tabs-top > .ant-tabs-nav::before, .ant-tabs-bottom > .ant-tabs-nav::before, .ant-tabs-top > div > .ant-tabs-nav::before, .ant-tabs-bottom > div > .ant-tabs-nav::before {
-    position: absolute;
-    right: 0;
-    left: 0;
-    border-bottom: 1px solid #f0f0f0;
-    content: '';
+ant-tabs-top > .ant-tabs-nav::before,
+.ant-tabs-bottom > .ant-tabs-nav::before,
+.ant-tabs-top > div > .ant-tabs-nav::before,
+.ant-tabs-bottom > div > .ant-tabs-nav::before {
+  position: absolute;
+  right: 0;
+  left: 0;
+  border-bottom: 1px solid #f0f0f0;
+  content: "";
 }
 ant-tabs-tab {
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-    padding: 12px 0;
-    font-size: 14px;
-    font-family: 'Noto Sans', sans-serif;
-    background: transparent;
-    border: 0;
-    outline: none;
-    cursor: pointer;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 0;
+  font-size: 14px;
+  font-family: "Noto Sans", sans-serif;
+  background: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
 }
 
-
-
+/*Home Page CSS Properties*/
+/* "Oxygen" From Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Oxygen&display=swap");
+
+/* "Noto Sans" From Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,700;1,700&family=Oxygen:wght@300;400&display=swap");
 .App {
   width: 100vw;
   height: 100vh;
 }
+/* Background Contaniner */
 .bg-container {
   background-color: rgb(46, 204, 113);
   width: 100vw;
   height: 100vh;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+/*Home Page Heading Properties(Wellyf)*/
 .login_page_header {
-  font-family: "Oxygen", "sans-serif";
+  font-family: "Oxygen";
   color: white;
   position: absolute;
   font-style: normal;
@@ -194,20 +196,173 @@ ant-tabs-tab {
   top: 108px;
   left: 20px;
 }
+/* Wellyf Logo (Home Page)*/
+.homepagelogo {
+  width: 405px;
+  height: 151px;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 4.8%;
+  bottom: 72.56%;
+}
+/*Hortizontal Line(Left Side)For Wellyf Logo*/
+/* .h_line_for_homepagelogo {
+  width: 191px;
+  position: absolute;
+  top: 167px;
+} */
+/*Home Page Paragraph Properties*/
 .para_content {
   color: white;
   font-size: 42px;
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Noto Sans";
+}
+/*Input Box For Email*/
+.input-box_home {
+  width: 335px;
+  height: 50px;
+  border-radius: 6px;
+  font-family: "Noto Sans";
+  border: none;
+  font-size: 13px;
+  padding-left: 9px;
+  margin: 22px;
+  position: absolute;
+  top: 248px;
+  font-weight: 500;
+  left: 3px;
+  line-height: 18px;
+}
+/*Input Box For Password*/
+.input-box_home_pwd {
+  position: absolute;
+  padding-left: 9px;
+  font-family: "Noto Sans";
+  font-size: 13px;
+  top: 330px;
+  height: 50px;
+  width: 335px;
+  left: 25px;
+  border-radius: 6px;
+  border: none;
+}
+/*Sign In Button Properties*/
+.sign-in-button {
+  background-color: #703ccf;
+  border-radius: 6px;
+  border: none;
+  color: white;
+  width: 335px;
+  height: 50px;
+  top: 392px;
+  left: 25px;
+  position: absolute;
+  font-family: "Noto Sans";
+  font-weight: 700;
+  font-size: 14px;
+}
+/* OR Container */
+.or-container {
+  color: #703ccf;
+  background-color: white;
+  font-size: 12px;
+  font-family: "Noto Sans";
+  width: 40px;
+  height: 40px;
+  border-radius: 24px;
+  font-weight: 800;
+  position: absolute;
+  top: 453px;
+  left: 174px;
+}
+/*OR Font*/
+.or-font {
+  padding-left: 10px;
+  position: absolute;
+  top: 11px;
+  left: 1px;
+  padding-left: 10px;
+}
+/* Sign In Button For Google*/
+.buttongooglesignin {
+  width: 335px;
+  height: 50px;
+  position: absolute;
+  left: -147px;
+  top: 60px;
+  border-radius: 6px;
+  border: none;
+  color: black;
+  background-color: white;
+  font-family: "Noto Sans";
+  font-weight: 700;
+  line-height: 19px;
+}
+
+/*Email Verify First Page CSS Properties*/
+.spancolor {
+  color: #703ccf;
+}
+.cardcontainerverification {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 374px;
+  left: 0px;
+  top: 314px;
+  background: #ffffff;
+  border-radius: 12px 12px 0px 0px;
+  text-align: center;
+  padding-top: 64px;
+}
+.headingverification{
+  position: absolute;
+  width: 220px;
+  height: 25px;
+  left: 87px;
+  top: 36px;
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #323232;
+}
+.paragraphmailverification{
+  font-family: "Noto Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    color: #323232;
+    margin-top: 25px;
+}
+.headingverifymobile{
+  position: absolute;
+    width: 166px;
+    height: 25px;
+    left: 110px;
+    top: 70px;
+    font-family: "Noto Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #323232;
 }
 .input-box {
   width: 98%;
   height: 124px;
   border-radius: 10px;
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Noto Sans";
   border: none;
   font-size: 40px;
   padding-left: 17px;
 }
+
 .button {
   width: 100%;
   height: 124px;
@@ -216,7 +371,7 @@ ant-tabs-tab {
   border: none;
   color: white;
   font-size: 28px;
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Noto Sans";
   font-weight: bold;
 }
 .log-in-button {
@@ -227,45 +382,54 @@ ant-tabs-tab {
   border: none;
   color: black;
   font-size: 28px;
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Noto Sans";
   font-weight: bold;
 }
 .h_line {
   background-color: white;
-  margin-top: 427px;
-}
-.homepagelogo {
-  width: 375px;
-  height: 151px;
-  position: absolute;
-  left: 0%;
-  right: 0%;
-  top: 4.8%;
-  bottom: 72.56%;
+  margin-top: 385px;
 }
 
 .card-container {
   position: absolute;
   z-index: 0;
   width: 100%;
-  height: 556px;
+  height: 374px;
   left: 0px;
-  top: 290px;
+  top: 282px;
   background: #ffffff;
   border-radius: 12px 12px 0px 0px;
   text-align: center;
   padding-top: 64px;
 }
-.card-heading {
+.mailheading {
+  position: absolute;
+  width: 154px;
+  height: 25px;
+  left: 110px;
+  top: 70px;
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 700;
   font-size: 18px;
-  padding-top: 108px;
+  line-height: 25px;
   text-align: center;
+  color: #323232;
 }
+
 .para_content_mail {
-  font-size: 16px;
+  position: absolute;
+  width: 292px;
+  height: 60px;
+  left: 41px;
+  top: 110px;
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
   text-align: center;
-  padding-left: 10px;
-  padding-right: 10px;
+  color: #323232;
 }
 .button_mail {
   width: 375px;
@@ -278,7 +442,7 @@ ant-tabs-tab {
   margin-right: 30px;
   padding-left: 20px;
   padding-right: 10px;
-  /* font-family: "Noto Sans"; */
+  font-family: "Noto Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -298,8 +462,8 @@ ant-tabs-tab {
   color: black;
   text-align: end;
   padding-right: 10px;
-  padding-top: 40px;
-  /* font-family: Noto Sans; */
+  padding-top: 90px;
+  font-family: "Noto Sans";
   font-size: 13px;
   font-weight: bold;
   line-height: 18px;
@@ -312,12 +476,6 @@ ant-tabs-tab {
   line-height: 25px;
   letter-spacing: 0em;
   text-align: center;
-}
-.rightarrow {
-  position: absolute;
-  height: 16.510801px;
-  width: 19px;
-  padding-left: 92px;
 }
 .emaildoctorlogo {
   position: absolute;
@@ -349,90 +507,34 @@ ant-tabs-tab {
   position: absolute;
   width: 296px;
   height: 59px;
-  left: 20px;
+  left: 30px;
   top: 194px;
   color: white;
-  font-family: sans-serif;
+  font-family: "Noto Sans";
   font-style: normal;
   font-size: 12px;
   line-height: 18px;
 }
 .namehomepage {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Noto Sans";
   font-weight: 700;
   size: 16px;
   line-height: 21.79px;
 }
-.input-box_home {
-  width: 335px;
-  height: 50px;
-  border-radius: 6px;
-  font-family: "Noto Sans", sans-serif;
-  border: none;
-  font-size: 10px;
-  padding-left: 9px;
-  margin: 22px;
-  position: absolute;
-  top: 269px;
-}
-.input-box_home_pwd {
-  position: absolute;
-  padding-left: 9px;
-  font-family: "Noto Sans", sans-serif;
-  font-size: 10px;
-  top: 353px;
-  right: 108px;
-  height: 50px;
-  width: 338px;
-  left: 20px;
-  border-radius: 6px;
-  border: none;
-}
-.sign-in-button {
-  background-color: #703ccf;
-  border-radius: 6px;
-  border: none;
-  color: white;
-  width: 353px;
-  height: 50px;
-  top: 418px;
-  left: 17px;
-  position: absolute;
-  font-family: "Noto Sans", sans-serif;
-}
-.or-container {
-  color: #703ccf;
-  background-color: white;
-  font-size: 12px;
-  font-family: "Noto Sans", sans-serif;
-  width: 40px;
-  height: 40px;
-  border-radius: 24px;
-  position: absolute;
-  top: 494px;
-  left: 174px;
-}
+
 .rightarrowhome {
   position: absolute;
   height: 16.510801px;
   width: 19px;
   padding-left: 123px;
 }
-.buttongooglesignin {
-  width: 354px;
-  height: 50px;
-  position: absolute;
-  left: -155px;
-  top: 60px;
-  border-radius: 6px;
-  border: none;
-  color: black;
-  background-color: white;
-  font-family: "Noto Sans", sans-serif;
-}
-.rightarrowgoogle {
-  position: absolute;
-  height: 16.510801px;
-  width: 19px;
-  padding-left: 100px;
+
+.paragraph {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  color: #323232;
+  margin-top: 50px;
 }

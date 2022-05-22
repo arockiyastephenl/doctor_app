@@ -7,8 +7,8 @@ import VerificationYourMail from "./components/VerificationYourMail";
 import VerifyYourMobile from "./components/VerifyYourMobile";
 import VerificationYourMobile from "./components/VerificationYourMobile";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import TabForm from "./components/TabForm";
-import Header from "./components/Header";
+// import TabForm from "./components/TabForm";
+// import Header from "./components/Header";
 // import { useNavigate } from "react-router-dom";
 // import AddressTab from './components/AddressTab';
 function App() {
@@ -22,27 +22,21 @@ function App() {
           <Route path="/emailverify" element={<EmailVerifyFirstPage />} />
           <Route path="/verifiedemail" element={<VerificationYourMail />} />
           <Route path="/mobileverify" element={<VerifyYourMobile />} />
-          <Route
-            path="/verifiedmobile"
-            element={<VerificationYourMobile />}
-          />
+          <Route path="/verifiedmobile" element={<VerificationYourMobile />} />
         </Routes>
       </Router>
 
-      <div className="App">
-      <Header />
-      <TabForm /> 
+      {/* <div className="App">
+        <Header />
+        <TabForm /> */}
         {/* <LoginPage1/> */}
         {/* <Email_Verify_First_Page/>
       <Verification_Your_Mail/>
       <Verify_Your_Mobile/>
       <Verification_Your_Mobile/> */}
 
-
-
-
-      {/* <button onClick={()=>history("/home")}>mobile</button> */}
-      </div>
+        {/* <button onClick={()=>history("/home")}>mobile</button> */}
+      {/* </div> */}
     </>
   );
 }
