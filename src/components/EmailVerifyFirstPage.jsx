@@ -12,7 +12,7 @@ function Email_Verification_First_Page() {
   return (
     <>
       <div className="bg-container">
-        <img alt="" src={Wave_Top}/>
+        <img alt="" src={Wave_Top} style={{position: "absolute",top: "20px",left: "0px"}}/>
         <img
           alt=""
           src={EmailVerification}

@@ -183,6 +183,8 @@ ant-tabs-tab {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 /*Home Page Heading Properties(Wellyf)*/
 .login_page_header {
@@ -308,7 +310,7 @@ ant-tabs-tab {
   position: absolute;
   z-index: 0;
   width: 100%;
-  height: 374px;
+  height: 529px;
   left: 0px;
   top: 314px;
   background: #ffffff;
@@ -394,7 +396,7 @@ ant-tabs-tab {
   position: absolute;
   z-index: 0;
   width: 100%;
-  height: 374px;
+  height: 563px;
   left: 0px;
   top: 282px;
   background: #ffffff;
