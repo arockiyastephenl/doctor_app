@@ -14,7 +14,7 @@ function ProfessionTab() {
               <p style={{color:"#702cc7"}}>Add education details form  <img alt="" src={ IconAddRound} style={{marginLeft:"146px"}}/> </p>  
               <input  className='form-input-field' placeholder='Clinic Name'type="text" />
               <input  className='form-input-field' placeholder='Clinic license number' type="text" />
-              <input  className='form-input-field' placeholder='clinic phone number' type="text" />
+              <input  className='form-input-field' placeholder='Doctor phone number' type="text" />
               <input  className='form-input-field' placeholder='Professionals Details 4' type="text" />
              
           </form>

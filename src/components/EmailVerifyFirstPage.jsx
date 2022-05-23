@@ -11,25 +11,23 @@ function Email_Verification_First_Page() {
   // const location = useLocation();
   return (
     <>
-      <div className="bg-container">
-        <img alt="" src={Wave_Top} style={{position: "absolute",top: "20px",left: "0px"}}/>
-        <img
-          alt=""
-          src={EmailVerification}
-          className="emailverificationimage" 
-        />
+      <div
+       className="bg-container"
+      >
+        <img alt="" src={Wave_Top} />
+        <img alt="" src={EmailVerification} className="emailverificationimage" />
         <div className="card-container">
-          <h1 className="mailheading">Verify your email</h1>
-          <p className="paragraph">
-            You've entered <span className="spancolor">william@gmail.com</span> as the email<br></br>address for your
-            account. Please verify this<br></br>email address by clicking button below
+          <h1 style={{marginTop:"65px"}}>Verify your email</h1>
+          <p>
+            You've entered pravankumar@gmail.com as the email address for your
+            account. Please add this email address by clicking button below.
           </p>
           <button
             onClick={() => history("/verifiedemail")}
             className="button_mail"
           >
             Verify your email
-            <img alt="" src={RightArrow} style={{position: "absolute",top: "217px",right: "27px"}} className="rightarrow" />
+            <img alt="" src={RightArrow} className="rightarrow" />
           </button>
           <p className="skipfunction">Skip</p>
         </div>

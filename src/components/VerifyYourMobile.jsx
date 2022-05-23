@@ -6,28 +6,24 @@ import { useNavigate } from "react-router-dom";
 
 function VerifyYourMobile() {
   const history = useNavigate();
-  //   const location = useLocation();
+//   const location = useLocation();
   return (
     <>
       <div className="bg-container">
-        <img alt="" src={Wave_Top}  style={{position: "absolute",top: "0px",left: "0px"}}/>
-        <img
-          alt=""
-          src={EmailVerification}
-          className="emailverificationimage"
-        />
+        <img alt="" src={Wave_Top} />
+        <img alt="" src={EmailVerification} className="emailverificationimage" />
         <div className="card-container">
-          <h1 className="headingverifymobile">Verify your mobile</h1>
-          <p className="paragraph">
-            You've entered <span className="spancolor">+91-XXXXX XXX68</span> as the mobile number<br></br> for your
-            account. Please verify this<br></br> email address by clicking button below
+          <h1 style={{marginTop:"67px"}}>Verify your mobile.</h1>
+          <p>
+            You've entered +91-XXXXX XXX68 as the mobile number for your
+            account. Please verify this email address by clicking button below
           </p>
           <button
             onClick={() => history("/verifiedmobile")}
             className="button_mail"
           >
             Verify your mobile
-            <img alt="" src={RightArrow} style={{position: "absolute",top: "218px",right: "27px"}} className="rightarrow" />
+            <img alt="" src={RightArrow} className="rightarrow" />
           </button>
           <p className="skipfunction">Skip</p>
         </div>

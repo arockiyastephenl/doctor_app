@@ -4,6 +4,7 @@ import {Button, Divider,Row} from 'antd';
 import IconSave from "../assets/icon/IconSave.svg";
 import IconNextArrow from "../assets/icon/IconNextArrow.svg";
 import IconAddRound from "../assets/logo/IconAddRound.png";
+import { useNavigate } from "react-router-dom";
 
 // import { Tabs } from 'antd';
 // import './src/components/AddressTabHomeWorkstyle.css'
@@ -12,6 +13,7 @@ import IconAddRound from "../assets/logo/IconAddRound.png";
 
 
 function AddressTab() {  
+  const history = useNavigate();
   const [description, setDescription] = useState(true);
   const [reviews, setReviews] = useState(false);
   const descriptionHandler = () => {
@@ -36,9 +38,10 @@ function AddressTab() {
       setWorkAddressAddField(tabs => {
             return [ ...tabs, "end"];});
       };  
- 
+     
   
   return ( 
+    
   
    <>
     <div className='home-tab'>
@@ -75,7 +78,7 @@ function AddressTab() {
            <input  className='form-input-field' placeholder='Mobile number' type="number"  />     
      </form>
      <Button className='btn save-btn'>Save  <img src={ IconSave } alt="" style={{marginLeft:"80px"}} /></Button>
-     <Button className='btn next-btn'>Next <img src={ IconNextArrow } alt="" style={{marginLeft:"80px"}}/></Button>
+     <Button className='btn next-btn' onClick={() => history("/userProfilestore")}>Next <img src={ IconNextArrow } alt=""  style={{marginLeft:"80px"}}/></Button>
      </div>
      )} 
      {reviews && ( 
@@ -107,7 +110,7 @@ function AddressTab() {
            <input  className='form-input-field' placeholder='Mobile number' type="number" />     
      </form>
      <Button className='btn save-btn'>Save  <img src={ IconSave } alt="" style={{marginLeft:"80px"}} /></Button>
-     <Button className='btn next-btn'>Next <img src={ IconNextArrow } alt="" style={{marginLeft:"80px"}}/></Button>
+     <Button className='btn next-btn' onClick={() => history("/userProfilestore")}>Next <img src={ IconNextArrow } alt="" style={{marginLeft:"80px"}}/></Button>
      </div>
      )} 
    </div>

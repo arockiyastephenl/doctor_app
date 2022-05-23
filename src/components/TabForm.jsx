@@ -8,13 +8,14 @@ import React, {useState} from 'react';
 // import ProfessionTab from './ProfessionTab';
 // import HomeTab from './HomeTab';
 // import AddressTab from './AddressTab';
-
+import Header from './Header';
 
 import {Button,  Tabs } from 'antd';
 import IconSave from "../assets/icon/IconSave.svg";
 import IconNextArrow from "../assets/icon/IconNextArrow.svg";
 import IconAddRound from "../assets/logo/IconAddRound.png";
 import AddressTab from './AddressTab';
+import { useNavigate } from "react-router-dom";
 const { TabPane } = Tabs;
 
 
@@ -23,6 +24,8 @@ const { TabPane } = Tabs;
 
 // eslint-disable-next-line
 function TabForm() {
+  const history = useNavigate();
+
   const [currentTab, setCurrentTab] = useState("Profile");
   function callback(key) {
     console.log(key);
@@ -64,6 +67,9 @@ function TabForm() {
      };
   
   return (
+    <>
+    <Header />
+   
     <div className='tab-align' >
     <div className='tab-bg' >
       <Tabs onChange={callback}  type="card" 
@@ -154,7 +160,7 @@ function TabForm() {
     </div> 
 
   </div>
- 
+  </>
   )
 }
       
