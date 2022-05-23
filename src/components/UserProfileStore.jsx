@@ -1,10 +1,10 @@
 import React from 'react';
-import { Row} from 'antd';
-import { ArrowLeftOutlined} from "@ant-design/icons";
-import Backdrop from "../assets/icon/Backdrop.svg";
-import DefaultAvatar from "../assets/icon/DefaultAvatar.svg";
-import AvatarCamera from "../assets/icon/AvatarCamera.svg";
-import { useNavigate } from "react-router-dom";
+// import { Row} from 'antd';
+// import { ArrowLeftOutlined} from "@ant-design/icons";
+// import Backdrop from "../assets/icon/Backdrop.svg";
+// import DefaultAvatar from "../assets/icon/DefaultAvatar.svg";
+// import AvatarCamera from "../assets/icon/AvatarCamera.svg";
+// import { useNavigate } from "react-router-dom";
 import {Button } from 'antd';
 import IconSave from "../assets/icon/IconSave.svg";
 import IconNextArrow from "../assets/icon/IconNextArrow.svg";
@@ -12,7 +12,7 @@ import IconNextArrow from "../assets/icon/IconNextArrow.svg";
 import Header from './Header';
 
 function UserProfileStore() {  
-    const history = useNavigate();
+    // const history = useNavigate();
     return(
          <>
           <Header />

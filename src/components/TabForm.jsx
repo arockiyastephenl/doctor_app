@@ -15,7 +15,7 @@ import IconSave from "../assets/icon/IconSave.svg";
 import IconNextArrow from "../assets/icon/IconNextArrow.svg";
 import IconAddRound from "../assets/logo/IconAddRound.png";
 import AddressTab from './AddressTab';
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 const { TabPane } = Tabs;
 
 
@@ -24,7 +24,7 @@ const { TabPane } = Tabs;
 
 // eslint-disable-next-line
 function TabForm() {
-  const history = useNavigate();
+  // const history = useNavigate();
 
   const [currentTab, setCurrentTab] = useState("Profile");
   function callback(key) {
