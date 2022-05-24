@@ -13,10 +13,10 @@ function VerifyYourMobile() {
         <img alt="" src={Wave_Top} />
         <img alt="" src={EmailVerification} className="emailverificationimage" />
         <div className="card-container">
-          <h1 style={{marginTop:"67px"}}>Verify your mobile.</h1>
+          <h1 style={{marginTop:"67px"}}>Verify your mobile</h1>
           <p>
             You've entered +91-XXXXX XXX68 as the mobile number for your
-            account. Please verify this email address by clicking button below
+            account. Please verify this email address by clicking button below.
           </p>
           <button
             onClick={() => history("/verifiedmobile")}

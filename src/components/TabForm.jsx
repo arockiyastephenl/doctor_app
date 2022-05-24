@@ -36,7 +36,7 @@ function TabForm() {
   };
   
   const handleSelect1 = (eventKey) => {
-    setCurrentTab("Professionals");
+    setCurrentTab("Work History");
   };
 
   const handleSelect2 = (eventKey) => {
@@ -83,8 +83,9 @@ function TabForm() {
         <form>  
             <input  className='form-input-field' placeholder='First Name'type="text" />
             <input  className='form-input-field' placeholder='Last Name' type="text" />
-            <input  className='form-input-field' placeholder='Phone Number' type="number" />
             <input  className='form-input-field' placeholder='Date of birth' type="text" />
+            <input  className='form-input-field' placeholder='Doctor license number' type="number" />
+            <input  className='form-input-field' placeholder='Phone Number' type="number" />
             <input  className='form-input-field' placeholder='Email' type="text" />
         </form>
         <Button className='btn save-btn'>Save  <img src={ IconSave } alt="" style={{marginLeft:"80px"}} /></Button>
@@ -122,15 +123,15 @@ function TabForm() {
 
           </TabPane> 
 
-        <TabPane onTabClick={callbackTabClicked} tab="Professionals" key="Professionals">
+        <TabPane onTabClick={callbackTabClicked} tab="Work History" key="Work History">
         <div className='home-tab'>
-        <h1 className='profile-text'> Professionals Details</h1>
+        <h1 className='profile-text'>Work History Details </h1>
           <form>  
-              <p style={{color:"#702cc7" }}>Add Profession details form  <img alt="" src={ IconAddRound} onClick={addProfessInput} style={{marginLeft:"146px"}}/> </p>  
+              <p style={{color:"#702cc7" }}>Add work history Details form  <img alt="" src={ IconAddRound} onClick={addProfessInput} style={{marginLeft:"146px"}}/> </p>  
               <input  className='form-input-field' placeholder='Clinic Name'type="text" />
-              <input  className='form-input-field' placeholder='Clinic license number' type="text" />
-              <input  className='form-input-field' placeholder='clinic phone number' type="number"  />
-              <input  className='form-input-field' placeholder='Professionals Details 4' type="text" />
+              <input  className='form-input-field' placeholder='Clinic address' type="text" />
+              <input  className='form-input-field' placeholder='Clinic phone number' type="number"  />
+              <input  className='form-input-field' placeholder='Notes' type="text" />
                 {/* input fields */}
                 <div>
                 {professionAddField.map((item, i) => {

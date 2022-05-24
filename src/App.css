@@ -80,7 +80,7 @@ button:focus{
     color: #702cc7;
   }
 .profile-text {
-    font-size: 18px;
+    font-size: 15px;
     font-family: 'Noto Sans', sans-serif;
     font-weight: bold;
     padding-bottom: 8px;
@@ -93,7 +93,7 @@ button:focus{
     width: 355px;
     height: 67px;
     border-radius: 10px;
-    font-size: 17px;
+    font-size: 16px;
     font-family: 'Noto Sans', sans-serif;
     padding: 20px;
     margin-bottom: 20px;
@@ -189,17 +189,66 @@ ant-tabs-tab {
   display: flex;
   font-family: 'Noto Sans', sans-serif;
   padding-left: 25px;
-  padding-top: 9px;
+  padding-top: 12px;
 
 }
 .user-details {
-  padding: 10px;
-
-  
+  padding: 10px;  
   margin-left: 12px;
- 
 
-
+}
+.success-bg-container1 {
+  display: flex;
+  background-color: #2ECC71;
+  background-size: cover;
+  width: 26rem;
+  height: 56rem;
+  position: relative;
+  
+  
+}
+.success-container {
+  display: flex;
+  background-color: white;
+  background-size: cover;
+  width: 20rem;
+  height: 27rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 13px;
+  text-align:"center";
+  font-family: 'Noto Sans', sans-serif;
+  margin-top: 41px;
+}
+.success-btn {
+    
+  color: white;
+  width: 264px;
+  height: 54px;
+  border-radius: 8px;
+  padding-right: 61px;
+  margin-right: 5px;
+  font-size: 16px;
+  font-family: 'Noto Sans', sans-serif;
+  position: absolute;
+  left: 24px;
+  bottom: 26px;
+  font-weight: bold;
+}
+.continue-btn {
+  background-color: #702cc7;
+}
+.success-text {
+  font-size: 20px;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: bold;
+  margin-top: 30px
+}
+.profile-created{
+  font-size: 16px;
+  font-family: 'Noto Sans', sans-serif;
+  
+  margin-top: 10px
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Oxygen&display=swap");
