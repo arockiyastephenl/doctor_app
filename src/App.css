@@ -378,6 +378,15 @@ ant-tabs-tab {
   z-index: 1;
   width: 156px;
 }
+.emailverifyimage {
+  position: absolute;
+  left: -9.47%;
+  right: 31.73%;
+  top: 7.39%;
+  bottom: 46.12%;
+  z-index: 1;
+  width: 330px;
+}
 .skipfunction {
   color: black;
   text-align: end;
