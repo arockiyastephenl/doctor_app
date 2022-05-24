@@ -1,6 +1,6 @@
 import React from "react";
 import Wave_Top from "../assets/logo/Wave_Top.svg";
-import EmailVerification from "../assets/logo/EmailVerification.svg";
+import Otp from "../assets/logo/Otp.svg";
 import RightArrow from "../assets/icon/RightArrow.svg";
 import { useNavigate } from "react-router-dom";
 
@@ -11,7 +11,7 @@ function VerifyYourMobile() {
     <>
       <div className="bg-container">
         <img alt="" src={Wave_Top} />
-        <img alt="" src={EmailVerification} className="emailverificationimage" />
+        <img alt="" src={Otp} className="emailverifyimage" />
         <div className="card-container">
           <h1 style={{marginTop:"67px"}}>Verify your mobile</h1>
           <p>
