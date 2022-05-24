@@ -9,6 +9,7 @@ import VerificationYourMobile from "./components/VerificationYourMobile";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import TabForm from "./components/TabForm";
 import UserProfileStore from "./components/UserProfileStore";
+import SuccessPage from "./components/SuccessPage";
 // import Header from "./components/Header";
 // import { useNavigate } from "react-router-dom";
 // import AddressTab from './components/AddressTab';
@@ -35,6 +36,10 @@ function App() {
            <Route
             path="/userProfilestore"
             element={<UserProfileStore />}
+          />
+          <Route
+            path="/successPage"
+            element={<SuccessPage />}
           />
         </Routes>
       </Router>

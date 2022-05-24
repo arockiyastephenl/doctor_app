@@ -42,7 +42,7 @@ function LoginPage1() {
         </button>
         <hr className="h_line"></hr>
         <div className="or-container">
-          <p style={{ paddingLeft: "10px" }}>OR</p>
+          <p style={{ paddingLeft: "11px",marginTop:"11px" }}>OR</p>
           <button
             onClick={() => history("/emailverify")}
             className="buttongooglesignin"
