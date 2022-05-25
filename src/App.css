@@ -1,213 +1,205 @@
-@import '~antd/dist/antd.css';
-
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
+@import "~antd/dist/antd.css";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap");
 
 .container {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 .bg-container1 {
-    display: flex;
-    background-color: #2ECC71;
-    background-size: cover;
-    width: 26rem;
-    height: 14rem;
-    position: relative;
-    
+  display: flex;
+  background-color: #2ecc71;
+  background-size: cover;
+  width: 26rem;
+  height: 14rem;
+  position: relative;
 }
 .header-arrow {
-    display: flex;
-    padding: 7px;
+  display: flex;
+  padding: 7px;
 }
 .arrow-size {
-    font-size: 30px;
-    font-family: 'Noto Sans', sans-serif;
-    color: white;
-    padding-right: 10px;
-    padding-top: 4px;
+  font-size: 30px;
+  font-family: "Noto Sans", sans-serif;
+  color: white;
+  padding-right: 10px;
+  padding-top: 4px;
 }
- 
 
 .header-title {
-    font-size: 18px;
-    font-family: 'Noto Sans', sans-serif;
-    font-weight: bold;
-    color: white;
-    position: absolute;
-    left: 49px;
-    top: 12px;
+  font-size: 18px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  left: 49px;
+  top: 12px;
 }
 .tab-align {
-    display: flex;
-    justify-content: center;
-    position: relative;
-   
-
+  display: flex;
+  justify-content: center;
+  position: relative;
 }
 .tab-bg {
-    width: 417px;
-    height: 550px;
-    background-color: #F1ECFB;
-    padding-top: 14px;
-    
-    
-
+  width: 417px;
+  height: 550px;
+  background-color: #f1ecfb;
+  padding-top: 14px;
 }
 .avatar {
-    position: absolute;
-    top: 77px;
-    left: 150px;
-    width: 97px;
+  position: absolute;
+  top: 77px;
+  left: 150px;
+  width: 97px;
 }
 .camera {
-    position: absolute;
-    top: 142px;
-    right: 133px;
-    width: 50px;
+  position: absolute;
+  top: 142px;
+  right: 133px;
+  width: 50px;
 }
 .home-tab {
-    background-color: #ffffff;
-    width: 26rem;
-    height: 36rem;
-    text-align: center;
-    padding: 14px;
+  background-color: #ffffff;
+  width: 26rem;
+  height: 36rem;
+  text-align: center;
+  padding: 14px;
 }
-button{
-    color: black;
-  }
-    
-button:focus{
-    color: #702cc7;
-  }
+button {
+  color: black;
+}
+
+button:focus {
+  color: #702cc7;
+}
 .profile-text {
-    font-size: 18px;
-    font-family: 'Noto Sans', sans-serif;
-    font-weight: bold;
-    padding-bottom: 8px;
-    border:none;
+  font-size: 18px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: bold;
+  padding-bottom: 8px;
+  border: none;
 }
 ::after {
-    color: #702cc7;
+  color: #702cc7;
 }
 .form-input-field {
-    width: 355px;
-    height: 67px;
-    border-radius: 10px;
-    font-size: 17px;
-    font-family: 'Noto Sans', sans-serif;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-color: lightgray;
-    border-style: solid;
+  width: 355px;
+  height: 67px;
+  border-radius: 10px;
+  font-size: 17px;
+  font-family: "Noto Sans", sans-serif;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-color: lightgray;
+  border-style: solid;
 }
 .btn {
-    
-    color: white;
-    width: 171px;
-    height: 54px;
-    border-radius: 8px;
-    padding-right: 61px;
-    margin-right:  5px;
-    font-size: 16px;
-    font-family: 'Noto Sans', sans-serif;
+  color: white;
+  width: 171px;
+  height: 54px;
+  border-radius: 8px;
+  padding-right: 61px;
+  margin-right: 5px;
+  font-size: 16px;
+  font-family: "Noto Sans", sans-serif;
 }
 .save-btn {
-    background-color: #702cc7;
-
+  background-color: #702cc7;
 }
 .next-btn {
-    background-color: #2ecb71;
+  background-color: #2ecb71;
 }
-.ant-tabs > .ant-tabs-nav .ant-tabs-nav-wrap, .ant-tabs > div > .ant-tabs-nav .ant-tabs-nav-wrap {
-    position: relative;
-    display: inline-block;
-    display: flex;
-    flex: auto;
-    align-self: stretch;
-    overflow: hidden;
-    white-space: nowrap;
-    transform: translate(0);
-    margin-left: 5px;
-
+.ant-tabs > .ant-tabs-nav .ant-tabs-nav-wrap,
+.ant-tabs > div > .ant-tabs-nav .ant-tabs-nav-wrap {
+  position: relative;
+  display: inline-block;
+  display: flex;
+  flex: auto;
+  align-self: stretch;
+  overflow: hidden;
+  white-space: nowrap;
+  transform: translate(0);
+  margin-left: 5px;
 }
-.ant-tabs-card > .ant-tabs-nav .ant-tabs-tab-active, .ant-tabs-card > div > .ant-tabs-nav .ant-tabs-tab-active {
-    color: white;
-    background: #702cc7;
-    /* width: 82px; */
+.ant-tabs-card > .ant-tabs-nav .ant-tabs-tab-active,
+.ant-tabs-card > div > .ant-tabs-nav .ant-tabs-tab-active {
+  color: white;
+  background: #702cc7;
+  /* width: 82px; */
 }
-.ant-tabs-card > .ant-tabs-nav .ant-tabs-tab, .ant-tabs-card > div > .ant-tabs-nav .ant-tabs-tab {
-    /* margin: 0; */
-    /* padding: 8px 16px; */
-    /* background: #fafafa; */
-    border: 1px solid #f0f0f0;
-    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-    margin-right: 4px;
-    /* width: 105px; */
+.ant-tabs-card > .ant-tabs-nav .ant-tabs-tab,
+.ant-tabs-card > div > .ant-tabs-nav .ant-tabs-tab {
+  /* margin: 0; */
+  /* padding: 8px 16px; */
+  /* background: #fafafa; */
+  border: 1px solid #f0f0f0;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  margin-right: 4px;
+  /* width: 105px; */
 }
 .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
-    color: white;
-    text-shadow: 0 0 0.25px currentcolor;
+  color: white;
+  text-shadow: 0 0 0.25px currentcolor;
 }
-ant-tabs-top > .ant-tabs-nav::before, .ant-tabs-bottom > .ant-tabs-nav::before, .ant-tabs-top > div > .ant-tabs-nav::before, .ant-tabs-bottom > div > .ant-tabs-nav::before {
-    position: absolute;
-    right: 0;
-    left: 0;
-    border-bottom: 1px solid #f0f0f0;
-    content: '';
+ant-tabs-top > .ant-tabs-nav::before,
+.ant-tabs-bottom > .ant-tabs-nav::before,
+.ant-tabs-top > div > .ant-tabs-nav::before,
+.ant-tabs-bottom > div > .ant-tabs-nav::before {
+  position: absolute;
+  right: 0;
+  left: 0;
+  border-bottom: 1px solid #f0f0f0;
+  content: "";
 }
 ant-tabs-tab {
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-    padding: 12px 0;
-    font-size: 14px;
-    font-family: 'Noto Sans', sans-serif;
-    background: transparent;
-    border: 0;
-    outline: none;
-    cursor: pointer;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 0;
+  font-size: 14px;
+  font-family: "Noto Sans", sans-serif;
+  background: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
 }
 .ant-tabs-tab-btn {
   outline: none;
   transition: all 0.3s;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-weight: bold;
 }
 
-.user-profile-bg{
+.user-profile-bg {
   width: 417px;
   height: 500px;
   background-color: white;
   /* padding-top: 14px; */
 }
-.user-profile-titles{
+.user-profile-titles {
   width: 417px;
   height: 45px;
   background-color: gainsboro;
   color: #702cc7;
   padding-top: 14px;
   display: flex;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   padding-left: 25px;
   padding-top: 9px;
-
 }
 .user-details {
   padding: 10px;
 
-  
   margin-left: 12px;
- 
-
-
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Oxygen&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,700;1,700&family=Oxygen:wght@300;400&display=swap");
+
 .App {
   width: 100vw;
   height: 100vh;
 }
+
 .bg-container {
   background-color: rgb(46, 204, 113);
   width: 100vw;
@@ -216,6 +208,7 @@ ant-tabs-tab {
   overflow-x: hidden;
   overflow-y: hidden;
 }
+
 .login_page_header {
   font-family: "Oxygen", "sans-serif";
   color: white;
@@ -227,11 +220,13 @@ ant-tabs-tab {
   top: 108px;
   left: 20px;
 }
+
 .para_content {
   color: white;
   font-size: 42px;
   font-family: "Noto Sans", sans-serif;
 }
+
 .input-box {
   width: 98%;
   height: 124px;
@@ -241,6 +236,7 @@ ant-tabs-tab {
   font-size: 40px;
   padding-left: 17px;
 }
+
 .button {
   width: 100%;
   height: 124px;
@@ -252,6 +248,7 @@ ant-tabs-tab {
   font-family: "Noto Sans", sans-serif;
   font-weight: bold;
 }
+
 .log-in-button {
   width: 100%;
   height: 124px;
@@ -263,10 +260,12 @@ ant-tabs-tab {
   font-family: "Noto Sans", sans-serif;
   font-weight: bold;
 }
+
 .h_line {
   background-color: white;
   margin-top: 427px;
 }
+
 .homepagelogo {
   width: 375px;
   height: 151px;
@@ -279,30 +278,33 @@ ant-tabs-tab {
 
 .card-container {
   position: absolute;
-    z-index: 0;
-    width: 100%;
-    height: 564px;
-    left: 0px;
-    top: 333px;
-    background: #ffffff;
-    border-radius: 12px 12px 0px 0px;
-    text-align: center;
-    padding-top: 64px;
-    padding: 14px;
+  z-index: 0;
+  width: 100%;
+  height: 564px;
+  left: 0px;
+  top: 333px;
+  background: #ffffff;
+  border-radius: 12px 12px 0px 0px;
+  text-align: center;
+  padding-top: 64px;
+  padding: 14px;
 }
+
 .card-heading {
   font-size: 18px;
   padding-top: 108px;
   text-align: center;
 }
+
 .para_content_mail {
   font-size: 16px;
   text-align: center;
   padding-left: 10px;
   padding-right: 10px;
 }
+
 .button_mail {
-  width: 375px;
+  width: 351px;
   height: 50px;
   background-color: #703ccf;
   border-radius: 6px;
@@ -320,6 +322,7 @@ ant-tabs-tab {
   text-align: center;
   color: #ffffff;
 }
+
 .emailverificationimage {
   position: absolute;
   left: 32.53%;
@@ -329,6 +332,7 @@ ant-tabs-tab {
   z-index: 1;
   width: 156px;
 }
+
 .skipfunction {
   color: black;
   text-align: end;
@@ -340,6 +344,7 @@ ant-tabs-tab {
   line-height: 18px;
   letter-spacing: 0em;
 }
+
 .page_header {
   font-family: Noto Sans;
   font-size: 18px;
@@ -348,12 +353,14 @@ ant-tabs-tab {
   letter-spacing: 0em;
   text-align: center;
 }
+
 .rightarrow {
   position: absolute;
   height: 16.510801px;
   width: 19px;
   padding-left: 92px;
 }
+
 .emaildoctorlogo {
   position: absolute;
   width: 294px;
@@ -361,12 +368,14 @@ ant-tabs-tab {
   left: 63px;
   top: 87.07px;
 }
+
 .passcode_box {
   width: 50px;
   height: 50px;
   border: none;
   background: #f1ecfb;
 }
+
 .passcode_box_alignment {
   display: flex;
   flex-direction: row;
@@ -375,11 +384,13 @@ ant-tabs-tab {
   gap: 5px;
   padding-left: 22px;
 }
+
 .Drop {
   position: absolute;
   top: -30px;
   right: 132px;
 }
+
 .parahomepage {
   position: absolute;
   width: 296px;
@@ -392,14 +403,16 @@ ant-tabs-tab {
   font-size: 12px;
   line-height: 18px;
 }
+
 .namehomepage {
   font-family: "Noto Sans", sans-serif;
   font-weight: 700;
   size: 16px;
   line-height: 21.79px;
 }
+
 .input-box_home {
-  width: 335px;
+  width: 350px;
   height: 50px;
   border-radius: 6px;
   font-family: "Noto Sans", sans-serif;
@@ -410,6 +423,7 @@ ant-tabs-tab {
   position: absolute;
   top: 269px;
 }
+
 .input-box_home_pwd {
   position: absolute;
   padding-left: 9px;
@@ -418,11 +432,12 @@ ant-tabs-tab {
   top: 353px;
   right: 108px;
   height: 50px;
-  width: 338px;
+  width: 350px;
   left: 20px;
   border-radius: 6px;
   border: none;
 }
+
 .sign-in-button {
   background-color: #703ccf;
   border-radius: 6px;
@@ -434,7 +449,9 @@ ant-tabs-tab {
   left: 17px;
   position: absolute;
   font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
 }
+
 .or-container {
   color: #703ccf;
   background-color: white;
@@ -446,13 +463,16 @@ ant-tabs-tab {
   position: absolute;
   top: 494px;
   left: 174px;
+  font-weight: 700;
 }
+
 .rightarrowhome {
   position: absolute;
   height: 16.510801px;
   width: 19px;
   padding-left: 123px;
 }
+
 .buttongooglesignin {
   width: 354px;
   height: 50px;
@@ -464,10 +484,26 @@ ant-tabs-tab {
   color: black;
   background-color: white;
   font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
 }
+
 .rightarrowgoogle {
   position: absolute;
   height: 16.510801px;
   width: 19px;
   padding-left: 100px;
+}
+
+.verifymobilenewlogo1 {
+  width: 249.88px;
+  height: 266.68px;
+  position: absolute;
+  left: 6.53%;
+  right: 31.73%;
+  z-index: 1;
+  top: 96px;
+}
+
+.spancolor {
+  color: #703ccf;
 }

@@ -6,15 +6,22 @@ import { useNavigate } from "react-router-dom";
 
 function VerificationYourMail() {
   const history = useNavigate();
-//   const location = useLocation();
+  //   const location = useLocation();
   return (
     <>
       <div className="bg-container">
         <img alt="" src={Wave_Top} />
-        <img alt="" src={EmailVerificationDoctorLogo} className="emaildoctorlogo" />
+        <img
+          alt=""
+          src={EmailVerificationDoctorLogo}
+          className="emaildoctorlogo"
+        />
         <div className="card-container">
           <h1>Verification your email</h1>
-          <p>We sent you an code On your email pravankumar@gmail.com.</p>
+          <p>
+            We sent you an code On your email{" "}
+            <span className="spancolor">pravankumar@gmail.com.</span>
+          </p>
           <div className="passcode_box_alignment">
             <form>
               <input type="password" className="passcode_box" />

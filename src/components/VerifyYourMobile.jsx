@@ -1,22 +1,28 @@
 import React from "react";
 import Wave_Top from "../assets/logo/Wave_Top.svg";
-import EmailVerification from "../assets/logo/EmailVerification.svg";
+import VerifyMobileNewLogo1 from "../assets/logo/VerifyMobileNewLogo1.svg";
 import RightArrow from "../assets/icon/RightArrow.svg";
 import { useNavigate } from "react-router-dom";
 
 function VerifyYourMobile() {
   const history = useNavigate();
-//   const location = useLocation();
+  //   const location = useLocation();
   return (
     <>
       <div className="bg-container">
         <img alt="" src={Wave_Top} />
-        <img alt="" src={EmailVerification} className="emailverificationimage" />
+        <img
+          alt=""
+          src={VerifyMobileNewLogo1}
+          className="verifymobilenewlogo1"
+        />
+
         <div className="card-container">
-          <h1 style={{marginTop:"67px"}}>Verify your mobile.</h1>
+          <h1 style={{ marginTop: "67px" }}>Verify your mobile.</h1>
           <p>
-            You've entered +91-XXXXX XXX68 as the mobile number for your
-            account. Please verify this email address by clicking button below
+            You've entered <span className="spancolor">+91-XXXXX XXX68</span> as
+            the mobile number for your account. Please verify this email address
+            by clicking button below
           </p>
           <button
             onClick={() => history("/verifiedmobile")}
