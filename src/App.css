@@ -99,6 +99,7 @@ button:focus{
     margin-bottom: 20px;
     border-color: lightgray;
     border-style: solid;
+    background-color: white;
 }
 .btn {
     
@@ -249,6 +250,16 @@ ant-tabs-tab {
   font-family: 'Noto Sans', sans-serif;
   
   margin-top: 10px
+}
+.form-control {
+  position: relative;
+}
+.phone-code{
+  	position: absolute;
+    left: 36px;
+    font-size: 17px;
+    color: #444;
+    
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Oxygen&display=swap");
@@ -467,6 +478,7 @@ ant-tabs-tab {
   margin: 22px;
   position: absolute;
   top: 269px;
+  background-color: white;
 }
 .input-box_home_pwd {
   position: absolute;
@@ -480,6 +492,7 @@ ant-tabs-tab {
   left: 20px;
   border-radius: 6px;
   border: none;
+  background-color: white;
 }
 .sign-in-button {
   background-color: #703ccf;
