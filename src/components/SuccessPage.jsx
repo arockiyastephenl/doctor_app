@@ -11,7 +11,7 @@ function SuccessPage() {
     return(
          <div className='container'>
          <div className='success-bg-container1'>
-             <img alt="" src={Backdrop}  style={{position:'absolute',top:"82px",height:"52rem"}}/>
+             <img alt="" src={Backdrop}  style={{position:'absolute',top:"82px",height:"49rem"}}/>
              <div style={{position:'absolute',top:"177px",right:"49px",textAlign:"center"}} >
              <div className='success-container'>
                  <h1 className='success-text'>Success!</h1>
