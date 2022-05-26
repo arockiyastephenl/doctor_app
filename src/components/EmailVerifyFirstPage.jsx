@@ -19,17 +19,17 @@ function Email_Verification_First_Page() {
         <div className="card-container">
           <h1 style={{marginTop:"65px"}}>Verify your email</h1>
           <p>
-            You've entered pravankumar@gmail.com as the email address for your
-            account. Please add this email address by clicking button below.
+            You've entered <span style={{color:"#703ccf"}}>pravankumar@gmail.com </span>  as the email address for your
+            account. Please Verify this email address by Clicking the button below.
           </p>
           <button
             onClick={() => history("/verifiedemail")}
-            className="button_mail"
+            className="sign-in-button" style={{ position: "absolute", right: "17px", top: "236px" }}
           >
             Verify your email
-            <img alt="" src={RightArrow} className="rightarrow" />
+            <img alt="" src={RightArrow}  style={{ position: "absolute", right: "17px", top: "18px" }} />
           </button>
-          <p className="skipfunction">Skip</p>
+          <p className="skipfunction" style={{top:"267px"}}>Skip</p>
         </div>
       </div>
     </>

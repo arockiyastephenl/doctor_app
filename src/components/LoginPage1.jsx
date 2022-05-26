@@ -1,12 +1,13 @@
 import React from "react";
 // import "./App.css";
-// import { Button } from "antd";
+import { Input } from "antd";
 import BackDrop from "../assets/logo/BackDrop.svg";
 import HomePageLogo from "../assets/logo/HomePageLogo.svg";
 import RightArrow from "../assets/icon/RightArrow.svg";
 import GoogleIconPurple from "../assets/icon/GoogleIconPurple.svg";
-import RightArrowBlack from "../assets/icon/RightArrowBlack.svg";
+import RightArrowPurple from "../assets/icon/RightArrowPurple.svg";
 import { useNavigate } from "react-router-dom";
+import {LockOutlined ,UserOutlined } from "@ant-design/icons";
 
 function LoginPage1() {
   const history = useNavigate();
@@ -23,26 +24,28 @@ function LoginPage1() {
           Wellyfe Doctor App<br></br>
           Simply dummy text Tag line.
         </p>
-        <input
+        <Input
           type="Email"
-          placeholder="Email Id                                                                                                    @"
+          placeholder="Email Id"
+          suffix={<UserOutlined />}                                                                                                 
           className="input-box_home"
         />
         <br></br>
         <br></br>
-        <input
+        <Input
           type="password"
-          placeholder="Password"
+          placeholder="Password" 
+          suffix={<LockOutlined/>}
           className="input-box_home_pwd"
         />
         <br></br>
         <br></br>
         <button className="sign-in-button">
-          Sign In <img src={RightArrow} alt="" className="rightarrowhome" />
+          Sign In <img src={RightArrow} alt=""  style={{ position: "absolute", right: "17px", top: "18px" }} />
         </button>
         <hr className="h_line"></hr>
         <div className="or-container">
-          <p style={{ paddingLeft: "11px",marginTop:"11px" }}>OR</p>
+          <p style={{ paddingLeft: "11px",marginTop:"11px",fontWeight:'700' ,color:"#703ccf"}}>OR</p>
           <button
             onClick={() => history("/emailverify")}
             className="buttongooglesignin"
@@ -53,7 +56,7 @@ function LoginPage1() {
             />
             Login with Google
             <img alt=""
-              src={RightArrowBlack}
+              src={RightArrowPurple}
               style={{ position: "absolute", right: "17px", top: "18px" }}
             />
           </button>

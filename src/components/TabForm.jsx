@@ -26,6 +26,8 @@ const { TabPane } = Tabs;
 function TabForm() {
  const history = useNavigate();
 
+ const [type, setType] = useState('text');
+
   const [currentTab, setCurrentTab] = useState("Profile");
   function callback(key) {
     console.log(key);
@@ -120,8 +122,10 @@ function TabForm() {
           <form>  
             <input disabled={isView}  className='form-input-field' placeholder='First Name'type="text" />
             <input disabled={isView}  className='form-input-field' placeholder='Last Name' type="text" />
-            <input disabled={isView}  className='form-input-field' placeholder='Date of birth' type="date" style={{textTransform:"capitalize"}} />
-            <input disabled={isView}  className='form-input-field' placeholder='Doctor license number' type="number" />
+            <input disabled={isView}  className='form-input-field' type={type} placeholder='Date of birth' 
+            onFocus={() => setType('date')} 
+            onBlur={() => setType('text')}   />
+            <input disabled={isView}  className='form-input-field' placeholder='Doctor license number' type="number"  />
             <input disabled={isView}  className='form-input-field' placeholder='Phone Number' type="number" />
             <input disabled={isView}  className='form-input-field' placeholder='Email' type="email" />
          </form>
@@ -164,7 +168,7 @@ function TabForm() {
           <div className='home-tab'>
            <h1 className='profile-text'>Work History Details </h1>
             <form>  
-                <p style={{color:"#702cc7" }}>Add work history Details form  <img alt="" src={ IconAddRound} onClick={addProfessInput} style={{marginLeft:"146px"}}/> </p>  
+                <p style={{color:"#702cc7" }}>Add work history details form  <img alt="" src={ IconAddRound} onClick={addProfessInput} style={{marginLeft:"146px"}}/> </p>  
                 <input disabled={isView}  className='form-input-field' placeholder='Clinic Name'type="text" />
                 <input disabled={isView}  className='form-input-field' placeholder='Clinic address' type="text" />
                 <input disabled={isView}  className='form-input-field' placeholder='Clinic phone number' type="number"  />
@@ -253,7 +257,8 @@ function TabForm() {
      <form>  
          <p style={{color:"#702cc7",marginLeft:"-279px"}}>Country </p>  
            <input disabled={isView}  className='form-input-field' placeholder='Country'type="text" />
-           <input disabled={isView}  value="+91" className='form-input-field' placeholder='Mobile number' type="number" />     
+          
+           <input disabled={isView}  className='form-input-field' placeholder='Mobile number' type="number" />     
      </form>
      <Button className='btn save-btn'>Save  <img src={ IconSave } alt="" style={{marginLeft:"80px"}} /></Button>
      <Button className='btn next-btn' onClick={() => history("/userProfilestore")}>Next <img src={ IconNextArrow } alt="" style={{marginLeft:"80px"}}/></Button>
