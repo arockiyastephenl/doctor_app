@@ -13,8 +13,8 @@ function VerificationYourMail() {
         <img alt="" src={Wave_Top} />
         <img alt="" src={EmailVerificationDoctorLogo} className="emaildoctorlogo" />
         <div className="card-container">
-          <h1>Verification your email</h1>
-          <p>We sent you an code On your email pravankumar@gmail.com.</p>
+          <h1>Verify your email</h1>
+          <p>We sent you an code to your email <span style={{color:"#703ccf"}}>pravankumar@gmail.com </span>.</p>
           <div className="passcode_box_alignment">
             <form>
               <input type="password" className="passcode_box" />
@@ -35,12 +35,13 @@ function VerificationYourMail() {
               <input type="password" className="passcode_box" />
             </form>
           </div>
+       
           <button
             onClick={() => history("/mobileverify")}
-            className="button_mail"
+            className="sign-in-button" style={{ position: "absolute", right: "22px", top: "226px" }}
           >
             Continue
-            <img alt="" src={RightArrow} className="rightarrow" />
+            <img alt="" src={RightArrow}  style={{ position: "absolute", right: "17px", top: "18px" }} />
           </button>
         </div>
       </div>

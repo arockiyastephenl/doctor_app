@@ -74,6 +74,7 @@
 }
 button{
     color: black;
+    background-color: #ffffff;
   }
     
 button:focus{
@@ -111,6 +112,7 @@ button:focus{
     margin-right:  5px;
     font-size: 16px;
     font-family: 'Noto Sans', sans-serif;
+    font-weight:bold;
 }
 .save-btn {
     background-color: #702cc7;
@@ -205,6 +207,7 @@ ant-tabs-tab {
   width: 26rem;
   height: 56rem;
   position: relative;
+  overflow: hidden;
   
   
 }
@@ -220,6 +223,8 @@ ant-tabs-tab {
   text-align:"center";
   font-family: 'Noto Sans', sans-serif;
   margin-top: 41px;
+  position: absolute;
+    left: -306px;
 }
 .success-btn {
     
@@ -390,13 +395,13 @@ ant-tabs-tab {
   width: 156px;
 }
 .emailverifyimage {
-  position: absolute;
-  left: -9.47%;
-  right: 31.73%;
-  top: 7.39%;
-  bottom: 46.12%;
-  z-index: 1;
-  width: 330px;
+    position: absolute;
+    left: 11.53%;
+    right: 31.73%;
+    top: 7.39%;
+    bottom: 46.12%;
+    z-index: 1;
+    width: 253px
 }
 .skipfunction {
   color: black;
@@ -408,6 +413,9 @@ ant-tabs-tab {
   font-weight: bold;
   line-height: 18px;
   letter-spacing: 0em;
+  top: 277px;
+    right: 14px;
+    position: absolute;
 }
 .page_header {
   font-family: Noto Sans;
@@ -468,7 +476,7 @@ ant-tabs-tab {
   line-height: 21.79px;
 }
 .input-box_home {
-  width: 335px;
+  width: 353px;
   height: 50px;
   border-radius: 6px;
   font-family: "Noto Sans", sans-serif;
@@ -479,6 +487,7 @@ ant-tabs-tab {
   position: absolute;
   top: 269px;
   background-color: white;
+  left: -2px;
 }
 .input-box_home_pwd {
   position: absolute;
@@ -488,7 +497,7 @@ ant-tabs-tab {
   top: 353px;
   right: 108px;
   height: 50px;
-  width: 338px;
+  width: 353px;
   left: 20px;
   border-radius: 6px;
   border: none;
@@ -499,12 +508,13 @@ ant-tabs-tab {
   border-radius: 6px;
   border: none;
   color: white;
-  width: 353px;
+  width: 354px;
   height: 50px;
   top: 418px;
-  left: 17px;
+  left: 20px;
   position: absolute;
   font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
 }
 .or-container {
   color: #703ccf;
@@ -523,6 +533,7 @@ ant-tabs-tab {
   height: 16.510801px;
   width: 19px;
   padding-left: 123px;
+  font-size: 12px;
 }
 .buttongooglesignin {
   width: 354px;
@@ -535,6 +546,7 @@ ant-tabs-tab {
   color: black;
   background-color: white;
   font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
 }
 .rightarrowgoogle {
   position: absolute;

@@ -15,15 +15,16 @@ function VerifyYourMobile() {
         <div className="card-container">
           <h1 style={{marginTop:"67px"}}>Verify your mobile</h1>
           <p>
-            You've entered +91-XXXXX XXX68 as the mobile number for your
-            account. Please verify this email address by clicking button below.
+            You've entered <span style={{color:"#703ccf"}}>+91-XXXXX XXX68 </span>  as the mobile number for your
+            account. Please verify this phone number by clicking button below.
           </p>
+         
           <button
-            onClick={() => history("/verifiedmobile")}
-            className="button_mail"
+              onClick={() => history("/verifiedmobile")}
+            className="sign-in-button" style={{ position: "absolute", right: "22px", top: "226px" }}
           >
             Verify your mobile
-            <img alt="" src={RightArrow} className="rightarrow" />
+            <img alt="" src={RightArrow}  style={{ position: "absolute", right: "17px", top: "18px" }} />
           </button>
           <p className="skipfunction">Skip</p>
         </div>

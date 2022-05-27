@@ -10,6 +10,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import TabForm from "./components/TabForm";
 import UserProfileStore from "./components/UserProfileStore";
 import SuccessPage from "./components/SuccessPage";
+import AddClinic from "./components/AddClinic";
+import ListOfClinics from "./components/ListOfClinics";
 // import Header from "./components/Header";
 // import { useNavigate } from "react-router-dom";
 // import AddressTab from './components/AddressTab';
@@ -40,6 +42,14 @@ function App() {
           <Route
             path="/successPage"
             element={<SuccessPage />}
+          />
+           <Route
+            path="/listOfClinics"
+            element={<ListOfClinics/>}
+          />
+          <Route
+            path="/addClinic"
+            element={<AddClinic/>}
           />
         </Routes>
       </Router>

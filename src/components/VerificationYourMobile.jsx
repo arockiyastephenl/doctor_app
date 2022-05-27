@@ -12,9 +12,9 @@ function VerificationYourMobile() {
         <img alt="" src={Wave_Top} />
         <img alt="" src={EmailVerificationDoctorLogo} className="emaildoctorlogo" />
         <div className="card-container">
-          <h1 style={{marginTop:"67px"}}>Verification your mobile</h1>
+          <h1 style={{marginTop:"67px"}}>Verify your mobile</h1>
           <p>
-            We sent you an SMS code <br></br> On number +91-XXXXX XXX68
+            We sent you an SMS code <br></br> to number <span style={{color:"#703ccf"}}>+91-XXXXX XXX68 </span> 
           </p>
           <div className="passcode_box_alignment">
             <form>
@@ -36,10 +36,13 @@ function VerificationYourMobile() {
               <input type="password" className="passcode_box" />
             </form>
           </div>
-          <button onClick={() => history("/tabForm")} className="button_mail"
-             >
+         
+          <button
+             onClick={() => history("/tabForm")} 
+            className="sign-in-button" style={{ position: "absolute", left: "13px", top: "260px" }}
+          >
             Continue
-            <img alt="" src={RightArrow} className="rightarrow" />
+            <img alt="" src={RightArrow}  style={{ position: "absolute", right: "17px", top: "18px" }} />
           </button>
         </div>
       </div>
