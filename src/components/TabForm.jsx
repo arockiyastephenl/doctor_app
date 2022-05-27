@@ -28,6 +28,8 @@ function TabForm() {
 
  const [type, setType] = useState('text');
 
+ const [code, setCode] = useState("text");
+
   const [currentTab, setCurrentTab] = useState("Profile");
   function callback(key) {
     console.log(key);
@@ -102,6 +104,7 @@ function TabForm() {
     const handleClick2 =() => {
       setIsView(false)
     }
+ 
   return (
     <>
      <div style={{textAlign:"center"}}>
@@ -120,13 +123,16 @@ function TabForm() {
         <div className='home-tab'>
          <h1 className='profile-text'> Profile Details</h1>
           <form>  
-            <input disabled={isView}  className='form-input-field' placeholder='First Name'type="text" />
-            <input disabled={isView}  className='form-input-field' placeholder='Last Name' type="text" />
+            <input disabled={isView}  className='form-input-field' placeholder='First name'type="text" />
+            <input disabled={isView}  className='form-input-field' placeholder='Last name' type="text" />
             <input disabled={isView}  className='form-input-field' type={type} placeholder='Date of birth' 
             onFocus={() => setType('date')} 
             onBlur={() => setType('text')}   />
             <input disabled={isView}  className='form-input-field' placeholder='Doctor license number' type="number"  />
-            <input disabled={isView}  className='form-input-field' placeholder='Phone Number' type="number" />
+            <input disabled={isView}  className='form-input-field' placeholder='Phone number'
+            type={code} 
+            onFocus={() => setCode("number")} 
+            onBlur={() => setCode('text')}    />
             <input disabled={isView}  className='form-input-field' placeholder='Email' type="email" />
          </form>
         <Button className='btn save-btn'>Save  <img src={ IconSave } alt="" style={{marginLeft:"80px"}} /></Button>
@@ -142,9 +148,9 @@ function TabForm() {
          <h1 className='profile-text'> Education Details</h1>
           <form>  
               <p style={{color:"#702cc7"}}>Add education details form  <img alt="" src={ IconAddRound} onClick={addEduInput} style={{marginLeft:"146px"}}/> </p>  
-              <input disabled={isView}  className='form-input-field' placeholder='Education deatils 1'type="text" />
-              <input disabled={isView}  className='form-input-field' placeholder='Education deatils 2' type="text" />
-              <input disabled={isView}  className='form-input-field' placeholder='Education deatils 3' type="text" />
+              <input disabled={isView}  className='form-input-field' placeholder='Education details 1'type="text" />
+              <input disabled={isView}  className='form-input-field' placeholder='Education details 2' type="text" />
+              <input disabled={isView}  className='form-input-field' placeholder='Education details 3' type="text" />
               <div>
                 {educationAddField.map((item, i) => {
                   return (
@@ -221,9 +227,8 @@ function TabForm() {
                   );
                 })}
            </div>
-     </form>
-     <form>  
-         <p style={{color:"#702cc7",marginLeft:"-279px"}}>Country </p>  
+     
+
            <input disabled={isView}  className='form-input-field' placeholder='Country'type="text" />
            <input disabled={isView} className='form-input-field' placeholder='Mobile number' type="number"  />     
      </form>
@@ -253,9 +258,9 @@ function TabForm() {
                   );
                 })}
               </div>
-     </form>
-     <form>  
-         <p style={{color:"#702cc7",marginLeft:"-279px"}}>Country </p>  
+    
+    
+     
            <input disabled={isView}  className='form-input-field' placeholder='Country'type="text" />
           
            <input disabled={isView}  className='form-input-field' placeholder='Mobile number' type="number" />     

@@ -1,35 +1,35 @@
 import React, {useState} from 'react';
 
-// import { Tabs,Button } from 'antd';
-// import IconSave from "../assets/icon/IconSave.svg";
-// import IconNextArrow from "../assets/icon/IconNextArrow.svg";
-// import IconAddRound from "../assets/logo/IconAddRound.png";
-// import EducationTab from './EducationTab';
-// import ProfessionTab from './ProfessionTab';
-// import HomeTab from './HomeTab';
-// import AddressTab from './AddressTab';
-// import Header from './Header';
+// import 'react-dropdown/style.css';
 
 
+import { Select } from 'antd';
 import { ArrowLeftOutlined} from "@ant-design/icons";
 import Backdrop from "../assets/icon/Backdrop.svg";
-import DefaultAvatar from "../assets/icon/DefaultAvatar.svg";
+import LocationIcon from "../assets/icon/LocationIcon.svg";
 import AvatarCamera from "../assets/icon/AvatarCamera.svg";
 import {Button,  Tabs, Row } from 'antd';
 import IconSave from "../assets/icon/IconSave.svg";
 import IconNextArrow from "../assets/icon/IconNextArrow.svg";
-import IconAddRound from "../assets/logo/IconAddRound.png";
-
+// import IconAddRound from "../assets/logo/IconAddRound.png";
+import { useNavigate } from "react-router-dom";
 // import { useNavigate } from "react-router-dom";
 const { TabPane } = Tabs;
 
 
 
+const { Option } = Select;
 
+const handleChange = (value) => {
+  console.log(`selected ${value}`);
+};
+const handleChange2 = (value) => {
+  console.log(`selected ${value}`);
+};
 
 // eslint-disable-next-line
 function AddClinic() {
-
+  const history = useNavigate();
 
   const [currentTab, setCurrentTab] = useState("Address");
   function callback(key) {
@@ -65,6 +65,8 @@ function AddClinic() {
     const handleClick2 =() => {
       setIsView(false)
     }
+    
+    
   return (
     <>
      <div style={{textAlign:"center"}}>
@@ -79,7 +81,7 @@ function AddClinic() {
                 <ArrowLeftOutlined className='arrow-size'/>
                     <h1 className='header-title'>Add New Clinic</h1>       
             </Row>
-            <img alt="" src= { DefaultAvatar} className="avatar"/>
+            <img alt="" src= { LocationIcon} className="avatar"/>
             <img alt="" src={ AvatarCamera } className="camera"/>
              </div>
              </div>
@@ -116,10 +118,40 @@ function AddClinic() {
         <div className='home-tab'>
          <h1 className='profile-text'> Working days/hours</h1>
           <form>  
-              <p style={{color:"#702cc7"}}>Add education details form  <img alt="" src={ IconAddRound}  style={{marginLeft:"146px"}}/> </p>  
-              <input disabled={isView}  className='form-input-field' placeholder='Education deatils 1'type="text" />
-              <input disabled={isView}  className='form-input-field' placeholder='Education deatils 2' type="text" />
-              
+              <div style={{display:"flex",flexDirection:"column",alignItems:"flex-start",marginBottom:'120px',position:'relative',left:"23px"}}>
+              <label style={{color:"#702cc7",paddingLeft:"4px",fontSize:"14px",paddingBottom:"10px"}}>Day  </label>  
+              <Select
+                  defaultValue="Monday"
+                  style={{
+                    width: 140,
+                    height:40
+                  }}
+                  onChange={handleChange}
+                >
+                    <Option disabled={isView} value="Monday">Monday</Option>
+                    <Option disabled={isView} value="Tuesday">Tuesday </Option>
+                    <Option disabled={isView} value="jWednesday">Wednesday</Option>
+                    <Option disabled={isView} value="Thursday">Thursday </Option>
+                    <Option disabled={isView} value="Friday">Friday</Option>
+                    <Option disabled={isView} value="Saturday">Saturday </Option>
+                    <Option disabled={isView} value="Sunday">Sunday </Option>
+               </Select>
+               <Select
+                  defaultValue="Tuesday"
+                  style={{
+                    width: 140,
+                    height:40
+                  }}
+                  onChange={handleChange2}
+                >
+                    <Option disabled={isView} value="Monday">Monday</Option>
+                    <Option disabled={isView} value="Tuesday">Tuesday </Option>
+                    <Option disabled={isView} value="jWednesday">Wednesday</Option>
+                    <Option disabled={isView} value="Thursday">Thursday </Option>
+                    <Option disabled={isView} value="Friday">Friday</Option>
+                    <Option disabled={isView} value="Saturday">Saturday </Option>
+               </Select>
+              </div>
              
           </form>
           <Button className='btn save-btn'>Save  <img src={ IconSave } alt="" style={{marginLeft:"80px"}} /></Button>
@@ -139,7 +171,7 @@ function AddClinic() {
                  
             </form>
             <Button className='btn save-btn'>Save  <img src={ IconSave } alt="" style={{marginLeft:"80px"}} /></Button>
-            <Button className='btn next-btn' onClick={handleSelect1}>Next <img src={ IconNextArrow } alt="" style={{marginLeft:"80px"}}/></Button>
+            <Button className='btn next-btn'  onClick={() => history("/addClinicDetails")}>Next <img src={ IconNextArrow } alt="" style={{marginLeft:"80px"}}/></Button>
           </div>
 
         </TabPane>

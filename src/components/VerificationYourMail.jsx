@@ -14,7 +14,7 @@ function VerificationYourMail() {
         <img alt="" src={EmailVerificationDoctorLogo} className="emaildoctorlogo" />
         <div className="card-container">
           <h1>Verify your email</h1>
-          <p>We sent you an code to your email <span style={{color:"#703ccf"}}>pravankumar@gmail.com </span>.</p>
+          <p>We sent you an code to your email <span style={{color:"#703ccf"}}>pravankumar@gmail.com</span>.</p>
           <div className="passcode_box_alignment">
             <form>
               <input type="password" className="passcode_box" />

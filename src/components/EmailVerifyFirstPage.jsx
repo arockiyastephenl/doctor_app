@@ -20,7 +20,7 @@ function Email_Verification_First_Page() {
           <h1 style={{marginTop:"65px"}}>Verify your email</h1>
           <p>
             You've entered <span style={{color:"#703ccf"}}>pravankumar@gmail.com </span>  as the email address for your
-            account. Please Verify this email address by Clicking the button below.
+            account. Please verify this email address by clicking the button below.
           </p>
           <button
             onClick={() => history("/verifiedemail")}

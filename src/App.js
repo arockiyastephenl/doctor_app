@@ -12,6 +12,8 @@ import UserProfileStore from "./components/UserProfileStore";
 import SuccessPage from "./components/SuccessPage";
 import AddClinic from "./components/AddClinic";
 import ListOfClinics from "./components/ListOfClinics";
+import AddClinicSuccess from "./components/AddClinicSuccesss";
+import AddClinicDetails from "./components/AddClinicDetails";
 // import Header from "./components/Header";
 // import { useNavigate } from "react-router-dom";
 // import AddressTab from './components/AddressTab';
@@ -50,6 +52,14 @@ function App() {
           <Route
             path="/addClinic"
             element={<AddClinic/>}
+          />
+          <Route
+            path="/addClinicDetails"
+            element={<AddClinicDetails/>}
+          />
+          <Route
+            path="/addClinicSuccess"
+            element={<AddClinicSuccess/>}
           />
         </Routes>
       </Router>

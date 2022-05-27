@@ -205,8 +205,8 @@ ant-tabs-tab {
   background-color: #2ECC71;
   background-size: cover;
   width: 26rem;
-  height: 56rem;
-  position: relative;
+  height: 53rem;
+  position: fixed;
   overflow: hidden;
   
   
@@ -224,7 +224,7 @@ ant-tabs-tab {
   font-family: 'Noto Sans', sans-serif;
   margin-top: 41px;
   position: absolute;
-    left: -306px;
+  left: -317px;
 }
 .success-btn {
     
@@ -251,7 +251,7 @@ ant-tabs-tab {
   margin-top: 30px
 }
 .profile-created{
-  font-size: 16px;
+  font-size: 17px;
   font-family: 'Noto Sans', sans-serif;
   
   margin-top: 10px
@@ -266,6 +266,19 @@ ant-tabs-tab {
     color: #444;
     
 }
+.add-location-titles{
+  width: 417px;
+  height: 45px;
+  background-color: white;
+  color: #702cc7;
+  padding-top: 14px;
+  display: flex;
+  font-family: 'Noto Sans', sans-serif;
+  padding-left: 25px;
+  padding-top: 12px;
+
+}
+
 
 @import url("https://fonts.googleapis.com/css2?family=Oxygen&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,700;1,700&family=Oxygen:wght@300;400&display=swap");
