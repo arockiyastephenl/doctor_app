@@ -26,6 +26,12 @@ const handleChange = (value) => {
 const handleChange2 = (value) => {
   console.log(`selected ${value}`);
 };
+// const handleChange3 = (value) => {
+//   console.log(`selected ${value}`);
+// };
+// const handleChange4 = (value) => {
+//   console.log(`selected ${value}`);
+// };
 
 // eslint-disable-next-line
 function AddClinic() {
@@ -75,13 +81,15 @@ function AddClinic() {
     </div>
     
     <div className='container'>
-         <div className='bg-container1'>
+         <div className='bg-container1' >
              <img alt="" src={Backdrop}  style={{position:'absolute'}}/>
             <Row className='header-arrow'>
                 <ArrowLeftOutlined className='arrow-size'/>
                     <h1 className='header-title'>Add New Clinic</h1>       
             </Row>
-            <img alt="" src= { LocationIcon} className="avatar"/>
+            <div className='location-card' style={{position:"absolute",right:'159px',top:"71px"}}>
+               <img alt='' src={LocationIcon}/>
+            </div>
             <img alt="" src={ AvatarCamera } className="camera"/>
              </div>
              </div>
@@ -118,7 +126,8 @@ function AddClinic() {
         <div className='home-tab'>
          <h1 className='profile-text'> Working days/hours</h1>
           <form>  
-              <div style={{display:"flex",flexDirection:"column",alignItems:"flex-start",marginBottom:'120px',position:'relative',left:"23px"}}>
+            <div style={{display:"flex"}}>
+              <div style={{display:"flex",flexDirection:"column",alignItems:"flex-start",marginBottom:'120px',position:'relative',left:"23px",marginRight:"5px"}}>
               <label style={{color:"#702cc7",paddingLeft:"4px",fontSize:"14px",paddingBottom:"10px"}}>Day  </label>  
               <Select
                   defaultValue="Monday"
@@ -136,6 +145,7 @@ function AddClinic() {
                     <Option disabled={isView} value="Saturday">Saturday </Option>
                     <Option disabled={isView} value="Sunday">Sunday </Option>
                </Select>
+               <br/>
                <Select
                   defaultValue="Tuesday"
                   style={{
@@ -152,6 +162,84 @@ function AddClinic() {
                     <Option disabled={isView} value="Saturday">Saturday </Option>
                </Select>
               </div>
+              <br />
+              <div style={{display:"flex",flexDirection:"column",alignItems:"flex-start",marginBottom:'120px',position:'relative',left:"23px"}}>
+              <label style={{color:"#702cc7",paddingLeft:"4px",fontSize:"14px",paddingBottom:"10px"}}>Time  </label>  
+              {/* <Select
+                  
+                  style={{
+                    width: 100,
+                    height:40,
+                
+                  }}
+                  onChange={handleChange3}
+                  placeholder="From"
+                >
+                     <Option disabled={isView} value="Monday">1:00</Option>
+                    <Option disabled={isView} value="Tuesday">2:00 </Option>
+                    <Option disabled={isView} value="jWednesday">3:00</Option>
+                    <Option disabled={isView} value="Thursday">4:00</Option>
+                    <Option disabled={isView} value="Friday">5:00</Option>
+                    <Option disabled={isView} value="Saturday">6:00 </Option>
+                    <Option disabled={isView} value="Sunday">7:00 </Option>                 
+                    <Option disabled={isView} value="Monday">8:00</Option>
+                    <Option disabled={isView} value="Tuesday">9:00 </Option>
+                    <Option disabled={isView} value="jWednesday">10:00</Option>
+                    <Option disabled={isView} value="Thursday">11:00</Option>
+                    <Option disabled={isView} value="Friday">12:00</Option>
+                    <Option disabled={isView} value="Saturday">13:00 </Option>
+                    <Option disabled={isView} value="Sunday">14:00 </Option>
+                    <Option disabled={isView} value="Monday">15:00</Option>
+                    <Option disabled={isView} value="Tuesday">16:00 </Option>
+                    <Option disabled={isView} value="jWednesday">17:00</Option>
+                    <Option disabled={isView} value="Thursday">18:00</Option>
+                    <Option disabled={isView} value="Friday">19:00</Option>
+                    <Option disabled={isView} value="Saturday">20:00 </Option>
+                    <Option disabled={isView} value="Sunday">21:00 </Option>
+                    <Option disabled={isView} value="Monday">22:00</Option>
+                    <Option disabled={isView} value="Tuesday">23:00 </Option>
+                    <Option disabled={isView} value="jWednesday">24:00</Option>
+                  
+               </Select>
+               <br/>
+               <Select
+                  
+                  style={{
+                    width: 100,
+                    height:40,
+                
+                  }}
+                  onChange={handleChange3}
+                  placeholder="From"
+                >
+                     <Option disabled={isView} value="Monday">1:00</Option>
+                    <Option disabled={isView} value="Tuesday">2:00 </Option>
+                    <Option disabled={isView} value="jWednesday">3:00</Option>
+                    <Option disabled={isView} value="Thursday">4:00</Option>
+                    <Option disabled={isView} value="Friday">5:00</Option>
+                    <Option disabled={isView} value="Saturday">6:00 </Option>
+                    <Option disabled={isView} value="Sunday">7:00 </Option>                 
+                    <Option disabled={isView} value="Monday">8:00</Option>
+                    <Option disabled={isView} value="Tuesday">9:00 </Option>
+                    <Option disabled={isView} value="jWednesday">10:00</Option>
+                    <Option disabled={isView} value="Thursday">11:00</Option>
+                    <Option disabled={isView} value="Friday">12:00</Option>
+                    <Option disabled={isView} value="Saturday">13:00 </Option>
+                    <Option disabled={isView} value="Sunday">14:00 </Option>
+                    <Option disabled={isView} value="Monday">15:00</Option>
+                    <Option disabled={isView} value="Tuesday">16:00 </Option>
+                    <Option disabled={isView} value="jWednesday">17:00</Option>
+                    <Option disabled={isView} value="Thursday">18:00</Option>
+                    <Option disabled={isView} value="Friday">19:00</Option>
+                    <Option disabled={isView} value="Saturday">20:00 </Option>
+                    <Option disabled={isView} value="Sunday">21:00 </Option>
+                    <Option disabled={isView} value="Monday">22:00</Option>
+                    <Option disabled={isView} value="Tuesday">23:00 </Option>
+                    <Option disabled={isView} value="jWednesday">24:00</Option>
+                  
+               </Select> */}
+              </div>
+              </div>  
              
           </form>
           <Button className='btn save-btn'>Save  <img src={ IconSave } alt="" style={{marginLeft:"80px"}} /></Button>
