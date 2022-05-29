@@ -16,7 +16,7 @@ function ListOfClinics() {
         <>
       
          <div className='bg-container1'>
-             <img alt="" src={Backdrop}  style={{position:'absolute'}}/>
+             <img alt="" src={Backdrop}  style={{position:'absolute'}} />
             <Row >
                 <ArrowLeftOutlined  style={{position:"absolute",top:'25px',left:"14px",fontSize:'26px',color:"white"}}/>
                     <h1 className='header-title' style={{position:"absolute",top:'12px',left:"53px",fontSize:"30px",color:"white",fontWeight:"bold"}}>List of clinic</h1>       
