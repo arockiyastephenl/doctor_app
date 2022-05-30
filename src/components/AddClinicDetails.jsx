@@ -8,66 +8,106 @@ import React from 'react';
 import {Button } from 'antd';
 import IconSave from "../assets/icon/IconSave.svg";
 import IconNextArrow from "../assets/icon/IconNextArrow.svg";
+import LocationIcon from "../assets/icon/LocationIcon.svg";
+import AvatarCamera from "../assets/icon/AvatarCamera.svg";
+
 import { useNavigate } from "react-router-dom";
-import Header from './Header';
+
 
 function AddClinicDetails() {  
     const history = useNavigate();
     return(
          <>
-          <Header />
+           <div className='container'>
+         <div className='bg-container1'>
+            
+         <div className='location-profile-bg' style={{position:"absolute",right:'145px',top:"59px"}}>
+            <div className='location-card' style={{position:"absolute",right:'8px',top:"8px"}}>               
+                <img alt='' src={LocationIcon}/>
+             </div>
+            </div>
+            <img alt="" src={ AvatarCamera } className="camera"/>
+             </div>
+             </div>
           <div className='tab-align' >
            <div className='user-profile-bg' >
             <div>
             <div className='add-location-titles'>Address</div>
-            <div className='user-details'></div>
+            <div style={{marginLeft:'13px'}}>
             <div>
-            <h1 style={{fontSize:"16px", marginLeft:'25px',marginTop:'0px', color:'darkgrey'}}>Name</h1>
-             <p  style={{fontSize:"15px", marginLeft:'25px'}}>Ravikumar</p>  
+            <p style={{fontSize:"15px", color:'darkgrey',marginBottom:"0px"}}>Address 1</p>
+             <p  style={{fontSize:"15px",marginBottom:"9px" }}>HSR layout</p>  
+             </div>
+             <div>
+            <p style={{fontSize:"15px", color:'darkgrey',marginBottom:"0px"}}>Address 2</p>
+             <p  style={{fontSize:"15px", }}>Plot no-18/A</p>  
+             </div>
+             <div>
+            <p style={{fontSize:"15px", color:'darkgrey',marginBottom:"0px"}}>State</p>
+             <p  style={{fontSize:"15px",marginBottom:"9px" }}>Telangana</p>  
+             </div>
+             <div>
+            <p style={{fontSize:"15px", color:'darkgrey',marginBottom:"0px"}}>Pin code</p>
+             <p  style={{fontSize:"15px",marginBottom:"9px" }}>789000</p>  
              </div>
            
-             <div>
-             <h1 style={{fontSize:"16px", marginLeft:'25px',marginTop:'0px', color:'darkgrey'}}>Date of birth</h1>
-             <p  style={{fontSize:"15px", marginLeft:'25px'}}>12/12/1999</p>     
-             </div>
-             <div>
-             <h1 style={{fontSize:"16px", marginLeft:'25px',marginTop:'0px', color:'darkgrey'}}>Doctor licence number</h1>
-             <p  style={{fontSize:"15px", marginLeft:'25px'}}>9383744</p>     
-             </div>
-             <div>
-             <h1 style={{fontSize:"16px", marginLeft:'25px',marginTop:'0px', color:'darkgrey'}}>Phone Number</h1>
-             <p  style={{fontSize:"15px", marginLeft:'25px'}}>9383744</p>     
-             </div>
             
+             </div>
              </div>
                 <div>
                 <div className='add-location-titles'>Working days/hours</div>
-                <div className='user-details'></div>
-                <div>
-                <h1 style={{fontSize:"16px", marginLeft:'25px',marginTop:'0px', color:'darkgrey'}}>Education 1</h1>
-                <p  style={{fontSize:"15px", marginLeft:'25px'}}>MBBS</p>  
+                <div style={{marginLeft:'8px'}}>
+                <div style={{display:"flex"}}>
+              <div style={{display:"flex",flexDirection:"column",alignItems:"flex-start",position:'relative',left:"23px",marginRight:"10px",marginLeft:"-15px"}}>
+              <label style={{color:'darkgrey',fontSize:"14px",paddingBottom:"10px"}}> Select Day  </label>  
+               <p>Monday</p>
+              </div>
+              <br />
+              <div style={{display:"flex",flexDirection:"column",alignItems:"flex-start",position:'relative',left:"23px",marginRight:"10px"}}>
+              <label style={{color:'darkgrey',fontSize:"14px",paddingBottom:"10px"}}>From  </label>  
+              <p>9:00pm</p>
+              </div>
+              <br />
+              <div style={{display:"flex",flexDirection:"column",alignItems:"flex-start",position:'relative',left:"23px",marginRight:"10px"}}>
+              <label style={{color:'darkgrey',fontSize:"14px",paddingBottom:"10px"}}>To </label>  
+              <p>11:00pm</p>
+              </div>
+              </div>  
+              <div style={{display:"flex"}}>
+              <div style={{display:"flex",flexDirection:"column",alignItems:"flex-start",position:'relative',left:"23px",marginRight:"10px",marginLeft:"-15px"}}>
+              <label style={{color:'darkgrey',fontSize:"14px",paddingBottom:"10px"}}> select Day  </label>  
+               <p>Monday</p>
+              </div>
+              <br />
+              <div style={{display:"flex",flexDirection:"column",alignItems:"flex-start",position:'relative',left:"23px",marginRight:"10px"}}>
+              <label style={{color:'darkgrey',fontSize:"14px",paddingBottom:"10px"}}>From  </label>  
+              <p>9:00pm</p>
+              </div>
+              <br />
+              <div style={{display:"flex",flexDirection:"column",alignItems:"flex-start",position:'relative',left:"23px",marginRight:"10px"}}>
+              <label style={{color:'darkgrey',fontSize:"14px",paddingBottom:"10px"}}>To </label>  
+              <p>11:00pm</p>
+              </div>
+              </div>  
                 </div>
-                <div>
-                <h1 style={{fontSize:"16px", marginLeft:'25px',marginTop:'0px', color:'darkgrey'}}>Education 2</h1>
-                <p  style={{fontSize:"15px", marginLeft:'25px'}}>MD</p>     
-                </div>
-                <div>
-                <h1 style={{fontSize:"16px", marginLeft:'25px',marginTop:'0px', color:'darkgrey'}}>Education 3</h1>
-                <p  style={{fontSize:"15px", marginLeft:'25px'}}>DNB</p>     
-                </div>
+               
             
                 
                 </div> 
                     <div>
                     <div className='add-location-titles'>Locations</div>
-                    <div className='user-details'></div>
+                    <div style={{marginLeft:'12px'}}></div>
                     <div>
-                    <h1 style={{fontSize:"16px", marginLeft:'25px',marginTop:'0px', color:'darkgrey'}}>Clinic name</h1>
-                    <p  style={{fontSize:"15px", marginLeft:'25px'}}>erfr</p>  
+                   
+                    <div style={{marginLeft:"31px"}}>
+                    <p className='list-clinic-name'>XYZ Hospital</p>
+                        <p  className='list-clinic-address'>HSR layout, hyderabad</p>
+                        <p  className='list-clinic-country'>India</p>
+                        </div>
                     </div>   
                     </div>  
                 
-                    <div style={{textAlign:"center"}}>
+                    <div style={{textAlign:"center",marginTop:"37px",paddingBottom:"27px"}}>
                     <Button className='btn save-btn'>Save  <img src={ IconSave } alt="" style={{marginLeft:"80px"}} /></Button>
                     <Button className='btn next-btn' onClick={() => history("/addClinicSuccess")} >Next <img src={ IconNextArrow } alt="" style={{marginLeft:"80px"}}/></Button>
                     </div>
