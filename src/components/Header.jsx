@@ -17,7 +17,19 @@ function Header() {
                 <ArrowLeftOutlined className='arrow-size'/>
                     <h1 className='header-title'>Doctor Profile Registration</h1>       
             </Row>
-            <img alt="" src= { DefaultAvatar} className="avatar"/>
+            <div className='location-profile-bg' style={{position:"absolute",right:'159px',top:"71px"}}>
+            <div className='location-card' style={{position:"absolute",right:'8px',top:"8px"}}>
+            <div class="image-upload">
+                    <label for="file-input">
+                    <img alt="" src= { DefaultAvatar} style={{width:"103px",position:"absolute",left:'-4px',top:"-4px"}} />
+                    </label>
+
+                    <input id="file-input" type="file" />
+                  </div>
+               
+            </div>
+            </div>
+            
             <img alt="" src={ AvatarCamera } className="camera"/>
              </div>
              </div>

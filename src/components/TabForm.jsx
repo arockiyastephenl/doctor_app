@@ -133,25 +133,28 @@ function TabForm() {
             <Input.Group compact >
               <Input disabled = "disabled"
                  className='phone-number-text-input-field'
-                  // style={{
-                  //   width: '50px',
-                  //   fontSize:"12px"
-                  // }}
+                  style={{
+                    backgroundColor:"white"
+                    // width: '50px',
+                    // fontSize:"12px"
+                  }}
                   defaultValue="+91"
                 />
                 <Input disabled={isView} type="number" placeholder='Phone number'
                   className='phone-number-text-input-field'
                   style={{
                     width: '75%',
-                    height:"67px"
+                    height:"67px",
+                    backgroundColor:"white"
                   }}
-                  Value="2"
+                  Value=""
                 />
              </Input.Group>
             <input disabled={isView}  className='form-input-field' placeholder='Email' type="email" />
-         </form>
+         
         <Button className='btn save-btn'>Save  <img src={ IconSave } alt="" style={{marginLeft:"80px"}} /></Button>
         <Button className='btn next-btn' onClick={handleSelect}>Next <img src={ IconNextArrow } alt="" style={{marginLeft:"80px"}}/></Button>
+        </form>
           </div>
           </TabPane>
 
@@ -178,9 +181,10 @@ function TabForm() {
                   );
                   })}
                    </div>
-          </form>
+         
           <Button className='btn save-btn'>Save  <img src={ IconSave } alt="" style={{marginLeft:"80px"}} /></Button>
           <Button className='btn next-btn' onClick={handleSelect1}>Next <img src={ IconNextArrow } alt="" style={{marginLeft:"80px"}}/></Button>
+          </form>
         </div>
 
           </TabPane> 
@@ -194,19 +198,21 @@ function TabForm() {
                 <input disabled={isView}  className='form-input-field' placeholder='Clinic address' type="text" />
                 
                 <Input.Group compact >
-              <Input disabled = "disabled"
+                 <Input disabled = "disabled"
                  className='phone-number-text-input-field'
-                  // style={{
-                  //   width: '50px',
-                  //   fontSize:"12px"
-                  // }}
+                  style={{
+                    backgroundColor:"white"
+                    // width: '50px',
+                    // fontSize:"12px"
+                  }}
                   defaultValue="+91"
                 />
-                <Input disabled={isView} type="number" placeholder='Clinic phone number'
+                <Input disabled={isView} type="number" placeholder='Phone number'
                   className='phone-number-text-input-field'
                   style={{
                     width: '75%',
-                    height:"67px"
+                    height:"67px",
+                    backgroundColor:"white"
                   }}
                   Value="2"
                 />
@@ -225,9 +231,10 @@ function TabForm() {
                     );
                   })}
                 </div>
-            </form>
+           
             <Button className='btn save-btn'>Save  <img src={ IconSave } alt="" style={{marginLeft:"80px"}} /></Button>
             <Button className='btn next-btn' onClick={handleSelect2}>Next <img src={ IconNextArrow } alt="" style={{marginLeft:"80px"}}/></Button>
+            </form>
           </div>
 
         </TabPane>
@@ -266,24 +273,27 @@ function TabForm() {
            <Input.Group compact >
               <Input disabled = "disabled"
                  className='phone-number-text-input-field'
-                  // style={{
-                  //   width: '50px',
-                  //   fontSize:"12px"
-                  // }}
+                  style={{
+                    backgroundColor:"white"
+                    // width: '50px',
+                    // fontSize:"12px"
+                  }}
                   defaultValue="+91"
                 />
-                <Input disabled={isView} type="number" placeholder='Mobile number'
+                <Input disabled={isView} type="number" placeholder='Phone number'
                   className='phone-number-text-input-field'
                   style={{
                     width: '75%',
-                    height:"67px"
+                    height:"67px",
+                    backgroundColor:"white"
                   }}
                   Value="2"
                 />
-             </Input.Group>    
-     </form>
+             </Input.Group> 
+    
      <Button className='btn save-btn'>Save  <img src={ IconSave } alt="" style={{marginLeft:"80px"}} /></Button>
      <Button className='btn next-btn' onClick={() => history("/userProfilestore")}>Next <img src={ IconNextArrow } alt=""  style={{marginLeft:"80px"}}/></Button>
+     </form>
      </div>
      )} 
      {workBtn && ( 
@@ -316,24 +326,27 @@ function TabForm() {
            <Input.Group compact >
               <Input disabled = "disabled"
                  className='phone-number-text-input-field'
-                  // style={{
-                  //   width: '50px',
-                  //   fontSize:"12px"
-                  // }}
+                  style={{
+                    backgroundColor:"white"
+                    // width: '50px',
+                    // fontSize:"12px"
+                  }}
                   defaultValue="+91"
                 />
-                <Input disabled={isView} type="number" placeholder='Mobile number'
+                <Input disabled={isView} type="number" placeholder='Phone number'
                   className='phone-number-text-input-field'
                   style={{
                     width: '75%',
-                    height:"67px"
+                    height:"67px",
+                    backgroundColor:"white"
                   }}
                   Value="2"
                 />
-             </Input.Group>   
-     </form>
+             </Input.Group>
+     
      <Button className='btn save-btn'>Save  <img src={ IconSave } alt="" style={{marginLeft:"80px"}} /></Button>
      <Button className='btn next-btn' onClick={() => history("/userProfilestore")}>Next <img src={ IconNextArrow } alt="" style={{marginLeft:"80px"}}/></Button>
+     </form>
      </div>
      )} 
           </div>

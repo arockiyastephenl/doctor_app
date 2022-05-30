@@ -112,6 +112,7 @@ button:focus{
     border-style: solid;
     border-width: 3px;
     height: 67px;
+    background-color: white;
 }
 .ant-input-group .ant-input {
   float: left;
@@ -294,23 +295,25 @@ ant-tabs-tab {
     color: #444;
     
 }
+
 .add-location-titles{
-  width: 417px;
+  width: 390px;
   height: 45px;
   background-color: white;
   color: #702cc7;
   padding-top: 14px;
   display: flex;
   font-family: 'Noto Sans', sans-serif;
-  padding-left: 25px;
-  padding-top: 12px;
+  padding-left: 14px;
+
 
 }
 .ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
   width: 100%;
-  height: 38px;
-  padding: 0 11px;
+  height: 48px;
+  padding: 7px 11px;
   margin-bottom: 46px;
+  
 }
 .ant-select:not(.ant-select-customize-input) .ant-select-selector {
   position: relative;
@@ -319,15 +322,26 @@ ant-tabs-tab {
   border-radius: 5px;
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
+
+.location-profile-bg {
+  width: 7rem;
+  height: 7rem;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .location-card {
   width: 6rem;
-    height: 6rem;
-    background-color: rgb(112, 44, 199);
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  height: 6rem;
+  background-color: rgb(112, 44, 199);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .list-clinic-name {
   margin: 0px;
@@ -338,7 +352,9 @@ ant-tabs-tab {
 .list-clinic-country {
   margin: 0px;
 }
-
+.image-upload>input {
+  display: none;
+}
 @import url("https://fonts.googleapis.com/css2?family=Oxygen&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,700;1,700&family=Oxygen:wght@300;400&display=swap");
 .App {
