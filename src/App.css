@@ -20,11 +20,12 @@
     padding: 7px;
 }
 .arrow-size {
-    font-size: 30px;
     font-family: 'Noto Sans', sans-serif;
     color: white;
-    padding-right: 10px;
-    padding-top: 4px;
+    width: 23px;
+    position: absolute;
+    top: 16px;
+    left: 13px;
 }
  
 
@@ -62,7 +63,7 @@
 .camera {
     position: absolute;
     top: 142px;
-    right: 133px;
+    right: 111px;
     width: 50px;
 }
 .home-tab {
@@ -105,12 +106,13 @@ button:focus{
 .phone-number-text-input-field {
     width: 4rem;
     font-size: 16px;
+    font-family: 'Noto Sans', sans-serif;
     height: 4rem;
     border-color: lightgray;
     font-weight: bold;
     color: grey;
     border-style: solid;
-    border-width: 3px;
+    border-width: 2px;
     height: 67px;
     background-color: white;
 }
@@ -355,6 +357,45 @@ ant-tabs-tab {
 .image-upload>input {
   display: none;
 }
+
+/* consultation page css */
+
+.consult-text {
+   position: absolute;
+    text-align: center;
+    top: 42px;
+    font-size: 19px;
+    left: 137px;
+    color: white;
+}
+.consult-icon-container {
+    display: flex;
+    margin-left: 19px;
+    margin-top: 22px;
+}
+.consult-page-round-bg {
+  width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 47px;
+    margin-right: 13px;
+}
+.consult-number-container {
+    display: flex;
+    margin-left: 133px;
+    margin-top: 4px;
+
+}
+.consult-page-number {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 7px;
+  margin-right: 13px;
+  background-color: #2ECC71
+}
+
+
 @import url("https://fonts.googleapis.com/css2?family=Oxygen&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,700;1,700&family=Oxygen:wght@300;400&display=swap");
 .App {

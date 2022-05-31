@@ -14,6 +14,7 @@ import AddClinic from "./components/AddClinic";
 import ListOfClinics from "./components/ListOfClinics";
 import AddClinicSuccess from "./components/AddClinicSuccesss";
 import AddClinicDetails from "./components/AddClinicDetails";
+import Consultation from "./components/Consultation";
 // import Header from "./components/Header";
 // import { useNavigate } from "react-router-dom";
 // import AddressTab from './components/AddressTab';
@@ -22,6 +23,7 @@ function App() {
 
   return (
     <>
+    {/* <Consultation /> */}
       <Router forceRefresh={true}>
         <Routes>
           
