@@ -23,8 +23,8 @@ function App() {
 
   return (
     <>
-    {/* <Consultation /> */}
-      <Router forceRefresh={true}>
+    <Consultation />
+      {/* <Router forceRefresh={true}>
         <Routes>
           
           <Route path="/" element={<LoginPage1 />} />
@@ -64,22 +64,9 @@ function App() {
             element={<AddClinicSuccess/>}
           />
         </Routes>
-      </Router>
+      </Router> */}
       
-      {/* <div className="App">
-      
-      <TabForm /> 
-        <LoginPage1/> */}
-        {/* <Email_Verify_First_Page/>
-      <Verification_Your_Mail/>
-      <Verify_Your_Mobile/>
-      <Verification_Your_Mobile/> 
-
-
-
-
-       <button onClick={()=>history("/home")}>mobile</button> */}
-      {/* </div>  */}
+     
     </>
   );
 }
