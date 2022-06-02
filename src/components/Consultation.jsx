@@ -1,5 +1,5 @@
 import React,{useState} from 'react';
-import { Row,Col} from 'antd';
+import { Row,Col,Button} from 'antd';
 
 import BackArrow from "../assets/icon/BackArrow.svg";
 import MenuDot from "../assets/icon/MenuDot.svg";
@@ -9,6 +9,7 @@ import Services from "../assets/icon/Services.svg";
 import CreateAppointment from "../assets/icon/CreateAppointment.svg";
 import StartConsultation from "../assets/icon/StartConsultation.svg";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import IconNextArrow from "../assets/icon/IconNextArrow.svg";
 import 'react-tabs/style/react-tabs.css'
 // import 'react-tabs/style/react-tabs.css';
 
@@ -88,31 +89,31 @@ function Consultation() {
                       <h2>4</h2>
                    </TabPanel>
                   
-                   <TabPanel style={{position:'absolute'}}>
-                          <TabList>
-                          <Tabs type="card" activekey ={currentTab} onChange={callback}>
-                            <div style={{display:"flex",position:"absolute",top:"75px",left:"75px"}}>
-                             <Tab onTabClick={callbackTabClicked} key='one'>
+                   <TabPanel >
+              
+                         
+                            <div style={{position:'absolute',display:'flex',top:"91px",left:"145px"}}> 
                             <div className='consult-page-number'>
                               <h1 className='number'>1</h1>
                             </div>
-                               </Tab> 
-                               <Tab onTabClick={callbackTabClicked} key='two'>
+                              
+                              
                             <div className='consult-page-number' >
                               <h1 className='number'>2</h1>
                             </div>
-                               </Tab > 
-                               <Tab onTabClick={callbackTabClicked} key='three'>
+                        
+                            
                             <div className='consult-page-number'>
                               <h1 className='number'>3</h1>
                             </div>
-                               </Tab> 
-                            </div> 
-                            <div className='consult-description-page'> 
-                              <TabPanel  >
+                            </div>
+      
+    
+              
         
-                            <div>
-                            <Space direction="vertical">
+                        <div className='consult-description-page'>
+                           <div>
+                           <Space direction="vertical">
                                   <Search
                                     placeholder="Search patients name"
                                     onSearch={onSearch}
@@ -153,21 +154,45 @@ function Consultation() {
                                     <p className='patients-info'>Raju Bhai</p>                      
                                 </div>
                             </Col>
-                          </div>
+                            </div>
                 
-                                </TabPanel> 
-                                <TabPanel >
-                                  <h1>Good morning</h1>
-                                </TabPanel>
+                                <div style={{padding:"15px"}}>
+                                <h1 className='patients-main-title'>Appointment Confirmation</h1>
+                             
+                                    <p style={{textAlign:"left"}}>Appointment</p>
+                                    <div style={{textAlign:"left" , margin:"0px"}}>
+                                    <p style={{display:"flex" , margin:"0px"}}> service:<span><p>Confirmed</p></span></p>
+                                    <p style={{display:"flex" , margin:"0px"}}> service:<span><p>Confirmed</p></span></p>
+                                    <p style={{display:"flex" , margin:"0px"}}> service:<span><p>Confirmed</p></span></p>
+                                    <p style={{display:"flex" , margin:"0px"}}> service:<span><p>Confirmed</p></span></p>                                         
+                                    </div>
+                                    <p style={{textAlign:"left", marginTop:"23px"}}>Appointment</p>
+                                    <div style={{textAlign:"left" , margin:"0px"}}>
+                                    <p style={{display:"flex" , margin:"0px"}}> service:<span><p>Confirmed</p></span></p>
+                                    <p style={{display:"flex" , margin:"0px"}}> service:<span><p>Confirmed</p></span></p>
+                                    
+                                    </div>
+                                    <Button className='btn save-btn'>Back  <img src={ IconNextArrow  } alt="" style={{marginLeft:"80px"}} /></Button>
+                                   <Button className='btn next-btn' >Next <img src={ IconNextArrow } alt="" style={{marginLeft:"80px"}}/></Button>  
+                               
+                                 </div>
+                               
+                                  <div style={{padding:"15px", display:"flex",flexDirection:"column", marginTop:'20px',marginBottom:'20px'}}  >
                                 
-                                <TabPanel >
-                                  Testing
-                                </TabPanel>
-                              </div> 
-                            </Tabs>        
-                           </TabList>
+                                  <Button className='btn-regular save-btn'>Back </Button>
+                                  <div style={{marginTop:"22px",marginBottom:"22px"}}>
+                                      <p style={{ paddingLeft: "13px",marginTop:"11px",fontWeight:'700' ,color:"black"}}>OR</p>
+                                      </div>
+                                  <Button className='btn-regular report-btn'>Report Verification</Button>
+                                 
+                                </div>
+                                
+                                
+                                </div>
+                          </TabPanel> 
+              
                          
-                     </TabPanel>
+        
                  
                 
                 </Tabs>
