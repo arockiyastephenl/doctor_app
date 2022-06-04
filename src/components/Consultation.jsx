@@ -40,7 +40,7 @@ function Consultation() {
               <img src={BackArrow} alt=''  className='arrow-size' style={{top:"7px"}}/>
                <h1 className='header-title'  style={{top:"4px"}}>Wellyfe</h1>       
             
-                    <img src={MenuDot} alt='' className='menu-dot'/>
+                    <img src={MenuDot}  alt='' className='menu-dot'/>
             
              </Row>
            
