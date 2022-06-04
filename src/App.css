@@ -1,7 +1,8 @@
 @import '~antd/dist/antd.css';
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
-
+@import '~react-tabs/style/react-tabs.css';
+@import '~antd/dist/antd.css';
 .container {
     display: flex;
     justify-content: center;
@@ -20,11 +21,12 @@
     padding: 7px;
 }
 .arrow-size {
-    font-size: 30px;
     font-family: 'Noto Sans', sans-serif;
     color: white;
-    padding-right: 10px;
-    padding-top: 4px;
+    width: 23px;
+    position: absolute;
+    top: 16px;
+    left: 13px;
 }
  
 
@@ -62,7 +64,7 @@
 .camera {
     position: absolute;
     top: 142px;
-    right: 133px;
+    right: 111px;
     width: 50px;
 }
 .home-tab {
@@ -105,12 +107,13 @@ button:focus{
 .phone-number-text-input-field {
     width: 4rem;
     font-size: 16px;
+    font-family: 'Noto Sans', sans-serif;
     height: 4rem;
     border-color: lightgray;
     font-weight: bold;
     color: grey;
     border-style: solid;
-    border-width: 3px;
+    border-width: 2px;
     height: 67px;
     background-color: white;
 }
@@ -355,6 +358,549 @@ ant-tabs-tab {
 .image-upload>input {
   display: none;
 }
+
+/* consultation page css */
+.react-tabs {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.react-tabs__tab-list {
+  border-bottom: 1px solid #aaa;
+  margin: 0 0 10px;
+  padding: 0;
+}
+
+.react-tabs__tab {
+  display: inline-block;
+  border: 1px solid transparent;
+  border-bottom: none;
+  bottom: -1px;
+  position: relative;
+  list-style: none;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.react-tabs__tab--selected {
+  background: #fff;
+  border-color: #aaa;
+  color: black;
+  border-radius: 0px 0px 0px 0px;
+}
+
+.react-tabs__tab--disabled {
+  color: GrayText;
+  cursor: default;
+}
+
+.react-tabs__tab:focus {
+  outline: none;
+}
+
+.react-tabs__tab:focus:after {
+  content: '';
+  position: absolute;
+  height: 5px;
+  left: -4px;
+  right: -4px;
+  bottom: -5px;
+  background: #fff;
+}
+
+.react-tabs__tab-panel {
+  display: none;
+}
+
+.react-tabs__tab-panel--selected {
+  display: block;
+}
+
+
+/* tab-css */
+.backdrop-container {
+    position: absolute;
+    width: 390px;
+    height: 40px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    background: #2EB96C;
+
+}
+.backdrop-icon-container {
+  position: absolute;
+  width: 390px;
+  height: 140px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  background: #2EB96C;
+  top: 77px
+
+}
+.menu-dot {
+  width: 5px;
+    position: absolute;
+    right: 7px;
+    top: 7px;
+
+}
+.consult-text {
+  position: absolute;
+  text-align: center;
+  top: 44px;
+  font-size: 22px;
+  left: 137px;
+  color: white;
+  font-weight: bold;
+  font-family: 'Noto Sans', sans-serif;
+}
+.consult-icon-container {
+    display: flex;
+    margin-left: 19px;
+    margin-top: 22px;
+}
+.consult-page-round-bg {
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  border-radius: 47px;
+  margin-right: 13px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.consult-page-round-bg:focus {
+ 
+  background-color: #702cc7;
+  color: white;
+  border-radius: 47px !important;
+ 
+}
+
+
+.icons {
+  width: 30px;
+  
+}
+.consult-number-container {
+  display: flex;
+  margin-left: 133px;
+  margin-top: 4px;
+  position: absolute;
+  top: -51px;
+}
+.consult-page-number {
+  width: 30px;
+  height: 30px;
+  border-radius: 7px;
+  margin-right: 13px;
+  
+ 
+}
+
+.number {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 21px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  background-color: darkgreen;
+  color: white; 
+}
+.number--color {
+  background-color: white;
+  color: black; 
+
+}
+.consult-description-page {
+  width: 390px;
+  height: 620px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: absolute;
+  top: 144px;
+  left: 0px;
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
+  text-align: center;
+  padding-top: 22px;
+}
+.patients-main-title {
+  font-size: 14px;
+  color: black;
+  margin-top: 30px;
+  padding-bottom: 18px;
+  font-weight: bold;
+  font-family: 'Noto Sans', sans-serif;
+
+}
+.patients-information {
+    width: 21rem;
+    height: 9rem;
+    background-color: white;
+    padding: 10px;
+    display: grid;
+    border-radius: 9px;
+    margin-bottom: 16px;
+    margin-left: 27px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+.patients-heading {
+  margin: inherit;
+  font-size: 12px;
+  color: lightgray;
+  font-family: 'Noto Sans', sans-serif;
+}
+.patients-info {
+  margin: inherit;
+  font-size: 16px;
+  color: black;
+  font-family: 'Noto Sans', sans-serif;
+}
+/* search-input */
+.ant-input-group > .ant-input:first-child, .ant-input-group-addon:first-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  width: 279px;
+    height: 48px;
+    border-width: 2px;
+    margin-left: 2px
+}
+.ant-input-search > .ant-input-group > .ant-input-group-addon:last-child .ant-input-search-button {
+  padding-top: 0;
+  padding-bottom: 0;
+  border-radius: 0 8px 9px 0;
+  border-width: 2px;
+  height: 48px;
+    width: 40px;
+    margin-left: -1px;
+} 
+.btn-regular {
+    
+  color: white;
+  width: 358px;
+  height: 63px;
+  border-radius: 8px;
+  padding-right: 20px;
+  margin-right:  5px;
+  font-size: 19px;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight:bold;
+}
+.report-btn {
+  background-color: #2ECC71
+}
+.person-nontab {
+  position: absolute;
+    width: 389px;
+    height: 614px;
+    top: 63px;
+    background-color: white;
+}
+
+/* person-profile -page */
+.person-backdrop-icon-container {
+  position: absolute;
+  width: 390px;
+  height: 140px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  background: #2ec16f;
+  top: 44px;
+}
+.person-profile-tab-align {
+  position: absolute;
+    top: -11px;
+    left: -168px;
+    width: 391px;
+    height: 62px;
+    background-color: #F1ECFB;
+    padding-top: 14px;
+}
+
+.person-profile-tab-align {    
+    position: absolute;
+    top: 130px;
+    left: 0px;
+    width: 391px;
+    height: 62px;
+    background-color: #F1ECFB;
+    padding-top: 14px;
+}  
+.person-profile-page-round-bg {
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  border-radius: 47px;
+  margin-right: 34px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.person-profile-page-round-bg:focus {
+  background-color: #702cc7;
+  color: white;
+  border-radius: 47px;
+} 
+.icon-headings {
+  position: absolute;
+  top: 88px;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  font-family: 'Noto Sans', sans-serif;
+}
+.history-page {
+  width: 390px;
+    height: 44rem;
+    left: -168px;
+    top: -21px;
+    position: absolute;
+    background-color: white;
+}
+.history-container {
+  margin-top: 52px;
+  margin-left: 15px;
+    width: 358px;
+    height: 52px;
+    background-color: grey;
+    text-align: center;
+    border-top-left-radius: 11px;
+    border-top-right-radius: 11px;
+    padding-top: 6px;
+    font-size: 13px;
+    font-family: 'Noto Sans', sans-serif;
+}
+.history-content {
+    margin-top: -1px;
+    margin-left: 15px;
+    width: 358px;
+    height: 273px;
+    background-color: darkgray;
+    padding: 16px;
+    border: 0px 5px 5px 41px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.history-details {
+   margin-top: 3px;
+   margin-bottom: 3px;
+   font-family: 'Noto Sans', sans-serif;
+}
+.prescriptions {
+  margin-bottom: 0;
+    font-size: 15px;
+    color: gray;
+}
+.prescription-content {
+  font-size: 14px;
+    color: black;
+}
+.prescription-tab {
+  padding-top: 10px;
+  width: 11rem;
+  border-radius: 6px;
+  height: 43px;
+  background-color: white;
+  margin-left: 11px;
+  font-family: 'Noto Sans', sans-serif;
+  margin-right: 22px;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  font-size: 15px;
+}
+.prescription-tab-after {
+  background-color: #702cc7;
+  color: white;
+
+}
+.prescription-tab-page {
+    width: 390px;
+    height: 64rem;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    background-color: white;
+}
+.Prescription-content {
+  margin-top: -1px;
+  margin-left: 15px;
+  width: 358px;
+  height: 361px;
+  background-color: darkgray;
+  padding: 16px;
+  border: 0px 5px 5px 41px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-bottom: 10px;
+
+}
+.btn-import-prescription {
+  color: white;
+  width: 317px;
+  height: 53px;
+  border-radius: 8px;
+  padding-right: 20px;
+  margin-right: 5px;
+  font-size: 19px;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: bold;
+  background-color: #702cc7
+}
+.diagnostic-content {
+  margin-top: -1px;
+  margin-left: 15px;
+  width: 358px;
+  height: 216px;
+  background-color: darkgray;
+  padding: 16px;
+  border: 0px 5px 5px 41px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.diagnostics-tab-page {
+  width: 390px;
+  height: 60rem;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  background-color: white;
+}
+.reference-page {
+  width: 390px;
+    height: 57rem;
+    left: -168px;
+    top: -21px;
+    position: absolute;
+    background-color: white;
+}
+.reference-content {
+  margin-top: -1px;
+  margin-left: 15px;
+  width: 358px;
+  height: 283px;
+  background-color: darkgray;
+  padding: 16px;
+  border: 0px 5px 5px 41px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.reference-tab {
+  padding-top: 10px;
+  width: 11rem;
+  border-radius: 6px;
+  height: 43px;
+  background-color: white;
+  margin-left: 11px;
+  /* margin-top: -9px; */
+  margin-right: 22px;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  font-size: 12px;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.doctor-view-heading {
+  margin-bottom: 0px;
+  color: gray;
+  font-size: 17px;
+  font-family: 'Noto Sans', sans-serif;
+}
+.doctor-view-details {
+ 
+  color: black;
+  font-size: 17px;
+  font-weight: 600;
+  font-family: 'Noto Sans', sans-serif;
+
+}
+.doctor-card-details {
+  width: 104px;
+    height: 10rem;
+    border-radius: 10px;
+    background-color: lightpink;
+    margin-right: 5px;
+    font-size: 13px;
+    display: flex;
+     font-weight: 600;
+    font-family: 'Noto Sans', sans-serif;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 14px;
+}
+.doctor-view-nontab {
+  position: absolute;
+    width: 389px;
+    height: 639px;
+    top: 63px;
+    background-color: white;
+}
+.bill-container {
+  margin-left: 15px;
+    width: 358px;
+    height: 40px;
+    background-color: lightgrey;
+    padding-top: -1px;
+    font-size: 9px;
+    padding-left: 14px;
+    margin-top: 1px;
+    padding-top: 4px;
+    font-family: 'Noto Sans', sans-serif;
+
+} 
+.bill-border {
+  border-bottom-left-radius: 11px;
+    border-bottom-right-radius: 9px
+}
+.bill-heading {
+  color: #702cc7
+}
+.bill-Prescription-content {
+  margin-top: -1px;
+  margin-left: 15px;
+  width: 358px;
+  height: 361px;
+  background-color: darkgray;
+  padding: 16px;
+  border: 0px 5px 5px 41px;
+  
+  margin-bottom: 10px;
+
+}
+.outstanding-name {
+  color: black;
+  margin-bottom: 0;
+  font-size: 15px;
+  
+}
+.outstanding-content {
+  color: #703ccf;
+  font-size: 15px;
+}
+/* .text-area {
+  
+    width: 22rem;
+    border-width: 2px;
+    border-radius: 6px;
+    min-height: 100%;
+} */
+textarea.ant-input {
+  max-width: 100%;
+    height: 11rem;
+    min-height: 100px;
+    line-height: 1.5715;
+    vertical-align: bottom;
+    transition: all 0.3s, height 0s;
+}
+
+
+
+/* //loginpages */
 @import url("https://fonts.googleapis.com/css2?family=Oxygen&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,700;1,700&family=Oxygen:wght@300;400&display=swap");
 .App {

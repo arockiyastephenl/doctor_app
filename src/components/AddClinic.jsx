@@ -4,7 +4,7 @@ import React, {useState} from 'react';
 
 import { TimePicker } from 'antd';
 import { Select } from 'antd';
-import { ArrowLeftOutlined} from "@ant-design/icons";
+import BackArrow from "../assets/icon/BackArrow.svg";
 import Backdrop from "../assets/icon/Backdrop.svg";
 import LocationIcon from "../assets/icon/LocationIcon.svg";
 import AvatarCamera from "../assets/icon/AvatarCamera.svg";
@@ -89,10 +89,10 @@ function AddClinic() {
          <div className='bg-container1' >
              <img alt="" src={Backdrop}  style={{position:'absolute'}}/>
             <Row className='header-arrow'>
-                <ArrowLeftOutlined className='arrow-size'/>
+            <img src={BackArrow} alt=''  className='arrow-size'/>
                     <h1 className='header-title'>Add New Clinic</h1>       
             </Row>
-            <div className='location-profile-bg' style={{position:"absolute",right:'149px',top:"71px"}}>
+            <div className='location-profile-bg' style={{position:"absolute",right:'135px',top:"71px"}}>
             <div className='location-card' style={{position:"absolute",right:'8px',top:"8px"}}>
             <div class="image-upload">
                     <label for="file-input">
