@@ -4,6 +4,7 @@ import { Row,Col,Button} from 'antd';
 import BackArrow from "../assets/icon/BackArrow.svg";
 import MenuDot from "../assets/icon/MenuDot.svg";
 import Calendar from "../assets/icon/Calendar.svg";
+import CalendarWhite from "../assets/icon/Calendar.svg";
 import Patients from "../assets/icon/Patients.svg";
 import Services from "../assets/icon/Services.svg";
 import CreateAppointment from "../assets/icon/CreateAppointment.svg";
@@ -28,22 +29,7 @@ function Consultation() {
   const [toggled,toggle] = useState(false)
   const [view,hide ] = useState(false)
  
-  const [currentTab, setCurrentTab] = useState("one");
-  function callback(key) {
-    console.log(key);
-    setCurrentTab (key)
-  }
-  const handleSelect = (eventKey) => {
-    setCurrentTab("two");
-  };
-  const callbackTabClicked = (key, event) => {
-    console.log(key);
-    console.log(event);
-    setCurrentTab (key)
-    if (key === 'one') {
-      console.log('tab 1 clicked...');
-    }
-  };
+ 
     return (
         <>
            <div className='container'>
@@ -64,7 +50,7 @@ function Consultation() {
                <Tabs className='consult-icon-container'>
                    <TabList style={{display:"contents"}}>
                    <Tab className='consult-page-round-bg'>
-                       <img src={Calendar} alt='' className='icons' />
+                       <img src={Calendar} alt= {CalendarWhite} className='icons' />
                   </Tab>
                   <Tab className='consult-page-round-bg'>
                        <img src={Patients} alt='' className='icons' />
@@ -102,17 +88,21 @@ function Consultation() {
                          
                             <div style={{position:'absolute',display:'flex',top:"91px",left:"145px"}}> 
                             <div className='consult-page-number'>
-                              <h1 className='number'>1</h1>
+                              <h1 
+                              className={'number ' + (!toggled && !view  ? 'number--color' : "" )}
+                              >1</h1>
                             </div>
                               
                               
                             <div className='consult-page-number' >
-                              <h1 className='number'>2</h1>
+                              <h1  className={'number ' + (toggled && !view ? 'number--color': ' ')}
+                              >2</h1>
                             </div>
                         
                             
                             <div className='consult-page-number'>
-                              <h1 className='number'>3</h1>
+                              <h1  className={'number ' + ( view ? 'number--color': '')}
+                              >3</h1>
                             </div>
                             </div>
       

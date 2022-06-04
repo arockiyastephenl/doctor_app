@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
 @import '~react-tabs/style/react-tabs.css';
+@import '~antd/dist/antd.css';
 .container {
     display: flex;
     justify-content: center;
@@ -448,6 +449,7 @@ ant-tabs-tab {
   left: 137px;
   color: white;
   font-weight: bold;
+  font-family: 'Noto Sans', sans-serif;
 }
 .consult-icon-container {
     display: flex;
@@ -490,25 +492,25 @@ ant-tabs-tab {
   height: 30px;
   border-radius: 7px;
   margin-right: 13px;
-  background-color: #2ECC71;
-  color: white;
- 
-}
-consult-page-number:focus {
-  color: black;
-  background-color: white;
-
- 
-}
-.number {
   
+ 
+}
+
+.number {
+  font-family: 'Noto Sans', sans-serif;
   font-size: 21px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-weight: bold;
-  
+  background-color: darkgreen;
+  color: white; 
+}
+.number--color {
+  background-color: white;
+  color: black; 
+
 }
 .consult-description-page {
   width: 390px;
@@ -531,6 +533,7 @@ consult-page-number:focus {
   margin-top: 30px;
   padding-bottom: 18px;
   font-weight: bold;
+  font-family: 'Noto Sans', sans-serif;
 
 }
 .patients-information {
@@ -547,12 +550,14 @@ consult-page-number:focus {
 .patients-heading {
   margin: inherit;
   font-size: 12px;
-  color: lightgray
+  color: lightgray;
+  font-family: 'Noto Sans', sans-serif;
 }
 .patients-info {
   margin: inherit;
   font-size: 16px;
-  color: black
+  color: black;
+  font-family: 'Noto Sans', sans-serif;
 }
 /* search-input */
 .ant-input-group > .ant-input:first-child, .ant-input-group-addon:first-child {
@@ -645,6 +650,7 @@ consult-page-number:focus {
   color: white;
   font-weight: 600;
   font-size: 14px;
+  font-family: 'Noto Sans', sans-serif;
 }
 .history-page {
   width: 390px;
@@ -659,12 +665,13 @@ consult-page-number:focus {
   margin-left: 15px;
     width: 358px;
     height: 52px;
-    background-color: lightgrey;
+    background-color: grey;
     text-align: center;
     border-top-left-radius: 11px;
     border-top-right-radius: 11px;
     padding-top: 6px;
     font-size: 13px;
+    font-family: 'Noto Sans', sans-serif;
 }
 .history-content {
     margin-top: -1px;
@@ -698,14 +705,14 @@ consult-page-number:focus {
   height: 43px;
   background-color: white;
   margin-left: 11px;
-  /* margin-top: -9px; */
+  font-family: 'Noto Sans', sans-serif;
   margin-right: 22px;
   text-align: center;
   color: black;
   font-weight: bold;
   font-size: 15px;
 }
-.prescription-tab:focus {
+.prescription-tab-after {
   background-color: #702cc7;
   color: white;
 
@@ -795,6 +802,100 @@ consult-page-number:focus {
   color: black;
   font-weight: bold;
   font-size: 12px;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.doctor-view-heading {
+  margin-bottom: 0px;
+  color: gray;
+  font-size: 17px;
+  font-family: 'Noto Sans', sans-serif;
+}
+.doctor-view-details {
+ 
+  color: black;
+  font-size: 17px;
+  font-weight: 600;
+  font-family: 'Noto Sans', sans-serif;
+
+}
+.doctor-card-details {
+  width: 104px;
+    height: 10rem;
+    border-radius: 10px;
+    background-color: lightpink;
+    margin-right: 5px;
+    font-size: 13px;
+    display: flex;
+     font-weight: 600;
+    font-family: 'Noto Sans', sans-serif;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 14px;
+}
+.doctor-view-nontab {
+  position: absolute;
+    width: 389px;
+    height: 639px;
+    top: 63px;
+    background-color: white;
+}
+.bill-container {
+  margin-left: 15px;
+    width: 358px;
+    height: 40px;
+    background-color: lightgrey;
+    padding-top: -1px;
+    font-size: 9px;
+    padding-left: 14px;
+    margin-top: 1px;
+    padding-top: 4px;
+    font-family: 'Noto Sans', sans-serif;
+
+} 
+.bill-border {
+  border-bottom-left-radius: 11px;
+    border-bottom-right-radius: 9px
+}
+.bill-heading {
+  color: #702cc7
+}
+.bill-Prescription-content {
+  margin-top: -1px;
+  margin-left: 15px;
+  width: 358px;
+  height: 361px;
+  background-color: darkgray;
+  padding: 16px;
+  border: 0px 5px 5px 41px;
+  
+  margin-bottom: 10px;
+
+}
+.outstanding-name {
+  color: black;
+  margin-bottom: 0;
+  font-size: 15px;
+  
+}
+.outstanding-content {
+  color: #703ccf;
+  font-size: 15px;
+}
+/* .text-area {
+  
+    width: 22rem;
+    border-width: 2px;
+    border-radius: 6px;
+    min-height: 100%;
+} */
+textarea.ant-input {
+  max-width: 100%;
+    height: 11rem;
+    min-height: 100px;
+    line-height: 1.5715;
+    vertical-align: bottom;
+    transition: all 0.3s, height 0s;
 }
 
 
