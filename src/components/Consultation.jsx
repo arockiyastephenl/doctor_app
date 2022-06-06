@@ -4,7 +4,7 @@ import { Row,Col,Button} from 'antd';
 import BackArrow from "../assets/icon/BackArrow.svg";
 import MenuDot from "../assets/icon/MenuDot.svg";
 import Calendar from "../assets/icon/Calendar.svg";
-import CalendarWhite from "../assets/icon/Calendar.svg";
+// import CalendarWhite from "../assets/icon/Calendar.svg";
 import Patients from "../assets/icon/Patients.svg";
 import Services from "../assets/icon/Services.svg";
 import CreateAppointment from "../assets/icon/CreateAppointment.svg";
@@ -18,6 +18,10 @@ import { useNavigate } from "react-router-dom";
 // import PersonProfile from './PersonProfile'
 import { Input, Space } from 'antd';
 
+import { FootMenu } from './FootMenu';
+
+
+// import FooterMenu from './Footer';
 const { Search } = Input;
 const onSearch = (value) => console.log(value);
 
@@ -29,10 +33,18 @@ function Consultation() {
   const [toggled,toggle] = useState(false)
   const [view,hide ] = useState(false)
  
+  const [footIcon1, setFootIcon1] = useState(false)
+  const [footIcon2, setFootIcon2] = useState(false)
+  const [footIcon3, setFootIcon3] = useState(false)
+  const [footIcon4, setFootIcon4] = useState(false)
+  const [footIcon5, setFootIcon5] = useState(false)
+  
  
     return (
         <>
            <div className='container'>
+
+
            <div className='bg-container1' >
              <Row className='backdrop-container'>
              
@@ -50,7 +62,7 @@ function Consultation() {
                <Tabs className='consult-icon-container'>
                    <TabList style={{display:"contents"}}>
                    <Tab className='consult-page-round-bg'>
-                       <img src={Calendar} alt= {CalendarWhite} className='icons' />
+                       <img src={Calendar} alt= '' className='icons' />
                   </Tab>
                   <Tab className='consult-page-round-bg'>
                        <img src={Patients} alt='' className='icons' />
@@ -211,6 +223,82 @@ function Consultation() {
 
            
              </div>
+            
+{/* footer-section */}
+             <div style={{backgroundColor:"white",boxShadow:"6px 6px 11px 4px", width:"386px",height:"74px",position:"fixed",bottom:'0px',left:"-1px"}}>
+               <div style={{paddingTop:"14px",marginLeft:"36px",display:"flex"}}>
+
+                 <div onClick={() =>  setFootIcon1(footIcon1 => !footIcon1  )} style={{marginRight:"28px"}} >
+                 <FootMenu
+                     color={footIcon1  ?  '#702cc7' : 'grey'}
+                    />
+                   {/* <img className='footer-image' src={Calendar} alt=''/> */}
+                   <p 
+                     className={'foot-head ' + 
+                     (
+                      footIcon1 
+                       ? 'foot-head--change': ' '
+                       )}
+                   
+                   >Home</p>
+                 </div>
+
+                
+                 <div onClick={() =>  setFootIcon2(footIcon2 => !footIcon2)} style={{marginRight:"28px"}} >
+                 <FootMenu
+                     color={
+                      footIcon2
+                      
+                      ? '#702cc7' : 'grey' }
+                    />
+                 
+                   <p 
+                     className={'foot-head ' + 
+                     (
+                       footIcon2 
+                      ? 
+                      'foot-head--change': ' ')}
+                   
+                   >Profile</p>
+                 </div>
+                 
+                 <div onClick={() =>  setFootIcon3(footIcon3 => !footIcon3)} style={{marginRight:"28px"}} >
+                 <FootMenu
+                     color={footIcon3  ? '#702cc7' : 'grey' }
+                    />
+                 
+                   <p 
+                     className={'foot-head ' + (footIcon3 ? 'foot-head--change': ' ')}
+                   
+                   >Wallet</p>
+                 </div>
+
+                 <div onClick={() =>  setFootIcon4(footIcon4 => !footIcon4)} style={{marginRight:"28px"}} >
+                 <FootMenu
+                     color={footIcon4  ? '#702cc7' : 'grey' }
+                    />
+                 
+                   <p 
+                     className={'foot-head ' + (footIcon4 ? 'foot-head--change': ' ')}
+                   
+                   >Service</p>
+                 </div>
+
+                 <div onClick={() =>  setFootIcon5(footIcon5 => !footIcon5)} style={{marginRight:"28px"}} >
+                 <FootMenu
+                     color={footIcon5  ? '#702cc7' : 'grey' }
+                    />
+                 
+                   <p 
+                     className={'foot-head ' + (footIcon5 ? 'foot-head--change': ' ')}
+                   
+                   >Support</p>
+                 </div>
+
+               </div>
+               
+             </div>        
+            
             </div>
         </>
     )
