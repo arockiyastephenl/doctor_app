@@ -16,8 +16,10 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // import ListOfClinics from "./components/ListOfClinics";
 // import AddClinicSuccess from "./components/AddClinicSuccesss";
 // import AddClinicDetails from "./components/AddClinicDetails";
-import Consultation from "./components/Consultation";
-import PersonProfile from "./components/PersonProfile";
+// import Consultation from "./components/Consultation";
+// import PersonProfile from "./components/PersonProfile";
+import MyPatients from "./components/MyPatients";
+import PatientDetailCard from "./components/PatientDetailCard";
 // import Header from "./components/Header";
 
 // import { useNavigate } from "react-router-dom";
@@ -27,15 +29,32 @@ function App() {
 
   return (
     <>
-    <Router forceRefresh={true}>
+{/* ==>patient-details and my-patients*/}    
+<Router forceRefresh={true}>
         <Routes>
           
-          <Route path="/" element={<Consultation/>} />
-          <Route path="/personProfile" element={<PersonProfile />} />
+          <Route path="/" element={<MyPatients/>} />
+          <Route path="/patientDetailCard" element={<PatientDetailCard/>} />
+          
           
         </Routes>
       </Router> 
+
+{/* ==>consult-and-personal-profile */}
+     
+
+          {/* <Router forceRefresh={true}>
+              <Routes>
+                
+                <Route path="/" element={<Consultation/>} />
+                <Route path="/personProfile" element={<PersonProfile />} />
+                
+              </Routes>
+            </Router>  */}
   
+{/* ==>loginpage-and-list-of-clinic */}
+
+
       {/* <Router forceRefresh={true}>
         <Routes>
           

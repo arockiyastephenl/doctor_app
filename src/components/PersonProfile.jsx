@@ -18,6 +18,12 @@ import IconPrescriptions from "../assets/icon/IconPrescriptions.svg";
 import IconDiagnostics from "../assets/icon/IconDiagnostics.svg";
 import IconReference from "../assets/icon/IconReference.svg";
 
+import IconPatientProfile from "../assets/icon/IconPatientProfile.svg";
+import IconBill from "../assets/icon/IconBill.svg";
+import  IconPreferedPharmacies from "../assets/icon/IconPreferedPharmacies.svg";
+import  IconNewPrescriptions from "../assets/icon/IconNewPrescriptions.svg";
+import  IconDoctor from "../assets/icon/IconDoctor.svg";
+
 import IconImportPrescription from "../assets/icon/IconImportPrescription.svg";
 import Checkbox from "../assets/icon/Checkbox.svg";
 import IconAddRound from "../assets/logo/IconAddRound.png";
@@ -62,7 +68,7 @@ function PersonProfile() {
              
             
               <img src={BackArrow} alt=''  className='arrow-size' style={{top:"7px"}}/>
-               <h1 className='header-title'  style={{top:"4px"}}>Wellyfe</h1>       
+               <h1 className='header-title'  style={{top:"4px"}}>In Person Consulting</h1>       
             
                     <img src={MenuDot} alt='' className='menu-dot'/>
             
@@ -153,13 +159,16 @@ function PersonProfile() {
              
                      <div onClick={() => setPrescriptionTab(prescriptionTab=> !prescriptionTab)}
                              style={{position:'absolute',top:"-57px"}}  
-                            className={'prescription-tab ' + (prescriptionTab ? 'prescription-tab-after': '')}>
-                               <img src={ ArrowLeft } alt="" 
-                             style={{width:"24px",position:"absolute",right:"16px",top:"20px"}} />
+                            className={'prescription-tab ' + (prescriptionTab ? 'prescription-tab-after': '') }>
+                               <img src={ IconNewPrescriptions} alt="" 
+                             style={{width:"20px",position:"absolute",right:"149px",top:"11px"}} />
                               New Prescription
                     </div>
                      <div style={{position:'absolute',top:"-57px",left:"184px"}} 
-                         className='prescription-tab'>Prefered Pharmacies
+                         className='prescription-tab'>
+                            <img src={ IconPreferedPharmacies} alt="" 
+                             style={{width:"20px",position:"absolute",right:"149px",top:"11px"}} />
+                           Prefered Pharmacies
                     </div>
                   
                           
@@ -306,7 +315,10 @@ function PersonProfile() {
              
                      <div onClick={() => setDiagnosisTab(diagnosisTab=> !diagnosisTab)}
                              style={{position:'absolute',top:"-57px",left: '90px'}}  
-                             className={'prescription-tab ' + (diagnosisTab ? 'prescription-tab-after': '')}>New Diagnostics
+                             className={'prescription-tab ' + (diagnosisTab ? 'prescription-tab-after': '')}>
+                                <img src={ IconPreferedPharmacies} alt="" 
+                             style={{width:"20px",position:"absolute",right:"149px",top:"11px"}} />
+                               New Diagnostics
                     </div>
                     
                   
@@ -470,7 +482,10 @@ function PersonProfile() {
                         
                               <div onClick={() => toggle(toggled => !toggled)} 
                                         style={{position:'absolute',top:"-57px"}}  
-                                        className='reference-tab'>Search for Doctor in Network
+                                        className='reference-tab'>
+                                           <img src={ IconDoctor} alt="" 
+                             style={{width:"20px",position:"absolute",right:"149px",top:"11px"}} />
+                                          Search for Doctor in Network
                                 </div>
                                 <div style={{position:'absolute',top:"-57px",left:"192px"}} 
                                     className='reference-tab'>External References
@@ -564,12 +579,15 @@ function PersonProfile() {
                              style={{position:'absolute',top:"-57px"}}  
                              onClick={() => setpatientProfileTab(!patientProfileTab)} 
                              className={'prescription-tab ' + (patientProfileTab  ? 'prescription-tab-after': '')}>
-                               <img src={ ArrowLeft } alt="" 
-                             style={{width:"24px",position:"absolute",right:"16px",top:"20px"}} />
+                               <img src={ IconPatientProfile} alt="" 
+                             style={{width:"20px",position:"absolute",right:"149px",top:"12px"}} />
                             Patient Profile
                     </div>
                      <div onClick={() => setBillTab(!billTab)} style={{position:'absolute',top:"-57px",left:"184px"}} 
-                        className={'prescription-tab ' + (billTab   ? 'prescription-tab-after': '')}>Bill Payment
+                        className={'prescription-tab ' + (billTab   ? 'prescription-tab-after': '')}>
+                           <img src={ IconBill} alt="" 
+                             style={{width:"20px",position:"absolute",right:"149px",top:"11px"}} />
+                          Bill Payment
                     </div>
                   
                           

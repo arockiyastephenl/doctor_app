@@ -460,6 +460,7 @@ ant-tabs-tab {
   width: 60px;
   height: 60px;
   background-color: white;
+  color: green;
   border-radius: 47px;
   margin-right: 13px;
   display: flex;
@@ -897,8 +898,23 @@ textarea.ant-input {
     vertical-align: bottom;
     transition: all 0.3s, height 0s;
 }
+.footer-image {
+  width: 27px;
 
+  
+}
+.foot-head {
+  font-size: 16px;
+    margin-left: -7px;
+    padding-top: 3px;
+    color: black;
+  
+    font-family: 'Noto Sans', sans-serif;
+}
+.foot-head--change {
+  color: #702cc7;
 
+}
 
 /* //loginpages */
 @import url("https://fonts.googleapis.com/css2?family=Oxygen&display=swap");
