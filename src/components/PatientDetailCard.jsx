@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Row,Button} from 'antd';
 import '../Style.css'
 
@@ -32,7 +32,7 @@ import MedicalRecords from "../assets/myPatientIcons/MedicalRecords.svg";
 
 function PatientDetailCard() {
 
-    const [patient, setPatient] = useState(false)
+    // const [patient, setPatient] = useState(false)
     return (
         <>
          
@@ -58,11 +58,11 @@ function PatientDetailCard() {
                  <img src={IconNaviConsultation}  alt='' style={{width:"26px"}}/>  
                  </div>
                  <div className='icon-home-container'>
-                 <img src={IconNaviPatients}  alt='' style={{width:"26px"}}/>  
+                 <img      src={IconNaviPatients}  alt='' style={{width:"26px"}}/>  
                  </div>
                
-
-                </div>
+ 
+                 </div>
                
         
           </div>
