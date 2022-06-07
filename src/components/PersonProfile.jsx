@@ -159,7 +159,7 @@ function PersonProfile() {
              
                      <div onClick={() => setPrescriptionTab(prescriptionTab=> !prescriptionTab)}
                              style={{position:'absolute',top:"-57px"}}  
-                            className={'prescription-tab ' + (prescriptionTab ? 'prescription-tab-after': '')}>
+                            className={'prescription-tab ' + (prescriptionTab ? 'prescription-tab-after': '') }>
                                <img src={ IconNewPrescriptions} alt="" 
                              style={{width:"20px",position:"absolute",right:"149px",top:"11px"}} />
                               New Prescription
