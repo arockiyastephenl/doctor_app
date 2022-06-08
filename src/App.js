@@ -20,6 +20,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // import PersonProfile from "./components/PersonProfile";
 import MyPatients from "./components/MyPatients";
 import PatientDetailCard from "./components/PatientDetailCard";
+import StartVisitPage from "./components/StartVisitPage";
 // import Header from "./components/Header";
 
 // import { useNavigate } from "react-router-dom";
@@ -35,6 +36,7 @@ function App() {
           
           <Route path="/" element={<MyPatients/>} />
           <Route path="/patientDetailCard" element={<PatientDetailCard/>} />
+          <Route path="/startVisitPage" element={<StartVisitPage/>} />
           
           
         </Routes>

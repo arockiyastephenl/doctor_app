@@ -13,32 +13,37 @@ import IconMobile from "../assets/myPatientIcons/IconMobile.svg";
 
 import IconNaviHome from "../assets/myPatientIcons/IconNaviHome.svg";
 import IconNaviConsultation from "../assets/myPatientIcons/IconNaviConsultation.svg";
-import IconNaviPatients from "../assets/myPatientIcons/IconNaviPatients.svg";
+import IconNaviPatientsGray from "../assets/myPatientIcons/IconNaviPatientsGray.svg";
 
 
 
 
 import StartVisit from "../assets/myPatientIcons/StartVisit.svg";
-import StartVideoCall from "../assets/myPatientIcons/StartVideoCall.svg";
-import IconPatientDetails from "../assets/myPatientIcons/IconPatientDetails.svg";
-import IconBill from "../assets/myPatientIcons/IconBill.svg";
-import Queue from "../assets/myPatientIcons/Queue.svg";
-import BookSlot from "../assets/myPatientIcons/BookSlot.svg";
+
+
+import SymptomsDiagnosis from "../assets/myPatientIcons/SymptomsDiagnosis.svg";
+import Prescription from "../assets/myPatientIcons/Prescription.svg";
+import AddAdvices from "../assets/myPatientIcons/AddAdvices.svg";
+import FollowUp from "../assets/myPatientIcons/IconBill.svg";
+import AddVitals from "../assets/myPatientIcons/AddVitals.svg";
+import AddNote from "../assets/myPatientIcons/AddNote.svg";
 import ReferDoctor from "../assets/myPatientIcons/ReferDoctor.svg";
-import MedicalRecords from "../assets/myPatientIcons/MedicalRecords.svg";
-
-import IconCancel from "../assets/myPatientIcons/IconCancel.svg";
-
-
-import { useNavigate } from 'react-router-dom';
+import AddMedicalHistory from "../assets/myPatientIcons/AddMedicalHistory.svg";
 
 
 import FooterSection from './FooterSection';
 
-function PatientDetailCard() {
-    const history = useNavigate();
+
+
+
+
+
+function StartVisitPage() {
 
     // const [patient, setPatient] = useState(false)
+
+
+
     return (
         <>
          
@@ -64,7 +69,11 @@ function PatientDetailCard() {
                  <img src={IconNaviConsultation}  alt='' style={{width:"20px"}}/>  
                  </div>
                  <div className='icon-home-container'>
-                 <img      src={IconNaviPatients}  alt='' style={{width:"20px"}}/>  
+                 <img src={IconNaviPatientsGray}  alt='' style={{width:"20px",fill:"grey"}}/>  
+                 </div>
+
+                 <div className='icon-home-container'>
+                 <img      src={StartVisit}  alt='' style={{width:"17px"}}/>  
                  </div>
                
  
@@ -76,7 +85,7 @@ function PatientDetailCard() {
            
           <div className='patient-detail-container'>
               <div className='patient-name'>
-                  <h1 style={{color:"white",fontWeight:"bold"}}>Cingireddy Narayana Reddy</h1>
+                  <h1 style={{color:"white",fontWeight:"bold"}}>Visit</h1>
               </div>
 
               <div className='patient-icon-container' >
@@ -115,23 +124,21 @@ function PatientDetailCard() {
 
           <div style={{overflow:"scroll"}}>
             <div style={{display:"flex",marginBottom:"5px",marginLeft:"5px"}}>
-             
-               <div  onClick={() => history("/startVisitPage")}
-               className='patient-cards-with-icon'>
-               <img src={StartVisit} alt="" style={{width:"27px",paddingTop:"21px"}}/> 
-               <h1 className='startvisit'>Start Visit</h1>
+               <div  className='patient-cards-with-icon'>
+               <img src={SymptomsDiagnosis} alt="" style={{width:"27px",paddingTop:"21px"}}/> 
+               <h1 className='startvisit'>Symptoms & Diagnosis</h1>
                
 
                    </div>   
                    <div  className='patient-cards-with-icon'>
-               <img src={StartVideoCall} alt="" style={{width:"27px",paddingTop:"21px"}}/> 
-               <h1 className='startvisit'>Start video Call</h1>
+               <img src={Prescription} alt="" style={{width:"27px",paddingTop:"21px"}}/> 
+               <h1 className='startvisit'>Prescription</h1>
                
 
                    </div>  
                    <div  className='patient-cards-with-icon'>
-               <img src={IconPatientDetails} alt="" style={{width:"27px",paddingTop:"21px"}}/> 
-               <h1 className='startvisit'>View patient details</h1>
+               <img src={AddAdvices} alt="" style={{width:"27px",paddingTop:"21px"}}/> 
+               <h1 className='startvisit'>Add advices</h1>
                
 
                    </div>     
@@ -142,20 +149,20 @@ function PatientDetailCard() {
 
                    <div style={{display:"flex",marginBottom:"5px",marginLeft:"5px"}}>
                <div  className='patient-cards-with-icon'>
-               <img src={IconBill } alt="" style={{width:"27px",paddingTop:"21px"}}/> 
-               <h1 className='startvisit'>Bill patient + add to queue</h1>
+               <img src={FollowUp } alt="" style={{width:"27px",paddingTop:"21px"}}/> 
+               <h1 className='startvisit'>Follow up</h1>
                
 
                    </div>   
                    <div  className='patient-cards-with-icon'>
-               <img src={Queue} alt="" style={{width:"27px",paddingTop:"21px"}}/> 
-               <h1 className='startvisit'>Add to queue</h1>
+               <img src={AddVitals} alt="" style={{width:"27px",paddingTop:"21px"}}/> 
+               <h1 className='startvisit'>Add vitals</h1>
                
 
                    </div>  
                    <div  className='patient-cards-with-icon'>
-               <img src={BookSlot} alt="" style={{width:"27px",paddingTop:"21px"}}/> 
-               <h1 className='startvisit'>Book a slot</h1>
+               <img src={AddNote} alt="" style={{width:"27px",paddingTop:"21px"}}/> 
+               <h1 className='startvisit'>Add notes</h1>
                
 
                    </div>     
@@ -173,8 +180,8 @@ function PatientDetailCard() {
 
                    </div>   
                    <div  className='patient-cards-with-icon'>
-               <img src={MedicalRecords} alt="" style={{width:"27px",paddingTop:"21px"}}/> 
-               <h1 className='startvisit'>Add medical records</h1>
+               <img src={AddMedicalHistory} alt="" style={{width:"37px",paddingTop:"21px"}}/> 
+               <h1 className='startvisit'>Add medical history</h1>
                
 
                    </div>  
@@ -185,18 +192,19 @@ function PatientDetailCard() {
                    </div>      
                    </div>           
              </div>
+        
+         <div style={{marginTop:"-28px",marginBottom:'9px', marginLeft:"32px"}}>             
+             <Button className='btn save-btn'>Push updates  <img src={ StartVisit} alt="" style={{marginLeft:"11px"}} /></Button>
+            <Button className='btn next-btn'>Send RX <img src={ StartVisit} alt="" style={{marginLeft:"52px"}}/></Button>  
+        
+          </div>
 
-             <Button  style={{position:"absolute",left:"32px",bottom:'14px'}}  className='btn-regular save-btn'>Cancel 
-             <img src={ IconCancel } alt="" 
-                             style={{width:"24px",position:"absolute",right:"16px",top:"20px"}} />
-             </Button>
+              
+            <FooterSection />
             
-             <FooterSection />
-
-          
          
         </>
 
     )
 }
-export default PatientDetailCard;
+export default StartVisitPage;
