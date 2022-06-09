@@ -162,7 +162,7 @@ const diseaseClickA5=()=> {
       <div style={{margintop:"33px",marginTop:"10px"}}>
           <Space direction="vertical">
                 <Search
-                    placeholder="Search patients name"
+                    placeholder=""
                     onSearch={onSearch}
                     className="search-input" />
             </Space>

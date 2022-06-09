@@ -274,7 +274,7 @@ const diseaseClick10=()=> {
                   
              </div>
         
-         <div style={{marginTop:"0px",marginBottom:'0px', marginLeft:"32px"}}>             
+         <div style={{marginTop:"-29px",marginBottom:'10px', marginLeft:"32px"}}>             
              <Button className='btn save-btn'>Back  <img src={ArrowLeft} alt="" style={{marginLeft:"79px"}} /></Button>
             <Button className='btn next-btn'>Save <img src={IconSave} alt="" style={{marginLeft:"73px"}}/></Button>  
         

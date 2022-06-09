@@ -274,7 +274,7 @@
 .ant-input-search > .ant-input-group > .ant-input-group-addon:last-child .ant-input-search-button {
     padding-top: 0;
     padding-bottom: 0;
-    border-radius: 0 -4px 6px 0;
+    border-radius: 0 0px 0px 0;
     border-width: 2px;
     height: 48px;
     width: 40px;
