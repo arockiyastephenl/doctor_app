@@ -1,39 +1,39 @@
 import React from 'react';
 import { Row,Button} from 'antd';
-import '../Style.css'
+import '../../Style.css'
 
-import BackArrow from "../assets/icon/BackArrow.svg";
-import MenuDot from "../assets/icon/MenuDot.svg";
-
-
-import IconMale from "../assets/myPatientIcons/IconMale.svg";
-import IconAge from "../assets/myPatientIcons/IconAge.svg";
-import IconMobile from "../assets/myPatientIcons/IconMobile.svg";
+import BackArrow from "../../assets/icon/BackArrow.svg";
+import MenuDot from "../../assets/icon/MenuDot.svg";
 
 
-import IconNaviHome from "../assets/myPatientIcons/IconNaviHome.svg";
-import IconNaviConsultation from "../assets/myPatientIcons/IconNaviConsultation.svg";
-import IconNaviPatients from "../assets/myPatientIcons/IconNaviPatients.svg";
+import IconMale from "../../assets/myPatientIcons/IconMale.svg";
+import IconAge from "../../assets/myPatientIcons/IconAge.svg";
+import IconMobile from "../../assets/myPatientIcons/IconMobile.svg";
+
+
+import IconNaviHome from "../../assets/myPatientIcons/IconNaviHome.svg";
+import IconNaviConsultation from "../../assets/myPatientIcons/IconNaviConsultation.svg";
+import IconNaviPatients from "../../assets/myPatientIcons/IconNaviPatients.svg";
 
 
 
 
-import StartVisit from "../assets/myPatientIcons/StartVisit.svg";
-import StartVideoCall from "../assets/myPatientIcons/StartVideoCall.svg";
-import IconPatientDetails from "../assets/myPatientIcons/IconPatientDetails.svg";
-import IconBill from "../assets/myPatientIcons/IconBill.svg";
-import Queue from "../assets/myPatientIcons/Queue.svg";
-import BookSlot from "../assets/myPatientIcons/BookSlot.svg";
-import ReferDoctor from "../assets/myPatientIcons/ReferDoctor.svg";
-import MedicalRecords from "../assets/myPatientIcons/MedicalRecords.svg";
+import StartVisit from "../../assets/myPatientIcons/StartVisit.svg";
+import StartVideoCall from "../../assets/myPatientIcons/StartVideoCall.svg";
+import IconPatientDetails from "../../assets/myPatientIcons/IconPatientDetails.svg";
+import IconBill from "../../assets/myPatientIcons/IconBill.svg";
+import Queue from "../../assets/myPatientIcons/Queue.svg";
+import BookSlot from "../../assets/myPatientIcons/BookSlot.svg";
+import ReferDoctor from "../../assets/myPatientIcons/ReferDoctor.svg";
+import MedicalRecords from "../../assets/myPatientIcons/MedicalRecords.svg";
 
-import IconCancel from "../assets/myPatientIcons/IconCancel.svg";
+import IconCancel from "../../assets/myPatientIcons/IconCancel.svg";
 
 
 import { useNavigate } from 'react-router-dom';
 
 
-import FooterSection from './FooterSection';
+import FooterSection from "../MyPatientsFolder/FooterSection";
 
 function PatientDetailCard() {
     const history = useNavigate();
@@ -186,7 +186,7 @@ function PatientDetailCard() {
                    </div>           
              </div>
 
-             <Button  style={{position:"absolute",left:"32px",bottom:'14px'}}  className='btn-regular save-btn'>Cancel 
+             <Button  style={{left:"32px",bottom:'43px'}}  className='btn-regular save-btn'>Cancel 
              <img src={ IconCancel } alt="" 
                              style={{width:"24px",position:"absolute",right:"16px",top:"20px"}} />
              </Button>

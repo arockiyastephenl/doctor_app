@@ -57,7 +57,7 @@
 .icons {
     background-color: #F0F0F0;
     width: 411px;
-    height: 51px;
+    height: 55px;
     position: absolute;
     top: 81px;
     padding-left: 19px;
@@ -127,11 +127,11 @@
 }
 .patient-detail-container {
     background-color: #f7f7f7;
-    width: 389px;
+    width: 400px;
     height: 54rem;
     position: relative;
     top: 133px;
-    left: 11px;
+    left: 1px;
     padding: 10px;
 
 }
@@ -178,7 +178,7 @@
     position: absolute;
     top: 87px;
     right: 286px;
-    margin-right: 20px;
+    margin-right: 40px;
 
 }
 .male {
@@ -221,4 +221,62 @@
 }
 .save-btn {
     background-color: #702cc7;
+}
+.heading-style-symptoms {
+    font-size: 19px;
+   
+    font-family: 'Noto Sans', sans-serif;
+    margin-left: 10px;
+    font-weight: bold;
+}
+.diseases-card {
+    width: fit-content;
+    height: 43px;
+    background-color:white;
+    border-color: #f7f7f7;
+    border-width: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 69px;
+    font-size: 16px;
+    font-family: 'Noto Sans', sans-serif;
+    color: black;
+    padding: 18px;
+  
+}
+.diseases-card-bg-color {
+    width: fit-content;
+    height: 36px;
+    background-color:#C9C9CA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 69px;
+    font-size: 16px;
+    font-family: 'Noto Sans', sans-serif;
+    color: black;
+    padding: 15px;
+}
+.cancel-icon {
+    width: 20px;
+    margin-left: 8px;
+}
+.ant-input-group > .ant-input:first-child, .ant-input-group-addon:first-child {
+    border-top-right-radius: 31;
+    border-bottom-right-radius: 0;
+    width: 341px;
+    height: 48px;
+    border-width: 2px;
+    margin-left: 2px;
+}
+.ant-input-search > .ant-input-group > .ant-input-group-addon:last-child .ant-input-search-button {
+    padding-top: 0;
+    padding-bottom: 0;
+    border-radius: 0 -4px 6px 0;
+    border-width: 2px;
+    height: 48px;
+    width: 40px;
+    margin-left: -1px;
 }

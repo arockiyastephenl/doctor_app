@@ -18,9 +18,11 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // import AddClinicDetails from "./components/AddClinicDetails";
 // import Consultation from "./components/Consultation";
 // import PersonProfile from "./components/PersonProfile";
-import MyPatients from "./components/MyPatients";
-import PatientDetailCard from "./components/PatientDetailCard";
-import StartVisitPage from "./components/StartVisitPage";
+import MyPatients from "./components/MyPatientsFolder/MyPatients";
+import PatientDetailCard from "./components/MyPatientsFolder/PatientDetailCard";
+import StartVisitPage from "./components/MyPatientsFolder/StartVisitPage";
+import Symptoms from "./components/MyPatientsFolder/Symptoms";
+import Prescription from "./components/MyPatientsFolder/Prescription";
 // import Header from "./components/Header";
 
 // import { useNavigate } from "react-router-dom";
@@ -37,6 +39,8 @@ function App() {
           <Route path="/" element={<MyPatients/>} />
           <Route path="/patientDetailCard" element={<PatientDetailCard/>} />
           <Route path="/startVisitPage" element={<StartVisitPage/>} />
+          <Route path="/symptoms" element={<Symptoms/>} />
+          <Route path="/prescription" element={<Prescription/>} />
           
           
         </Routes>

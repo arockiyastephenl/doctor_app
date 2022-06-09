@@ -1,37 +1,42 @@
 import React from 'react';
 import { Row,Button} from 'antd';
-import '../Style.css'
+import '../../Style.css'
 
-import BackArrow from "../assets/icon/BackArrow.svg";
-import MenuDot from "../assets/icon/MenuDot.svg";
-
-
-import IconMale from "../assets/myPatientIcons/IconMale.svg";
-import IconAge from "../assets/myPatientIcons/IconAge.svg";
-import IconMobile from "../assets/myPatientIcons/IconMobile.svg";
+import BackArrow from "../../assets/icon/BackArrow.svg";
+import MenuDot from "../../assets/icon/MenuDot.svg";
 
 
-import IconNaviHome from "../assets/myPatientIcons/IconNaviHome.svg";
-import IconNaviConsultation from "../assets/myPatientIcons/IconNaviConsultation.svg";
-import IconNaviPatientsGray from "../assets/myPatientIcons/IconNaviPatientsGray.svg";
+import IconMale from "../../assets/myPatientIcons/IconMale.svg";
+import IconAge from "../../assets/myPatientIcons/IconAge.svg";
+import IconMobile from "../../assets/myPatientIcons/IconMobile.svg";
+
+
+import IconNaviHome from "../../assets/myPatientIcons/IconNaviHome.svg";
+import IconNaviConsultation from "../../assets/myPatientIcons/IconNaviConsultation.svg";
+import IconNaviPatientsGray from "../../assets/myPatientIcons/IconNaviPatientsGray.svg";
 
 
 
 
-import StartVisit from "../assets/myPatientIcons/StartVisit.svg";
+import StartVisit from "../../assets/myPatientIcons/StartVisit.svg";
 
 
-import SymptomsDiagnosis from "../assets/myPatientIcons/SymptomsDiagnosis.svg";
-import Prescription from "../assets/myPatientIcons/Prescription.svg";
-import AddAdvices from "../assets/myPatientIcons/AddAdvices.svg";
-import FollowUp from "../assets/myPatientIcons/IconBill.svg";
-import AddVitals from "../assets/myPatientIcons/AddVitals.svg";
-import AddNote from "../assets/myPatientIcons/AddNote.svg";
-import ReferDoctor from "../assets/myPatientIcons/ReferDoctor.svg";
-import AddMedicalHistory from "../assets/myPatientIcons/AddMedicalHistory.svg";
+import SymptomsDiagnosis from "../../assets/myPatientIcons/SymptomsDiagnosis.svg";
+import Prescription from "../../assets/myPatientIcons/Prescription.svg";
+import AddAdvices from "../../assets/myPatientIcons/AddAdvices.svg";
+import FollowUp from "../../assets/myPatientIcons/IconBill.svg";
+import AddVitals from "../../assets/myPatientIcons/AddVitals.svg";
+import AddNote from "../../assets/myPatientIcons/AddNote.svg";
+import ReferDoctor from "../../assets/myPatientIcons/ReferDoctor.svg";
+import AddMedicalHistory from "../../assets/myPatientIcons/AddMedicalHistory.svg";
+
+import IconPushUpdate from "../../assets/myPatientIcons/IconPushUpdate.svg";
+import IconSendRx from "../../assets/myPatientIcons/IconSendRx.svg";
 
 
-import FooterSection from './FooterSection';
+import { useNavigate } from "react-router-dom";
+
+import FooterSection from "../MyPatientsFolder/FooterSection";
 
 
 
@@ -39,7 +44,7 @@ import FooterSection from './FooterSection';
 
 
 function StartVisitPage() {
-
+    const history = useNavigate();     
     // const [patient, setPatient] = useState(false)
 
 
@@ -123,14 +128,17 @@ function StartVisitPage() {
                   </div>  
 
           <div style={{overflow:"scroll"}}>
+            
+            
             <div style={{display:"flex",marginBottom:"5px",marginLeft:"5px"}}>
-               <div  className='patient-cards-with-icon'>
+               <div onClick={() => history("/symptoms")} 
+                className='patient-cards-with-icon'>
                <img src={SymptomsDiagnosis} alt="" style={{width:"27px",paddingTop:"21px"}}/> 
                <h1 className='startvisit'>Symptoms & Diagnosis</h1>
-               
+            </div>   
 
-                   </div>   
-                   <div  className='patient-cards-with-icon'>
+                   <div  onClick={() => history("/prescription")} 
+                   className='patient-cards-with-icon'>
                <img src={Prescription} alt="" style={{width:"27px",paddingTop:"21px"}}/> 
                <h1 className='startvisit'>Prescription</h1>
                
@@ -194,8 +202,8 @@ function StartVisitPage() {
              </div>
         
          <div style={{marginTop:"-28px",marginBottom:'9px', marginLeft:"32px"}}>             
-             <Button className='btn save-btn'>Push updates  <img src={ StartVisit} alt="" style={{marginLeft:"11px"}} /></Button>
-            <Button className='btn next-btn'>Send RX <img src={ StartVisit} alt="" style={{marginLeft:"52px"}}/></Button>  
+             <Button className='btn save-btn'>Push updates  <img src={IconPushUpdate} alt="" style={{marginLeft:"11px"}} /></Button>
+            <Button className='btn next-btn'>Send RX <img src={IconSendRx} alt="" style={{marginLeft:"52px"}}/></Button>  
         
           </div>
 

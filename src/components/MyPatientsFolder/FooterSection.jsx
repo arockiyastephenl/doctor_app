@@ -1,11 +1,12 @@
 import React,{useState} from 'react';
-import '../App.css'
+import '../../App.css'
 
-import IconHomeNavi from "../assets/footerSvg/IconHomeNavi.svg";
-import IconProfile from "../assets/footerSvg/IconProfile.svg";
-import IconWallet from "../assets/footerSvg/IconWallet.svg";
-import IconService from "../assets/footerSvg/IconService.svg";
-import IconSupport from "../assets/footerSvg/IconSupport.svg";
+
+import IconHomeNavi from "../../assets/footerSvg/IconHomeNavi.svg";
+import IconProfile from "../../assets/footerSvg/IconProfile.svg";
+import IconWallet from "../../assets/footerSvg/IconWallet.svg";
+import IconService from "../../assets/footerSvg/IconService.svg"
+import IconSupport from "../../assets/footerSvg/IconSupport.svg"
 
 
 function FooterSection() {

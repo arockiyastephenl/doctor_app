@@ -1,15 +1,15 @@
 import React from 'react';
 import { Row} from 'antd';
-import '../Style.css'
+import '../../Style.css'
 
-import BackArrow from "../assets/icon/BackArrow.svg";
-import MenuDot from "../assets/icon/MenuDot.svg";
+import BackArrow from "../../assets/icon/BackArrow.svg";
+import MenuDot from "../../assets/icon/MenuDot.svg";
 import { useNavigate } from "react-router-dom";
 
-import IconNaviHome from "../assets/myPatientIcons/IconNaviHome.svg";
-import IconNaviConsultation from "../assets/myPatientIcons/IconNaviConsultation.svg";
+import IconNaviHome from "../../assets/myPatientIcons/IconNaviHome.svg";
+import IconNaviConsultation from "../../assets/myPatientIcons/IconNaviConsultation.svg";
 
-import FooterSection from './FooterSection';
+import FooterSection from "../MyPatientsFolder/FooterSection";
 
 function MyPatients() {
     const history = useNavigate();      
