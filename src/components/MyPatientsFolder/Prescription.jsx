@@ -48,10 +48,10 @@ const { Search } = Input;
 const onSearch = (value) => console.log(value);    
 
 
-const [isClick1, setIsClick1] = useState(false)
-const diseaseClick1=()=> {
-    setIsClick1(!isClick1)
-}
+// const [isClick1, setIsClick1] = useState(false)
+// const diseaseClick1=()=> {
+//     setIsClick1(!isClick1)
+// }
 const [isClick2, setIsClick2] = useState(false)
 const diseaseClick2=()=> {
     setIsClick2(!isClick2)
@@ -169,20 +169,14 @@ const diseaseClickA5=()=> {
             </div>
 
       <div style={{marginTop:"20px"}}>
-            <h1 className='heading-style-symptoms'>Frequently seen by you</h1>  
+            <h1 className='heading-style-symptoms'>Frequently prescribed drugs</h1>  
          <div style={{marginLeft:"3px",display:"flex",flexWrap:"wrap"}}>
                 
-                 <div style={{marginRight:"10px"}} onClick={diseaseClick1}
-                 >
-                     {!isClick1 ? 
-                     <h1  className='diseases-card '>Sompraz L capsule Sr</h1>
-                     : 
-                     <h1 
-                     className='diseases-card-bg-color'>
-                        Sompraz L capsule Sr
-                         <img src={IconCancelGray}  
-                         className='cancel-icon'
-                         alt='' /></h1>} 
+                 <div style={{marginRight:"10px"}} onClick={() => history("/tabletPage")}>
+                    
+                     <h1  className='diseases-card'>Sompraz L capsule Sr</h1>
+                    
+                   
                     </div>
 
                     <div style={{marginRight:"10px"}} onClick={diseaseClick2}>
@@ -299,7 +293,7 @@ const diseaseClickA5=()=> {
             </div>
             </div>
       <div style={{marginTop:"20px"}}>
-            <h1 className='heading-style-symptoms'>Frequently seen by you</h1>  
+            <h1 className='heading-style-symptoms'>Frequently prescribed Investigations</h1>  
              <div style={{marginLeft:"3px",display:"flex",flexWrap:"wrap"}}>
                 
                  <div style={{marginRight:"10px"}} onClick={diseaseClickA1}
@@ -377,9 +371,9 @@ const diseaseClickA5=()=> {
              <Button className='btn save-btn '
                style={{marginRight:"10px"}}>
                  Back  
-                 <img src={ArrowLeft} alt="" style={{marginLeft:"11px"}} />
+                 <img src={ArrowLeft} alt="" style={{marginLeft:"70px"}} />
               </Button>
-            <Button className='btn next-btn'>Save <img src={IconSave} alt="" style={{marginLeft:"52px"}}/></Button>  
+            <Button className='btn next-btn'>Save <img src={IconSave} alt="" style={{marginLeft:"70px"}}/></Button>  
         
           </div>
 

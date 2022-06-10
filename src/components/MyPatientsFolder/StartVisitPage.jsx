@@ -141,10 +141,10 @@ function StartVisitPage() {
                    className='patient-cards-with-icon'>
                <img src={Prescription} alt="" style={{width:"27px",paddingTop:"21px"}}/> 
                <h1 className='startvisit'>Prescription</h1>
-               
+                   </div> 
 
-                   </div>  
-                   <div  className='patient-cards-with-icon'>
+            <div  onClick={() => history("/addAdvicesPage")} 
+                   className='patient-cards-with-icon'>
                <img src={AddAdvices} alt="" style={{width:"27px",paddingTop:"21px"}}/> 
                <h1 className='startvisit'>Add advices</h1>
                
@@ -162,7 +162,8 @@ function StartVisitPage() {
                
 
                    </div>   
-                   <div  className='patient-cards-with-icon'>
+                   <div onClick={() => history("/addVitalsPage")}  
+                    className='patient-cards-with-icon'>
                <img src={AddVitals} alt="" style={{width:"27px",paddingTop:"21px"}}/> 
                <h1 className='startvisit'>Add vitals</h1>
                
