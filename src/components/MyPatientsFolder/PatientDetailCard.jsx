@@ -1,36 +1,42 @@
 import React from 'react';
 import { Row,Button} from 'antd';
-import '../Style.css'
+import '../../Style.css'
 
-import BackArrow from "../assets/icon/BackArrow.svg";
-import MenuDot from "../assets/icon/MenuDot.svg";
-
-
-import IconMale from "../assets/myPatientIcons/IconMale.svg";
-import IconAge from "../assets/myPatientIcons/IconAge.svg";
-import IconMobile from "../assets/myPatientIcons/IconMobile.svg";
+import BackArrow from "../../assets/icon/BackArrow.svg";
+import MenuDot from "../../assets/icon/MenuDot.svg";
 
 
-import IconNaviHome from "../assets/myPatientIcons/IconNaviHome.svg";
-import IconNaviConsultation from "../assets/myPatientIcons/IconNaviConsultation.svg";
-import IconNaviPatients from "../assets/myPatientIcons/IconNaviPatients.svg";
+import IconMale from "../../assets/myPatientIcons/IconMale.svg";
+import IconAge from "../../assets/myPatientIcons/IconAge.svg";
+import IconMobile from "../../assets/myPatientIcons/IconMobile.svg";
 
 
-
-
-import StartVisit from "../assets/myPatientIcons/StartVisit.svg";
-import StartVideoCall from "../assets/myPatientIcons/StartVideoCall.svg";
-import IconPatientDetails from "../assets/myPatientIcons/IconPatientDetails.svg";
-import IconBill from "../assets/myPatientIcons/IconBill.svg";
-import Queue from "../assets/myPatientIcons/Queue.svg";
-import BookSlot from "../assets/myPatientIcons/BookSlot.svg";
-import ReferDoctor from "../assets/myPatientIcons/ReferDoctor.svg";
-import MedicalRecords from "../assets/myPatientIcons/MedicalRecords.svg";
+import IconNaviHome from "../../assets/myPatientIcons/IconNaviHome.svg";
+import IconNaviConsultation from "../../assets/myPatientIcons/IconNaviConsultation.svg";
+import IconNaviPatients from "../../assets/myPatientIcons/IconNaviPatients.svg";
 
 
 
+
+import StartVisit from "../../assets/myPatientIcons/StartVisit.svg";
+import StartVideoCall from "../../assets/myPatientIcons/StartVideoCall.svg";
+import IconPatientDetails from "../../assets/myPatientIcons/IconPatientDetails.svg";
+import IconBill from "../../assets/myPatientIcons/IconBill.svg";
+import Queue from "../../assets/myPatientIcons/Queue.svg";
+import BookSlot from "../../assets/myPatientIcons/BookSlot.svg";
+import ReferDoctor from "../../assets/myPatientIcons/ReferDoctor.svg";
+import MedicalRecords from "../../assets/myPatientIcons/MedicalRecords.svg";
+
+import IconCancel from "../../assets/myPatientIcons/IconCancel.svg";
+
+
+import { useNavigate } from 'react-router-dom';
+
+
+import FooterSection from "../MyPatientsFolder/FooterSection";
 
 function PatientDetailCard() {
+    const history = useNavigate();
 
     // const [patient, setPatient] = useState(false)
     return (
@@ -46,19 +52,19 @@ function PatientDetailCard() {
                </Row>
 
               <Row className='name-bg'>
-              <h1 className='header-title2'  style={{top:"4px"}}>My Patients</h1>       
-                                            <img src={MenuDot}  alt='' className='menu-dot'/>      
+              <h1 className='header-title2' style={{top:"4px"}}>My Patients</h1>       
+               <img src={MenuDot}  alt='' className='menu-dot'/>      
               </Row>
 
               <div className='icons' style={{display:"flex"}}>
                  <div className='icon-home-container'>
-                 <img src={IconNaviHome}  alt='' style={{width:"26px"}}/>  
+                 <img src={IconNaviHome}  alt='' style={{width:"20px"}}/>  
                  </div>
                  <div className='icon-home-container'>
-                 <img src={IconNaviConsultation}  alt='' style={{width:"26px"}}/>  
+                 <img src={IconNaviConsultation}  alt='' style={{width:"20px"}}/>  
                  </div>
                  <div className='icon-home-container'>
-                 <img      src={IconNaviPatients}  alt='' style={{width:"26px"}}/>  
+                 <img      src={IconNaviPatients}  alt='' style={{width:"20px"}}/>  
                  </div>
                
  
@@ -76,7 +82,7 @@ function PatientDetailCard() {
               <div className='patient-icon-container' >
               <div style={{display:"flex"}}>
                   <div className='male-container'>
-                  <img src={IconMale}  alt='' style={{width:"17px"}}/> 
+                  <img src={IconMale}  alt='' style={{width:"13px"}}/> 
                   <p style={{position:"absolute",top:"63px",color:"black"}}>Male</p>
 
                   </div>
@@ -109,7 +115,9 @@ function PatientDetailCard() {
 
           <div style={{overflow:"scroll"}}>
             <div style={{display:"flex",marginBottom:"5px",marginLeft:"5px"}}>
-               <div  className='patient-cards-with-icon'>
+             
+               <div  onClick={() => history("/startVisitPage")}
+               className='patient-cards-with-icon'>
                <img src={StartVisit} alt="" style={{width:"27px",paddingTop:"21px"}}/> 
                <h1 className='startvisit'>Start Visit</h1>
                
@@ -178,9 +186,12 @@ function PatientDetailCard() {
                    </div>           
              </div>
 
-             <Button  style={{position:"absolute",left:"11px"}}  className='btn-regular save-btn'>Cancel </Button>
-        
-         
+             <Button  style={{left:"32px",bottom:'43px'}}  className='btn-regular save-btn'>Cancel 
+             <img src={ IconCancel } alt="" 
+                             style={{width:"24px",position:"absolute",right:"16px",top:"20px"}} />
+             </Button>
+            
+             <FooterSection />
 
           
          

@@ -1,13 +1,15 @@
 import React from 'react';
 import { Row} from 'antd';
-import '../Style.css'
+import '../../Style.css'
 
-import BackArrow from "../assets/icon/BackArrow.svg";
-import MenuDot from "../assets/icon/MenuDot.svg";
+import BackArrow from "../../assets/icon/BackArrow.svg";
+import MenuDot from "../../assets/icon/MenuDot.svg";
 import { useNavigate } from "react-router-dom";
 
-import IconNaviHome from "../assets/myPatientIcons/IconNaviHome.svg";
-import IconNaviConsultation from "../assets/myPatientIcons/IconNaviConsultation.svg";
+import IconNaviHome from "../../assets/myPatientIcons/IconNaviHome.svg";
+import IconNaviConsultation from "../../assets/myPatientIcons/IconNaviConsultation.svg";
+
+import FooterSection from "../MyPatientsFolder/FooterSection";
 
 function MyPatients() {
     const history = useNavigate();      
@@ -30,10 +32,10 @@ function MyPatients() {
 
               <div className='icons' style={{display:"flex"}}>
                  <div className='icon-home-container'>
-                 <img src={IconNaviHome}  alt='' style={{width:"26px"}}/>  
+                 <img src={IconNaviHome}  alt='' style={{width:"20px"}}/>  
                  </div>
                  <div className='icon-home-container'>
-                 <img src={IconNaviConsultation}  alt='' style={{width:"26px"}}/>  
+                 <img src={IconNaviConsultation}  alt='' style={{width:"20px"}}/>  
                  </div>
                
 
@@ -79,7 +81,7 @@ function MyPatients() {
 
                 </div>
 
-             <div className='patient-card'>
+             <div className='patient-card'  onClick={() => history("/patientDetailCard")}>
                   <div className='patient-details'>
                               <p   className='names'>Name</p>
                                  <p  className='description-content '>Cingireddy Narayana Reddy</p>
@@ -107,7 +109,7 @@ function MyPatients() {
 
                  </div>
 
-             <div className='patient-card'>
+             <div className='patient-card'  onClick={() => history("/patientDetailCard")}>
                   <div className='patient-details'>
                               <p   className='names'>Name</p>
                                  <p  className='description-content '>Cingireddy Narayana Reddy</p>
@@ -135,7 +137,7 @@ function MyPatients() {
 
                  </div>
 
-            <div className='patient-card'>
+            <div className='patient-card'  onClick={() => history("/patientDetailCard")}>
                    <div className='patient-details'>
                               <p   className='names'>Name</p>
                                  <p  className='description-content '>Cingireddy Narayana Reddy</p>
@@ -162,7 +164,7 @@ function MyPatients() {
                              
 
                  </div>    
-          <div className='patient-card'>
+          <div className='patient-card'  onClick={() => history("/patientDetailCard")}>
                   <div className='patient-details'>
                               <p   className='names'>Name</p>
                                  <p  className='description-content '>Cingireddy Narayana Reddy</p>
@@ -190,7 +192,7 @@ function MyPatients() {
           </div>
         
 
-        
+        <FooterSection />
        
           
          
