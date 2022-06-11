@@ -43,7 +43,7 @@
     font-family: 'Noto Sans', sans-serif;
     font-weight: bold;
     color: white;
-    margin-left: 147px;
+    margin-left: 7px;
     margin-top: 6px;
     font-family: 'Noto Sans', sans-serif;
 }
@@ -131,8 +131,8 @@
     height: 54rem;
     position: relative;
     top: 133px;
-    left: 11px;
-    padding: 10px;
+    left: 2px;
+    padding: 17px;
 
 }
 .patient-name {
@@ -153,32 +153,30 @@
 
 }
 .patient-icon-container {
-    background-color: whitesmoke;
+    background-color: #702cc7;
     width: 366px;
-    margin-bottom: 9px;
-    height: 9rem;
+    margin-bottom: 15px;
+    height: 7rem;
     font-size: 14px;
     color: white;
     box-shadow: 3px 3px gainsboro;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-radius: 5px;
   
 
 
 }
 .male-container {
-    background-color: #E2E3E3;
-    width: 60px;
-    height: 60px;
+    background-color: white;
+    width: 50px;
+    height: 50px;
     border-radius: 42px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    top: 87px;
-    right: 286px;
-    margin-right: 40px;
+    margin-right: 27px;
+    margin-top: 15px;
+    margin-left: 38px
 
 }
 .male {
@@ -201,7 +199,9 @@
     justify-content: center;
     box-shadow: 3px 3px gainsboro;
     line-height: 1;
+    margin-bottom: 11px;
 }
+
 .startvisit {
     font-size: 14px;
     width: 94px;
@@ -356,3 +356,19 @@
     width: 20px;
     height: 20px;
 }
+.male-text {
+    color: white;
+    position: absolute;
+    top: 84px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Noto Sans', sans-serif;
+}
+.consult-name {
+    font-size: 19px;
+    font-weight: 600;
+    font-family: 'Noto Sans', sans-serif;
+    padding-top: 7px;
+    margin-bottom: 22px
+}
+

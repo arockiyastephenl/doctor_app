@@ -80,7 +80,7 @@ const history = useNavigate();
           </div>
           
            
-          <div className='patient-detail-container' style={{height:"61rem"}}>
+          <div className='patient-detail-container' style={{height:"65rem"}}>
          
             <div onClick={() => history("/addVitalsNewPulse")}
             className='vitals-card'>
