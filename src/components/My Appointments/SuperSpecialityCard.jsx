@@ -14,6 +14,7 @@ function SuperSpecialityCard() {
         <>
          
          <div style={{position:"fixed",zIndex:"3"}} >
+             <div className='special-container'>
              <Row className='special-card'>
                  <div className='special-main'>
                      <div style={{marginLeft:"13px",marginRight:"120px"}}>
@@ -24,7 +25,7 @@ function SuperSpecialityCard() {
                  </div>
 
              </Row>
-           
+             </div>
           </div>
           
          
