@@ -29,7 +29,7 @@ import '../../../Style.css'
 
 import IconSave from "../../../assets/icon/IconSave.svg";
 import ArrowLeft from "../../../assets/icon/ArrowLeft.svg";
-// import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 // import FooterSection from "./FooterSection";
 
 
@@ -45,7 +45,7 @@ const onChange = (e) => {
 
 function PatientAdvice() {
 
-// const history = useNavigate();
+const history = useNavigate();
  
    
 
@@ -94,7 +94,7 @@ function PatientAdvice() {
           
           
                 <div style={{marginTop:"43px",marginBottom:'0px', marginLeft:"0px",display:'flex'}}>             
-             <Button className='btn save-btn '
+             <Button className='btn save-btn ' onClick={() => history("/startVisitPage")}
                style={{marginRight:"10px"}}>
                  Back  
                  <img src={ArrowLeft} alt="" style={{marginLeft:"70px"}} />

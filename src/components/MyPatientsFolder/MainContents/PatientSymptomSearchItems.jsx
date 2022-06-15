@@ -27,7 +27,7 @@ import IconCancelGray from "../../../assets/myPatientIcons/IconCancelGray.svg";
 import ArrowLeft from "../../../assets/icon/ArrowLeft.svg";
 import IconSave from "../../../assets/icon/IconSave.svg";
 
-// import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 // import FooterSection from "../MyPatientsFolder/FooterSection";
 // import MainHeader from './Headers/Mainheader';
 // import HeaderSymptoms from './Headers/TitleHeaders/HeaderSymptoms';
@@ -40,7 +40,7 @@ import IconSave from "../../../assets/icon/IconSave.svg";
 
 function PatientSymptomSearchItems() {
 
-// const history = useNavigate();
+const history = useNavigate();
  
 // const { Search } = Input;
 // const onSearch = (value) => console.log(value);    
@@ -240,7 +240,8 @@ const diseaseClick10=()=> {
              
         
             <div style={{display:"flex",marginTop:"11px",marginBottom:'0px', marginLeft:"10px"}}>        
-             <Button className='btn save-btn'>Back  <img src={ArrowLeft} alt="" style={{marginLeft:"79px"}} /></Button>
+             <Button onClick={() => history("/startVisitPage")}
+             className='btn save-btn'>Back  <img src={ArrowLeft} alt="" style={{marginLeft:"79px"}} /></Button>
             <Button className='btn next-btn'>Save <img src={IconSave} alt="" style={{marginLeft:"73px"}}/></Button>  
         
           </div>

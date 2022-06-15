@@ -18,15 +18,21 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // import AddClinicDetails from "./components/AddClinicDetails";
 // import Consultation from "./components/Consultation";
 // import PersonProfile from "./components/PersonProfile";
-import MyPatients from "./components/MyPatientsFolder/MyPatients";
-import PatientDetailCard from "./components/MyPatientsFolder/PatientDetailCard";
-import StartVisitPage from "./components/MyPatientsFolder/StartVisitPage";
-import Symptoms from "./components/MyPatientsFolder/Symptoms";
-import Prescription from "./components/MyPatientsFolder/Prescription";
-import TabletPage from "./components/MyPatientsFolder/TabletPage";
-import AddAdvicesPage from "./components/MyPatientsFolder/AddAdvicesPage";
-import AddVitalsPage from "./components/MyPatientsFolder/AddVitalsPage";
-import AddVitalsNewPulse from "./components/MyPatientsFolder/AddVitalsNewPulse";
+
+
+// import MyPatients from "./components/MyPatientsFolder/MyPatients";
+// import PatientDetailCard from "./components/MyPatientsFolder/PatientDetailCard";
+// import StartVisitPage from "./components/MyPatientsFolder/StartVisitPage";
+// import Symptoms from "./components/MyPatientsFolder/Symptoms";
+// import Prescription from "./components/MyPatientsFolder/Prescription";
+// import TabletPage from "./components/MyPatientsFolder/TabletPage";
+// import AddAdvicesPage from "./components/MyPatientsFolder/AddAdvicesPage";
+// import AddVitalsPage from "./components/MyPatientsFolder/AddVitalsPage";
+// import AddVitalsNewPulse from "./components/MyPatientsFolder/AddVitalsNewPulse";
+
+
+import MainPageMyAppoint from "./components/My Appointments/MainPageMyAppoint";
+
 // import Header from "./components/Header";
 
 // import { useNavigate } from "react-router-dom";
@@ -36,8 +42,18 @@ function App() {
 
   return (
     <>
-{/* ==>patient-details and my-patients*/}    
+{/* ==>MyAppointment*/} 
+
 <Router forceRefresh={true}>
+        <Routes>
+          
+          <Route path="/" element={<MainPageMyAppoint/>} />
+        </Routes>
+      </Router> 
+
+
+{/* ==>patient-details and my-patients*/}    
+ {/* <Router forceRefresh={true}>
         <Routes>
           
           <Route path="/" element={<MyPatients/>} />
@@ -53,7 +69,9 @@ function App() {
           
           
         </Routes>
-      </Router> 
+      </Router>  */}
+
+
 
 {/* ==>consult-and-personal-profile */}
      

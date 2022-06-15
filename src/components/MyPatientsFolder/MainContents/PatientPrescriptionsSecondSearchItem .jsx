@@ -32,7 +32,7 @@ import IconSave from "../../../assets/icon/IconSave.svg";
 
 
 
-// import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 
 
@@ -42,7 +42,7 @@ import IconSave from "../../../assets/icon/IconSave.svg";
 
 function PatientPrescriptionsSecondSearchItem () {
 
-// const history = useNavigate();
+const history = useNavigate();
  
 
 
@@ -101,7 +101,7 @@ function PatientPrescriptionsSecondSearchItem () {
           
 
           <div style={{display:"flex",marginTop:"11px",marginBottom:'0px', marginLeft:"10px"}}>             
-             <Button className='btn save-btn '
+             <Button className='btn save-btn ' onClick={() => history("/startVisitPage")}
                style={{marginRight:"10px"}}>
                  Back  
                  <img src={ArrowLeft} alt="" style={{marginLeft:"70px"}} />
