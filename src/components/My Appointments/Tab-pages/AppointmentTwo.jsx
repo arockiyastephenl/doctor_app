@@ -16,9 +16,10 @@ import IconTimes from "../../../assets/myAppointment/IconTimes.svg";
 import IconOnlineConsulting from "../../../assets/myAppointment/IconOnlineConsulting.svg";
 
 import IconOnlineConsultingWhite  from "../../../assets/myAppointment/IconOnlineConsultingWhite.svg";
-
+import {useNavigate} from 'react-router-dom'
 
 function AppointmentTwo() {
+  const history = useNavigate();   
 //     const [toggleState, setToggleState] = useState(1);
 
 //   const toggleTab = (index) => {
@@ -54,7 +55,8 @@ function AppointmentTwo() {
             <hr />
           
             <div className='appointment-name-card' >
-                  <div className='patient-details'>
+                  <div onClick={() => history("/mainPageNamePatientDetails")}
+                  className='patient-details'>
                               <p   className='names'>Name</p>
                                  <p  className='appointment-content '>Cingireddy Narayana Reddy</p>
                   </div>
@@ -72,8 +74,12 @@ function AppointmentTwo() {
 
                     
          <div style={{marginTop:"13px",marginBottom:'9px', marginLeft:"0px",display:'flex'}}>             
-             <Button className='appoint-btn'>In Person <img src={IconPerson} alt="" style={{marginTop:"-1px",marginLeft:"51px",width:"16px"}} /></Button>
-            <Button className='appoint-btn select-btn'> 
+             <Button onClick={() => history("/patientDetailCard")}
+             
+             className='appoint-btn'>In Person <img src={IconPerson} alt="" style={{marginTop:"-1px",marginLeft:"51px",width:"16px"}} /></Button>
+            <Button
+            onClick={() => history("/patientDetailCard")}
+            className='appoint-btn select-btn'> 
               <img src={IconSelectedCheckbox} alt="" style={{marginLeft:"-6px",marginRight:"6px",width:"24px"}}/>
                   Online
                 <img src={IconOnlineConsultingWhite} alt="" style={{marginLeft:"46px",width:"24px",marginTop:"-1px"}}/>

@@ -20,18 +20,19 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // import PersonProfile from "./components/PersonProfile";
 
 
-// import MyPatients from "./components/MyPatientsFolder/MyPatients";
-// import PatientDetailCard from "./components/MyPatientsFolder/PatientDetailCard";
-// import StartVisitPage from "./components/MyPatientsFolder/StartVisitPage";
-// import Symptoms from "./components/MyPatientsFolder/Symptoms";
-// import Prescription from "./components/MyPatientsFolder/Prescription";
-// import TabletPage from "./components/MyPatientsFolder/TabletPage";
-// import AddAdvicesPage from "./components/MyPatientsFolder/AddAdvicesPage";
-// import AddVitalsPage from "./components/MyPatientsFolder/AddVitalsPage";
-// import AddVitalsNewPulse from "./components/MyPatientsFolder/AddVitalsNewPulse";
+import MyPatients from "./components/MyPatientsFolder/MyPatients";
+import PatientDetailCard from "./components/MyPatientsFolder/PatientDetailCard";
+import StartVisitPage from "./components/MyPatientsFolder/StartVisitPage";
+import Symptoms from "./components/MyPatientsFolder/Symptoms";
+import Prescription from "./components/MyPatientsFolder/Prescription";
+import TabletPage from "./components/MyPatientsFolder/TabletPage";
+import AddAdvicesPage from "./components/MyPatientsFolder/AddAdvicesPage";
+import AddVitalsPage from "./components/MyPatientsFolder/AddVitalsPage";
+import AddVitalsNewPulse from "./components/MyPatientsFolder/AddVitalsNewPulse";
 
 
 import MainPageMyAppoint from "./components/My Appointments/MainPageMyAppoint";
+import MainPageNamePatientDetails from "./components/NamePatientDetails/MainPageNamePatientDetails";
 
 // import Header from "./components/Header";
 
@@ -47,7 +48,19 @@ function App() {
 <Router forceRefresh={true}>
         <Routes>
           
-          <Route path="/" element={<MainPageMyAppoint/>} />
+          <Route path="/" element={<MainPageMyAppoint/>} />       
+          <Route path="/mainPageNamePatientDetails" element={<MainPageNamePatientDetails/>} />
+          
+
+          <Route path="/myPatients" element={<MyPatients/>} />
+          <Route path="/patientDetailCard" element={<PatientDetailCard/>} />
+          <Route path="/startVisitPage" element={<StartVisitPage/>} />
+          <Route path="/symptoms" element={<Symptoms/>} />
+          <Route path="/prescription" element={<Prescription/>} />
+          <Route path="/tabletPage" element={<TabletPage/>} />
+          <Route path="/addAdvicesPage" element={<AddAdvicesPage/>} />
+          <Route path="/addVitalsPage" element={<AddVitalsPage/>} />
+          <Route path="/addVitalsNewPulse" element={<AddVitalsNewPulse/>} />
         </Routes>
       </Router> 
 

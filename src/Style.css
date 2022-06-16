@@ -693,3 +693,153 @@
     background-color: #2EB96C;
 
 }
+.name-patient-container {
+    background-color: white;
+    width: 413px;
+    height: 126px;
+    margin-left: -12px;
+    margin-top: 71px;
+    padding: 3px;
+}
+.name-details-head {
+    font-size: 15px;
+    margin-bottom: 0px;
+    font-family: 'Noto Sans', sans-serif;
+    color: #702cc7;
+    font-weight: bold;
+}
+.name-details {
+    font-size: 19px;
+    margin-bottom: 4px;
+    font-family: 'Noto Sans', sans-serif;
+    color: black;
+    font-weight: bold;
+
+}
+.person-info {
+    font-size: 15px;
+    margin-bottom: 0px;
+    font-family: 'Noto Sans', sans-serif;
+    color:#C9C9CA;
+    font-weight: bold;
+    margin-right: 43px;
+
+}
+.person-info-details {
+    font-size: 23px;
+    margin-bottom: 0px;
+    font-family: 'Noto Sans', sans-serif;
+    color: black;
+    font-weight: bold;
+
+}
+.name-detail-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    z-index: 2;
+    height: 328px;
+    width: 423px;
+    background-color: #f7f7f7;
+    padding-top: 12px;
+    margin-top: -14px;
+    margin-left: -22px;
+    padding-left: 20px;
+ 
+}
+.name-tab {
+    padding: 15px;
+    text-align: center;
+    width: 85px;
+    height: 119px;
+    background: rgba(128, 128, 128, 0.075);
+    /* cursor: pointer; */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+    box-sizing: content-box;
+    position: relative;
+    outline: none;
+    margin-right: 18px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.icon-change-tab {
+    background: #702cc7;
+    border-bottom: 1px solid transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+.tab-content-name {
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 25px;
+    margin-bottom: 0px;
+}
+.tab-content-name-color {
+    color: black;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 25px;
+    margin-bottom: 0px
+
+ }
+ .name-tab-content {
+    background: #f7f7f7;
+    /* padding: 20px; */
+    width: 100%;
+    height: 100%;
+    display: none;
+    margin-top: 9px;
+    position: absolute;
+    top: 318px;
+    margin-bottom: 12px;
+}
+.past-visit-container{
+    width: 408px;
+    background-color: #f7f7f7;
+    margin-top: 110px;
+    margin-left: -8px;
+    padding: 8px;
+
+}
+.past-visit-cards {
+    color: black;
+    background-color: white;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 9px;
+    font-weight: bold;
+    /* margin-top: 25px; */
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    /* padding: 10px; */
+    padding-left: 12px;
+    padding-right: 11px;
+    border-radius: 9px;
+    padding-top: 10px;
+    margin-bottom: 11px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+
+}
+.past-visit-content {
+    font-weight: bold;
+    
+}
+.refresh-btn {
+    width: 133px;
+    height: 2rem;
+    font-size: 13px;
+    background-color: #702cc7;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+}
