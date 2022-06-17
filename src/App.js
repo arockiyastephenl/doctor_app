@@ -33,6 +33,7 @@ import AddVitalsNewPulse from "./components/MyPatientsFolder/AddVitalsNewPulse";
 
 import MainPageMyAppoint from "./components/My Appointments/MainPageMyAppoint";
 import MainPageNamePatientDetails from "./components/NamePatientDetails/MainPageNamePatientDetails";
+import AddVitalsNewSp02 from "./components/MyPatientsFolder/AddVitalsNewSp02";
 
 // import Header from "./components/Header";
 
@@ -61,6 +62,7 @@ function App() {
           <Route path="/addAdvicesPage" element={<AddAdvicesPage/>} />
           <Route path="/addVitalsPage" element={<AddVitalsPage/>} />
           <Route path="/addVitalsNewPulse" element={<AddVitalsNewPulse/>} />
+          <Route path="/addVitalsNewSpo2" element={<AddVitalsNewSp02/>} />
         </Routes>
       </Router> 
 

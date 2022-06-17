@@ -1,8 +1,10 @@
 import React from 'react';
 
 import '../../Style.css';
-import BackArrow from "../../assets/icon/BackArrow.svg"
+// import BackArrow from "../../assets/icon/BackArrow.svg"
 
+import IconPatientDetails from '../../assets/namePatientdetails/IconPatientDetails.svg'
+import IconEdit from '../../assets/namePatientdetails/IconEdit.svg'
 
 
 
@@ -19,10 +21,10 @@ function NameCard() {
          <div style={{position:"fixed",zIndex:"3"}} >
              <div className='name-patient-container'>
           
-                <div style={{display:"flex",marginTop:'4px',marginLeft:"5px"}}>
-                <img src={BackArrow} alt=''  style={{marginRight:'6px',marginLeft:"7px"}}/>
+                <div style={{display:"flex",marginTop:'6px',marginLeft:"5px",marginBottom:"16px"}}>
+                <img src={IconPatientDetails} alt=''  style={{marginRight:'18px',marginLeft:"7px"}}/>
                     <h1 className='name-details-head'>Patient Details</h1>
-                    <img src={BackArrow} alt='' style={{marginLeft:'234px'}} />
+                    <img src={IconEdit} alt='' style={{marginLeft:'215px'}} />
                 </div>
                 <hr/>
                 <div style={{padding:'3px',marginLeft:"5px"}}>

@@ -92,7 +92,8 @@ const history = useNavigate();
           
               </div>
 
-            <div className='vitals-card'>  
+            <div onClick={() => history("/addVitalsNewSpo2")} 
+            className='vitals-card'>  
                 <h1 className='heading-style-symptoms' style={{fontSize:"19px"}}>SpO2</h1> 
                 <img className='green-add-round' src={IconAddRound } alt=''/>    
               </div>
