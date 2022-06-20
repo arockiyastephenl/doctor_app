@@ -377,6 +377,13 @@
     height: 56rem;
     padding: 11px;
 }
+.special-container {
+    background-color:#f7f7f7;
+    width: 394px;
+    height: 114px;
+    margin-top: 71px;
+
+}
 .special-card {
     background-color: white;
     width: 391px;
@@ -385,6 +392,8 @@
     margin-bottom: 15px;
     border-radius: 9px;
     padding: 8px;
+    position: absolute;
+    top: 5px;
 }
 .special-main {
     display: flex;
@@ -409,15 +418,14 @@
 .special-change-card {
     width: 87px;
     height: 29px;
-
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    background: #2EB96C;
-
-    
-    border-radius: 10px;
+    background: #2EB96C;  
+    border-radius: 20px;
     text-align: center;
     color: white;
     font-size: 15px;
+    font-weight: bold;
+    font-family: 'Noto Sans', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -447,9 +455,13 @@
   
   .bloc-tabs {
     display: flex;
-    width: 393px;
-   
+    position: fixed;
+    z-index: 2;
+    height: 190px;
+    width: 396px;
+    background-color: #f7f7f7;
     overflow-x: scroll;
+    padding-top: 8px;
 
   }
   .tabs {
@@ -580,23 +592,31 @@
     height: 100%;
     display: none;
     margin-top: 9px;
+    position: absolute;
+    top: 196px;
+    margin-bottom: 12px;
 }
-.content-element {
-    padding: 5px;
-    height: 11rem;
-    width: 392px;
-    background-color: red;
-    border-radius: 5px;
 
-      
-} 
  
   .active-content {
     display: block;
   }
+
+  .content-element {
+    padding: 5px;
+    height: 12rem;
+    width: 392px;
+    background-color: white;
+    border-radius: 5px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+
+      
+} 
 .appointments-card {
     display: flex;
     padding: 4px;
+   
+    border-bottom: 1px solid transparent;
 }
 .appointments-icon {
     width: 22px;
@@ -604,5 +624,263 @@
 .appointment-dates {
     color: #702cc7;
     font-size: 12px;
+    font-weight: bold;
+    margin-left: 12px;
+    margin-bottom: 0px;
+    font-family: 'Noto Sans', sans-serif;
 }
 
+.appointment-count {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 45px;
+}
+.count {
+    margin-bottom: 7px;
+    text-align: center;
+    width: 5rem;
+    height: 54px;
+    border-radius: 8px;
+    background-color: #702cc7;
+    padding: 3px;
+    color: white;
+    font-family: 'Noto Sans', sans-serif; 
+    font-weight: 600;
+}
+.appointment-text {
+    font-size: 12px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 600;
+    color: black;
+    margin-top: 3px;
+
+}
+.content-element2 {
+    padding: 5px;
+    height: 302px;
+    width: 392px;
+    background-color: white;
+    border-radius: 5px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    margin-top: 11px;
+}
+.appointment-name-card {
+    padding: 7px;
+    margin-top: 18px;
+}
+.appointment-content {
+    font-size: 14px;
+    color: black;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+}
+.appoint-btn {
+    color: black;
+    background-color: #f7f7f7;
+    width: 176px;
+    height: 54px;
+    border-radius: 8px;
+    padding-right: 61px;
+    margin-right: 8px;
+    font-size: 16px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+}
+.select-btn {
+    color: white;
+    background-color: #2EB96C;
+
+}
+.name-patient-container {
+    background-color: white;
+    width: 413px;
+    height: 126px;
+    margin-left: -12px;
+    margin-top: 71px;
+    padding: 3px;
+}
+.name-details-head {
+    font-size: 15px;
+    margin-bottom: 0px;
+    font-family: 'Noto Sans', sans-serif;
+    color: #702cc7;
+    font-weight: bold;
+}
+.name-details {
+    font-size: 19px;
+    margin-bottom: 4px;
+    font-family: 'Noto Sans', sans-serif;
+    color: black;
+    font-weight: bold;
+
+}
+.person-info {
+    font-size: 15px;
+    margin-bottom: 0px;
+    font-family: 'Noto Sans', sans-serif;
+    color:#C9C9CA;
+    font-weight: bold;
+    margin-right: 43px;
+
+}
+.person-info-details {
+    font-size: 23px;
+    margin-bottom: 0px;
+    font-family: 'Noto Sans', sans-serif;
+    color: black;
+    font-weight: bold;
+
+}
+.name-detail-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    z-index: 2;
+    height: 328px;
+    width: 423px;
+    background-color: #f7f7f7;
+    padding-top: 12px;
+    margin-top: -14px;
+    margin-left: -22px;
+    padding-left: 20px;
+ 
+}
+.name-tab {
+    padding: 15px;
+    text-align: center;
+    width: 85px;
+    height: 119px;
+    background: rgba(128, 128, 128, 0.075);
+    /* cursor: pointer; */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+    box-sizing: content-box;
+    position: relative;
+    outline: none;
+    margin-right: 18px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.icon-change-tab {
+    background: #702cc7;
+    border-bottom: 1px solid transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+.tab-content-name {
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 25px;
+    margin-bottom: 0px;
+}
+.tab-content-name-color {
+    color: black;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 25px;
+    margin-bottom: 0px
+
+ }
+ .name-tab-content {
+    background: #f7f7f7;
+    /* padding: 20px; */
+    width: 100%;
+    height: 100%;
+    display: none;
+    margin-top: 9px;
+    position: absolute;
+    top: 318px;
+    margin-bottom: 12px;
+}
+.past-visit-container{
+    width: 408px;
+    background-color: #f7f7f7;
+    margin-top: 110px;
+    margin-left: -8px;
+    padding: 8px;
+
+}
+.past-visit-cards {
+    color: black;
+    background-color: white;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 9px;
+    font-weight: bold;
+    /* margin-top: 25px; */
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    /* padding: 10px; */
+    padding-left: 12px;
+    padding-right: 11px;
+    border-radius: 9px;
+    padding-top: 10px;
+    margin-bottom: 11px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+
+}
+.past-visit-content {
+    font-weight: bold;
+    
+}
+.refresh-btn {
+    width: 133px;
+    height: 2rem;
+    font-size: 13px;
+    background-color: #702cc7;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+}
+.receipt-content-card {
+    display: flex;
+
+}
+
+.receipt-card {
+    width: 110px;
+    height: 7rem;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 25px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+
+}
+.receipt-icon-card {
+    width: 50px;
+    height: 50px;
+    background-color: #f7f7f7;
+    border-radius: 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 6px;
+
+
+}
+.receipt-text {
+    font-size: 13px;
+    margin-bottom: 0px;
+    color: black;
+    font-family: 'Noto Sans', sans-serif;
+
+}

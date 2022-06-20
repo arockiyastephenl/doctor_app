@@ -30,7 +30,7 @@ import FooterSection from "../MyPatientsFolder/FooterSection";
 
 
 
-function AddVitalsNewPulse() {
+function AddVitalsNewSp02() {
 
 const history = useNavigate();
 
@@ -144,4 +144,4 @@ return (
 
     )
 }
-export default AddVitalsNewPulse;
+export default AddVitalsNewSp02;
