@@ -43,6 +43,7 @@ const { TextArea } = Input;
 
 
 function TabletPage() {
+
 // eslint-disable-next-line
 const history = useNavigate();
  
