@@ -1,9 +1,10 @@
 import React  from 'react';
+// eslint-disable-next-line
 import { Row,Button,Checkbox} from 'antd';
 import '../../Style.css'
 
-import BackArrow from "../../assets/icon/BackArrow.svg";
-import MenuDot from "../../assets/icon/MenuDot.svg";
+// import BackArrow from "../../assets/icon/BackArrow.svg";
+// import MenuDot from "../../assets/icon/MenuDot.svg";
 
 
 
@@ -27,8 +28,8 @@ import SymptomsDiagnosisGray from "../../assets/myPatientIcons/SymptomsDiagnosis
 import AddAdvices from "../../assets/myPatientIcons/AddAdvices.svg";
 
 
-import IconSave from "../../assets/icon/IconSave.svg";
-import ArrowLeft from "../../assets/icon/ArrowLeft.svg";
+// import IconSave from "../../assets/icon/IconSave.svg";
+// import ArrowLeft from "../../assets/icon/ArrowLeft.svg";
 import { useNavigate } from 'react-router-dom';
 import FooterSection from "./FooterSection";
 import PatientAdvice from './MainContents/PatientAdvice';
@@ -37,18 +38,18 @@ import HeaderAdvice from './Headers/TitleHeaders/HeaderAdvice';
 import MainHeader from './Headers/Mainheader';
 
 
-
+// eslint-disable-next-line
 const { TextArea } = Input;
 
 
 
-
+// eslint-disable-next-line
 const onChange = (e) => {
   console.log(`checked = ${e.target.checked}`);
 };
 
 function AddAdvicesPage() {
-
+// eslint-disable-next-line
 const history = useNavigate();
  
    
