@@ -46,14 +46,33 @@ function App() {
 
   return (
     <>
-{/* ==>MyAppointment*/} 
 
+{/* ==>loginpage1*/}
 <Router forceRefresh={true}>
         <Routes>
+
+        <Route path="/" element={<LoginPage1 />} />
+          <Route path="/emailverify" element={<EmailVerifyFirstPage />} />
+          <Route path="/verifiedemail" element={<VerificationYourMail />} />
+          <Route path="/mobileverify" element={<VerifyYourMobile />} />
+          <Route path="/verifiedmobile"element={<VerificationYourMobile />}/>
           
-          <Route path="/" element={<MainPageMyAppoint/>} />       
-          <Route path="/mainPageNamePatientDetails" element={<MainPageNamePatientDetails/>} />
+        
+{/* ==>ProfilePage (as) TabForm*/}    
+
+          <Route path="/tabForm"element={<TabForm />}/>
+
+{/* UserProfileStore (as) doctorProfile*/}   
+          <Route path="/userProfilestore"element={<UserProfileStore />}/>
+          <Route path="/successPage"element={<SuccessPage />}/>
+          <Route path="/listOfClinics"element={<ListOfClinics/>}/>
+          <Route path="/addClinic"element={<AddClinic/>}/>
+          <Route path="/addClinicDetails"element={<AddClinicDetails/>}/>
+          <Route path="/addClinicSuccess"element={<AddClinicSuccess/>}/>
+       
           
+         
+{/* ==>ProfilePage (as) TabForm*/}        
 
           <Route path="/myPatients" element={<MyPatients/>} />
           <Route path="/patientDetailCard" element={<PatientDetailCard/>} />
@@ -65,13 +84,11 @@ function App() {
           <Route path="/addVitalsPage" element={<AddVitalsPage/>} />
           <Route path="/addVitalsNewPulse" element={<AddVitalsNewPulse/>} />
           <Route path="/addVitalsNewSpo2" element={<AddVitalsNewSp02/>} />
-        </Routes>
-      </Router> 
+       
 
 
 {/* ==>patient-details and my-patients*/}    
- <Router forceRefresh={true}>
-        <Routes>
+ 
           
         <Route path="/myPatients" element={<MyPatients/>} />
           <Route path="/patientDetailCard" element={<PatientDetailCard/>} />
@@ -83,68 +100,29 @@ function App() {
           <Route path="/addVitalsPage" element={<AddVitalsPage/>} />
           <Route path="/addVitalsNewPulse" element={<AddVitalsNewPulse/>} />
           
+   
+{/* ==>consult-and-personal-profile */}       
           
-          
-        </Routes>
-      </Router> 
+          <Route path="/consultation" element={<Consultation/>} />
+         <Route path="/personProfile" element={<PersonProfile />} />   
 
 
 
-{/* ==>consult-and-personal-profile */}
      
-
-          <Router forceRefresh={true}>
-              <Routes>
+{/* ==>MyAppointment*/} 
+         <Route path="/mainPageMyAppoint" element={<MainPageMyAppoint/>} />       
+          <Route path="/mainPageNamePatientDetails" element={<MainPageNamePatientDetails/>} /> 
                 
-                <Route path="/consultation" element={<Consultation/>} />
-                <Route path="/personProfile" element={<PersonProfile />} />
+               
                 
-              </Routes>
-            </Router> 
+               
   
-{/* ==>loginpage-and-list-of-clinic */}
 
 
-      <Router forceRefresh={true}>
-        <Routes>
-          
-          <Route path="/loginPage1" element={<LoginPage1 />} />
-          <Route path="/emailverify" element={<EmailVerifyFirstPage />} />
-          <Route path="/verifiedemail" element={<VerificationYourMail />} />
-          <Route path="/mobileverify" element={<VerifyYourMobile />} />
-          <Route
-            path="/verifiedmobile"
-            element={<VerificationYourMobile />}
-          />
-           <Route
-            path="/tabForm"
-            element={<TabForm />}
-          />
-           <Route
-            path="/userProfilestore"
-            element={<UserProfileStore />}
-          />
-          <Route
-            path="/successPage"
-            element={<SuccessPage />}
-          />
-           <Route
-            path="/listOfClinics"
-            element={<ListOfClinics/>}
-          />
-          <Route
-            path="/addClinic"
-            element={<AddClinic/>}
-          />
-          <Route
-            path="/addClinicDetails"
-            element={<AddClinicDetails/>}
-          />
-          <Route
-            path="/addClinicSuccess"
-            element={<AddClinicSuccess/>}
-          />
-        </Routes>
+
+    
+</Routes>
+         
       </Router>
       
      
