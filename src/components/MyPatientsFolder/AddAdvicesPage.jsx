@@ -10,21 +10,21 @@ import '../../Style.css'
 // import {Input } from 'antd';
 
 
-import IconNaviHome from "../../assets/myPatientIcons/IconNaviHome.svg";
-import IconNaviConsultation from "../../assets/myPatientIcons/IconNaviConsultation.svg";
-import IconNaviPatientsGray from "../../assets/myPatientIcons/IconNaviPatientsGray.svg";
+// import IconNaviHome from "../../assets/myPatientIcons/IconNaviHome.svg";
+// import IconNaviConsultation from "../../assets/myPatientIcons/IconNaviConsultation.svg";
+// import IconNaviPatientsGray from "../../assets/myPatientIcons/IconNaviPatientsGray.svg";
 
 
 
 
-import StartVisitGray from "../../assets/myPatientIcons/StartVisitGray.svg";
+// import StartVisitGray from "../../assets/myPatientIcons/StartVisitGray.svg";
 
 
 
 
 
-import SymptomsDiagnosisGray from "../../assets/myPatientIcons/SymptomsDiagnosisGray.svg";
-import AddAdvices from "../../assets/myPatientIcons/AddAdvices.svg";
+// import SymptomsDiagnosisGray from "../../assets/myPatientIcons/SymptomsDiagnosisGray.svg";
+// import AddAdvices from "../../assets/myPatientIcons/AddAdvices.svg";
 
 
 // import IconSave from "../../assets/icon/IconSave.svg";
