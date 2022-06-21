@@ -1,13 +1,13 @@
 import React  from 'react';
-import { Row,Button,Checkbox} from 'antd';
+// import { Row,Button,Checkbox} from 'antd';
 import '../../Style.css'
 
-import BackArrow from "../../assets/icon/BackArrow.svg";
-import MenuDot from "../../assets/icon/MenuDot.svg";
+// import BackArrow from "../../assets/icon/BackArrow.svg";
+// import MenuDot from "../../assets/icon/MenuDot.svg";
 
 
 
-import {Input } from 'antd';
+// import {Input } from 'antd';
 
 
 import IconNaviHome from "../../assets/myPatientIcons/IconNaviHome.svg";
@@ -27,9 +27,9 @@ import SymptomsDiagnosisGray from "../../assets/myPatientIcons/SymptomsDiagnosis
 import AddAdvices from "../../assets/myPatientIcons/AddAdvices.svg";
 
 
-import IconSave from "../../assets/icon/IconSave.svg";
-import ArrowLeft from "../../assets/icon/ArrowLeft.svg";
-import { useNavigate } from 'react-router-dom';
+// import IconSave from "../../assets/icon/IconSave.svg";
+// import ArrowLeft from "../../assets/icon/ArrowLeft.svg";
+// import { useNavigate } from 'react-router-dom';
 import FooterSection from "./FooterSection";
 import PatientAdvice from './MainContents/PatientAdvice';
 import PatientAdviceSearch from './MainContents/PatientAdviceSearch';
@@ -38,18 +38,18 @@ import MainHeader from './Headers/Mainheader';
 
 
 
-const { TextArea } = Input;
+// const { TextArea } = Input;
 
 
 
 
-const onChange = (e) => {
-  console.log(`checked = ${e.target.checked}`);
-};
+// const onChange = (e) => {
+//   console.log(`checked = ${e.target.checked}`);
+// };
 
 function AddAdvicesPage() {
 
-const history = useNavigate();
+// const history = useNavigate();
  
    
 
@@ -62,7 +62,7 @@ const history = useNavigate();
            <MainHeader/>
            <HeaderAdvice/>
 
-           <div style={{position:"fixed",zIndex:"3"}} > 
+           {/* <div style={{position:"fixed",zIndex:"3"}} > 
               <div className='icons' style={{display:"flex"}}>
                  <div className='icon-home-container'>
                  <img src={IconNaviHome}  alt='' style={{width:"20px"}}/>  
@@ -87,7 +87,7 @@ const history = useNavigate();
  
                  </div>
                </div>
-        
+         */}
     
           
            

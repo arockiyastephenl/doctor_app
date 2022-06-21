@@ -1,21 +1,21 @@
 import React  from 'react';
-import { Row,Button} from 'antd';
+// import { Row,Button} from 'antd';
 import '../../Style.css'
 
-import BackArrow from "../../assets/icon/BackArrow.svg";
-import MenuDot from "../../assets/icon/MenuDot.svg";
+// import BackArrow from "../../assets/icon/BackArrow.svg";
+// import MenuDot from "../../assets/icon/MenuDot.svg";
 
 
 
-import {Input } from 'antd';
-import {CloseOutlined } from "@ant-design/icons";
+// import {Input } from 'antd';
+// import {CloseOutlined } from "@ant-design/icons";
 
 import IconNaviHome from "../../assets/myPatientIcons/IconNaviHome.svg";
 import IconNaviConsultation from "../../assets/myPatientIcons/IconNaviConsultation.svg";
 import IconNaviPatientsGray from "../../assets/myPatientIcons/IconNaviPatientsGray.svg";
 
 import IconPrescriptions from "../../assets/myPatientIcons/Prescription.svg";
-import IconCancel from "../../assets/myPatientIcons/IconCancel.svg";
+// import IconCancel from "../../assets/myPatientIcons/IconCancel.svg";
 
 import StartVisitGray from "../../assets/myPatientIcons/StartVisitGray.svg";
 
@@ -26,9 +26,9 @@ import SymptomsDiagnosisGray from "../../assets/myPatientIcons/SymptomsDiagnosis
 
 
 
-import IconSave from "../../assets/icon/IconSave.svg";
+// import IconSave from "../../assets/icon/IconSave.svg";
 
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 import FooterSection from "../MyPatientsFolder/FooterSection";
 import PatientTabletName from './MainContents/PatientTabletName';
 import PatientTabletForm from './MainContents/PatientTabletForm';
@@ -37,13 +37,13 @@ import HeaderPrescriptions from './Headers/TitleHeaders/HeaderPrescriptions';
 
 
 
-const { TextArea } = Input;
+// const { TextArea } = Input;
 
 
 
 function TabletPage() {
 
-const history = useNavigate();
+// const history = useNavigate();
  
     
 
