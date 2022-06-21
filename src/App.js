@@ -1,23 +1,25 @@
 import React from "react";
 import "./App.css";
 // import Login_Page from "./components/Login_Page";  
-
-// import LoginPage1 from "./components/LoginPage1";
-// import EmailVerifyFirstPage from "./components/EmailVerifyFirstPage";
-// import VerificationYourMail from "./components/VerificationYourMail";
-// import VerifyYourMobile from "./components/VerifyYourMobile";
-// import VerificationYourMobile from "./components/VerificationYourMobile";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-// import TabForm from "./components/TabForm";
-// import UserProfileStore from "./components/UserProfileStore";
-// import SuccessPage from "./components/SuccessPage";
-// import AddClinic from "./components/AddClinic";
-// import ListOfClinics from "./components/ListOfClinics";
-// import AddClinicSuccess from "./components/AddClinicSuccesss";
-// import AddClinicDetails from "./components/AddClinicDetails";
-// import Consultation from "./components/Consultation";
-// import PersonProfile from "./components/PersonProfile";
+
+import LoginPage1 from "./components/LoginPage1";
+import EmailVerifyFirstPage from "./components/EmailVerifyFirstPage";
+import VerificationYourMail from "./components/VerificationYourMail";
+import VerifyYourMobile from "./components/VerifyYourMobile";
+import VerificationYourMobile from "./components/VerificationYourMobile";
+
+
+import TabForm from "./components/TabForm";
+import UserProfileStore from "./components/UserProfileStore";
+import SuccessPage from "./components/SuccessPage";
+import AddClinic from "./components/AddClinic";
+import ListOfClinics from "./components/ListOfClinics";
+import AddClinicSuccess from "./components/AddClinicSuccesss";
+import AddClinicDetails from "./components/AddClinicDetails";
+import Consultation from "./components/Consultation";
+import PersonProfile from "./components/PersonProfile";
 
 
 import MyPatients from "./components/MyPatientsFolder/MyPatients";
@@ -68,10 +70,10 @@ function App() {
 
 
 {/* ==>patient-details and my-patients*/}    
- {/* <Router forceRefresh={true}>
+ <Router forceRefresh={true}>
         <Routes>
           
-          <Route path="/" element={<MyPatients/>} />
+        <Route path="/myPatients" element={<MyPatients/>} />
           <Route path="/patientDetailCard" element={<PatientDetailCard/>} />
           <Route path="/startVisitPage" element={<StartVisitPage/>} />
           <Route path="/symptoms" element={<Symptoms/>} />
@@ -84,29 +86,29 @@ function App() {
           
           
         </Routes>
-      </Router>  */}
+      </Router> 
 
 
 
 {/* ==>consult-and-personal-profile */}
      
 
-          {/* <Router forceRefresh={true}>
+          <Router forceRefresh={true}>
               <Routes>
                 
-                <Route path="/" element={<Consultation/>} />
+                <Route path="/consultation" element={<Consultation/>} />
                 <Route path="/personProfile" element={<PersonProfile />} />
                 
               </Routes>
-            </Router>  */}
+            </Router> 
   
 {/* ==>loginpage-and-list-of-clinic */}
 
 
-      {/* <Router forceRefresh={true}>
+      <Router forceRefresh={true}>
         <Routes>
           
-          <Route path="/" element={<LoginPage1 />} />
+          <Route path="/loginPage1" element={<LoginPage1 />} />
           <Route path="/emailverify" element={<EmailVerifyFirstPage />} />
           <Route path="/verifiedemail" element={<VerificationYourMail />} />
           <Route path="/mobileverify" element={<VerifyYourMobile />} />
@@ -143,7 +145,7 @@ function App() {
             element={<AddClinicSuccess/>}
           />
         </Routes>
-      </Router> */}
+      </Router>
       
      
     </>

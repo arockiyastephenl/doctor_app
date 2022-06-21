@@ -8,29 +8,29 @@ import '../../Style.css'
 
 
 
-import {Input } from 'antd';
+// import {Input } from 'antd';
 
 
-import IconNaviHome from "../../assets/myPatientIcons/IconNaviHome.svg";
-import IconNaviConsultation from "../../assets/myPatientIcons/IconNaviConsultation.svg";
-import IconNaviPatientsGray from "../../assets/myPatientIcons/IconNaviPatientsGray.svg";
-
-
-
-
-import StartVisitGray from "../../assets/myPatientIcons/StartVisitGray.svg";
+// import IconNaviHome from "../../assets/myPatientIcons/IconNaviHome.svg";
+// import IconNaviConsultation from "../../assets/myPatientIcons/IconNaviConsultation.svg";
+// import IconNaviPatientsGray from "../../assets/myPatientIcons/IconNaviPatientsGray.svg";
 
 
 
 
+// import StartVisitGray from "../../assets/myPatientIcons/StartVisitGray.svg";
 
-import SymptomsDiagnosisGray from "../../assets/myPatientIcons/SymptomsDiagnosisGray.svg";
-import AddAdvices from "../../assets/myPatientIcons/AddAdvices.svg";
+
+
+
+
+// import SymptomsDiagnosisGray from "../../assets/myPatientIcons/SymptomsDiagnosisGray.svg";
+// import AddAdvices from "../../assets/myPatientIcons/AddAdvices.svg";
 
 
 // import IconSave from "../../assets/icon/IconSave.svg";
 // import ArrowLeft from "../../assets/icon/ArrowLeft.svg";
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 import FooterSection from "./FooterSection";
 import PatientAdvice from './MainContents/PatientAdvice';
 import PatientAdviceSearch from './MainContents/PatientAdviceSearch';
@@ -38,19 +38,19 @@ import HeaderAdvice from './Headers/TitleHeaders/HeaderAdvice';
 import MainHeader from './Headers/Mainheader';
 
 
-// eslint-disable-next-line
-const { TextArea } = Input;
+
+// const { TextArea } = Input;
 
 
 
-// eslint-disable-next-line
-const onChange = (e) => {
-  console.log(`checked = ${e.target.checked}`);
-};
+
+// const onChange = (e) => {
+//   console.log(`checked = ${e.target.checked}`);
+// };
 
 function AddAdvicesPage() {
-// eslint-disable-next-line
-const history = useNavigate();
+
+// const history = useNavigate();
  
    
 
@@ -63,7 +63,7 @@ const history = useNavigate();
            <MainHeader/>
            <HeaderAdvice/>
 
-           <div style={{position:"fixed",zIndex:"3"}} > 
+           {/* <div style={{position:"fixed",zIndex:"3"}} > 
               <div className='icons' style={{display:"flex"}}>
                  <div className='icon-home-container'>
                  <img src={IconNaviHome}  alt='' style={{width:"20px"}}/>  
@@ -88,7 +88,7 @@ const history = useNavigate();
  
                  </div>
                </div>
-        
+         */}
     
           
            
