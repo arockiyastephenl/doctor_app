@@ -1,6 +1,5 @@
 import React  from 'react';
-// eslint-disable-next-line
-import { Row,Button} from 'antd';
+// import { Row,Button} from 'antd';
 import '../../Style.css'
 
 // import BackArrow from "../../assets/icon/BackArrow.svg";
@@ -8,7 +7,7 @@ import '../../Style.css'
 
 
 
-import {Input } from 'antd';
+// import {Input } from 'antd';
 // import {CloseOutlined } from "@ant-design/icons";
 
 import IconNaviHome from "../../assets/myPatientIcons/IconNaviHome.svg";
@@ -29,7 +28,7 @@ import SymptomsDiagnosisGray from "../../assets/myPatientIcons/SymptomsDiagnosis
 
 // import IconSave from "../../assets/icon/IconSave.svg";
 
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 import FooterSection from "../MyPatientsFolder/FooterSection";
 import PatientTabletName from './MainContents/PatientTabletName';
 import PatientTabletForm from './MainContents/PatientTabletForm';
@@ -37,15 +36,14 @@ import MainHeader from './Headers/Mainheader';
 import HeaderPrescriptions from './Headers/TitleHeaders/HeaderPrescriptions';
 
 
-// eslint-disable-next-line
-const { TextArea } = Input;
+
+// const { TextArea } = Input;
 
 
 
 function TabletPage() {
 
-// eslint-disable-next-line
-const history = useNavigate();
+// const history = useNavigate();
  
     
 
