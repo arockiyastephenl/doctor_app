@@ -11,14 +11,14 @@ import IconNextArrow from "../assets/icon/IconNextArrow.svg";
 import { useNavigate } from "react-router-dom";
 import Header from './Header';
 
-function UserProfileStore() {  
+function DoctorProfileDetails() {  
     const history = useNavigate();
     return(
          <>
-          <Header />
-          <div className='tab-align' >
+          <Header style={{zIndex:"2",top:"2px",position:"fixed"}}/>
+          <div className='tab-align' style={{position:"absolute",top:"352px",zIndex:"0"}} >
            <div className='user-profile-bg' >
-            <div>
+            <div style={{backgroundColor:"white"}}>
             <div className='user-profile-titles'>Profile</div>
             <div className='user-details'></div>
             <div>
@@ -160,4 +160,4 @@ function UserProfileStore() {
 
     )
 }
-export default UserProfileStore;
+export default DoctorProfileDetails;

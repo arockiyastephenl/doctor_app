@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-
+import "../App.css"
 // import { Tabs,Button } from 'antd';
 // import IconSave from "../assets/icon/IconSave.svg";
 // import IconNextArrow from "../assets/icon/IconNextArrow.svg";
@@ -23,7 +23,7 @@ const { TabPane } = Tabs;
 
 
 // eslint-disable-next-line
-function TabForm() {
+function DoctorProfile() {
  const history = useNavigate();
 
  const [type, setType] = useState('text');
@@ -134,9 +134,11 @@ function TabForm() {
               <Input disabled = "disabled"
                  className='phone-number-text-input-field'
                   style={{
-                    backgroundColor:"white"
-                    // width: '50px',
-                    // fontSize:"12px"
+                    backgroundColor:"white",
+                    width: '65px',
+                    fontSize:"19px",
+                    height:"67px",
+
                   }}
                   defaultValue="+91"
                 />
@@ -199,11 +201,12 @@ function TabForm() {
                 
                 <Input.Group compact >
                  <Input disabled = "disabled"
-                 className='phone-number-text-input-field'
+                  className='phone-number-text-input-field'
                   style={{
-                    backgroundColor:"white"
-                    // width: '50px',
-                    // fontSize:"12px"
+                    backgroundColor:"white",
+                    width: '65px',
+                    fontSize:"19px",
+                    height:"67px",
                   }}
                   defaultValue="+91"
                 />
@@ -273,10 +276,11 @@ function TabForm() {
            <Input.Group compact >
               <Input disabled = "disabled"
                  className='phone-number-text-input-field'
-                  style={{
-                    backgroundColor:"white"
-                    // width: '50px',
-                    // fontSize:"12px"
+                 style={{
+                   backgroundColor:"white",
+                   width: '65px',
+                   fontSize:"19px",
+                   height:"67px",
                   }}
                   defaultValue="+91"
                 />
@@ -292,7 +296,7 @@ function TabForm() {
              </Input.Group> 
     
      <Button className='btn save-btn'>Save  <img src={ IconSave } alt="" style={{marginLeft:"80px"}} /></Button>
-     <Button className='btn next-btn' onClick={() => history("/userProfilestore")}>Next <img src={ IconNextArrow } alt=""  style={{marginLeft:"80px"}}/></Button>
+     <Button className='btn next-btn' onClick={() => history("/doctor-profile-details")}>Next <img src={ IconNextArrow } alt=""  style={{marginLeft:"80px"}}/></Button>
      </form>
      </div>
      )} 
@@ -345,7 +349,7 @@ function TabForm() {
              </Input.Group>
      
      <Button className='btn save-btn'>Save  <img src={ IconSave } alt="" style={{marginLeft:"80px"}} /></Button>
-     <Button className='btn next-btn' onClick={() => history("/userProfilestore")}>Next <img src={ IconNextArrow } alt="" style={{marginLeft:"80px"}}/></Button>
+     <Button className='btn next-btn' onClick={() => history("/doctor-profile-details")}>Next <img src={ IconNextArrow } alt="" style={{marginLeft:"80px"}}/></Button>
      </form>
      </div>
      )} 
@@ -365,4 +369,4 @@ function TabForm() {
  
 
 
-export default TabForm;
+export default DoctorProfile;

@@ -4,23 +4,26 @@ Route Details
 1. LoginPage
     link: http://localhost:3004/loginPage1
 
-2. Profilepage (as)  TabForm 
-     link: http://localhost:3004/tabForm
+2.  DoctorProfile 
+     link: http://localhost:3004/doctor-profile
+3. ClinicProfile
+      link: http://localhost:3004/clinic-profile
+4. DoctorProfileDetails
+     link:  http://localhost:3004/doctor-profile-details
 
-3. consultation
-     link: http://localhost:3004/consultation
+5. DoctorConsult
+     link: http://localhost:3004/doctor-consult
 
-4. PersonProfile (as)
-     link: http://localhost:3004/personProfile
+6. PatientProfile
+     link: http://localhost:3004/patient-profile
 
-5. UserProfileStore (as) doctorProfile
-     link:  http://localhost:3004/userProfileStore
 
-6. Patientprofile (as) MyPatients 
+
+7. Patientprofile (as) MyPatients 
      link: http://localhost:3004/myPatients
 
-7. MyAppointments (as) MainPageMyAppoint
-     link: http://localhost:3004/mainPageMyAppoint
+8. PatientAppointment
+     link: http://localhost:3004/patient-appointment
 
-8. PatientDetails (as) MainPageNamePatientDetails
-     link: http://localhost:3004/mainPageNamePatientDetails
+9. PatientDetails 
+     link: http://localhost:3004/patient-details

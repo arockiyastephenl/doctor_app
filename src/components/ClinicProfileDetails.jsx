@@ -14,12 +14,12 @@ import AvatarCamera from "../assets/icon/AvatarCamera.svg";
 import { useNavigate } from "react-router-dom";
 
 
-function AddClinicDetails() {  
+function ClinicProfileDetails() {  
     const history = useNavigate();
     return(
          <>
            <div className='container'>
-         <div className='bg-container1'>
+         <div className='bg-container1' style={{top:'-100px',position:"absolute"}}>
             
          <div className='location-profile-bg' style={{position:"absolute",right:'145px',top:"59px"}}>
             <div className='location-card' style={{position:"absolute",right:'8px',top:"8px"}}>               
@@ -109,7 +109,7 @@ function AddClinicDetails() {
                 
                     <div style={{textAlign:"center",marginTop:"37px",paddingBottom:"27px"}}>
                     <Button className='btn save-btn'>Save  <img src={ IconSave } alt="" style={{marginLeft:"80px"}} /></Button>
-                    <Button className='btn next-btn' onClick={() => history("/addClinicSuccess")} >Next <img src={ IconNextArrow } alt="" style={{marginLeft:"80px"}}/></Button>
+                    <Button className='btn next-btn' onClick={() => history("/clinic-success")} >Next <img src={ IconNextArrow } alt="" style={{marginLeft:"80px"}}/></Button>
                     </div>
 
         </div>
@@ -121,4 +121,4 @@ function AddClinicDetails() {
 
     )
 }
-export default AddClinicDetails;
+export default ClinicProfileDetails;

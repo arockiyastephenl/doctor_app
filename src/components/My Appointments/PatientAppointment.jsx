@@ -11,7 +11,7 @@ import TabMyAppoint from './TabMyAppoint';
 // import { useNavigate } from "react-router-dom";
 
 
-function MainPageMyAppoint() {
+function PatientAppointment() {
     // const history = useNavigate();      
     // const [patient, setPatient] = useState(false)
     return (
@@ -37,4 +37,4 @@ function MainPageMyAppoint() {
 
     )
 }
-export default MainPageMyAppoint;
+export default PatientAppointment;

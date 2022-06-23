@@ -34,7 +34,7 @@ const handleChange2 = (value) => {
 // };
 
 // eslint-disable-next-line
-function AddClinic() {
+function ClinicProfile() {
   const history = useNavigate();
 
   const [currentTab, setCurrentTab] = useState("Address");
@@ -262,7 +262,7 @@ function AddClinic() {
                  
            
             <Button className='btn save-btn'>Save  <img src={ IconSave } alt="" style={{marginLeft:"80px"}} /></Button>
-            <Button className='btn next-btn'  onClick={() => history("/addClinicDetails")}>Next <img src={ IconNextArrow } alt="" style={{marginLeft:"80px"}}/></Button>
+            <Button className='btn next-btn'  onClick={() => history("/clinic-profile-details")}>Next <img src={ IconNextArrow } alt="" style={{marginLeft:"80px"}}/></Button>
             </form>
           </div>
 
@@ -281,4 +281,4 @@ function AddClinic() {
  
 
 
-export default AddClinic;
+export default ClinicProfile;

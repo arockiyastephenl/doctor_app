@@ -12,6 +12,7 @@ function Header() {
    
     return(
         <div className='container'>
+            
          <div className='bg-container1' >
              <img alt="" src={Backdrop}  style={{position:'absolute'}}/>
             <Row className='header-arrow'>

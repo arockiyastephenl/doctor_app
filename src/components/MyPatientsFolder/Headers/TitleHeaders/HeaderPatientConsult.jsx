@@ -17,7 +17,7 @@ function HeaderPatientConsult() {
          
           
          <div style={{position:"fixed",zIndex:"3"}} >
-              <Row onClick={() => history('/mainPageNamePatientDetails')} 
+              <Row onClick={() => history('/patient-details')} 
               className='name-bg'>
                   <h1 className='header-title2'  style={{top:"4px"}}>Cingireddy Narayana Reddy</h1>       
                <img src={MenuDot}  alt='' className='menu-dot'/>      

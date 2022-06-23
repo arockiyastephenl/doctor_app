@@ -30,7 +30,7 @@ function PatientDetails() {
 
                     <div className='patient-details'  >
                                 <p   className='names'>Name</p>
-                                   <p  onClick={() => history("/mainPageNamePatientDetails")} className='description-content '>Cingireddy Narayana Reddy</p>
+                                   <p  onClick={() => history("/patient-details")} className='description-content '>Cingireddy Narayana Reddy</p>
                     </div>
 
                     <div className='patient-details'>

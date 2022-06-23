@@ -6,7 +6,7 @@ import {Button} from 'antd';
 import IconNextArrow from "../assets/icon/IconNextArrow.svg";
 // import { useNavigate } from "react-router-dom";
 
-function AddClinicSuccess() {  
+function ClinicSuccess() {  
     // const history = useNavigate();
     return(
          <div className='container'>
@@ -29,4 +29,4 @@ function AddClinicSuccess() {
 
     )
 }
-export default AddClinicSuccess;
+export default ClinicSuccess;
