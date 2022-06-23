@@ -122,7 +122,7 @@ function DoctorProfile() {
         <TabPane onTabClick={callbackTabClicked} tab="Profile" key="Profile"  >
         <div className='home-tab'>
          <h1 className='profile-text'> Profile Details</h1>
-          <form>  
+          <form style={{marginBottom:"12rem"}}>  
             <input disabled={isView}  className='form-input-field' placeholder='First name'type="text" />
             <input disabled={isView}  className='form-input-field' placeholder='Last name' type="text" />
             <input disabled={isView}  className='form-input-field' type={type} placeholder='Date of birth' 
@@ -194,7 +194,7 @@ function DoctorProfile() {
         <TabPane onTabClick={callbackTabClicked} tab="Work History" key="Work History">
           <div className='home-tab'>
            <h1 className='profile-text'>Work History Details </h1>
-            <form>  
+            <form style={{marginBottom:"13rem"}}>  
                 <p style={{color:"#702cc7" }}>Add work history details form  <img alt="" src={ IconAddRound} onClick={addProfessInput} style={{marginLeft:"146px"}}/> </p>  
                 <input disabled={isView}  className='form-input-field' placeholder='Clinic name'type="text" />
                 <input disabled={isView}  className='form-input-field' placeholder='Clinic address' type="text" />
@@ -251,7 +251,7 @@ function DoctorProfile() {
             </Row>
    {homeBtn && (
     <div >
-     <form>  
+     <form style={{marginBottom:"12rem"}}>  
          <p style={{color:"#702cc7"}}>Address<img alt="" src={ IconAddRound} onClick={addHomeAddressInput} style={{marginLeft:"264px", marginRight:"-4px"}}/> </p>  
            <input disabled={isView} className='form-input-field' placeholder='Address 1'type="text" />
            <input disabled={isView} className='form-input-field' placeholder='Address 2' type="text" />
@@ -303,7 +303,7 @@ function DoctorProfile() {
      {workBtn && ( 
      <div >
       
-     <form>  
+     <form style={{marginBottom:"12rem"}}>  
           <p style={{color:"#702cc7"}}>Address < img alt='' src={ IconAddRound} onClick={addWorkAddressInput} style={{marginLeft:"264px", marginRight:"-4px"}}/> </p>  
            <input disabled={isView} className='form-input-field' placeholder='Address 1'type="text" />
            <input disabled={isView} className='form-input-field' placeholder='Address 2' type="text" />

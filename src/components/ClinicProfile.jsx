@@ -120,7 +120,7 @@ function ClinicProfile() {
         <TabPane onTabClick={callbackTabClicked} tab="Address" key="Address"  >
         <div className='home-tab'>
          <h1 className='profile-text'> Address</h1>
-          <form>  
+          <form style={{marginBottom:"12rem"}}>  
             <input disabled={isView}  className='form-input-field' placeholder='Name of the Clinic'type="text" />
             <input disabled={isView}  className='form-input-field' placeholder='Address 1' type="text" />
             <input disabled={isView}  className='form-input-field' placeholder='Address 2' type="text" style={{textTransform:"capitalize"}} />
