@@ -65,6 +65,8 @@ function App() {
 {/* UserProfileStore */}   
           <Route path="/doctor-profile-details"element={<DoctorProfileDetails />}/>
           <Route path="/successPage"element={<SuccessPage />}/>
+
+          
           <Route path="/listOfClinics"element={<ListOfClinics/>}/>
           <Route path="/clinic-profiles"element={<ClinicProfile/>}/>
           <Route path="/clinic-profile-details"element={<ClinicProfileDetails/>}/>

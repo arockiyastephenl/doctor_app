@@ -11,6 +11,10 @@ import AvatarCamera from "../assets/icon/AvatarCamera.svg";
 import {Button,  Tabs, Row } from 'antd';
 import IconSave from "../assets/icon/IconSave.svg";
 import IconNextArrow from "../assets/icon/IconNextArrow.svg";
+
+import IconAddRound from "../assets/logo/IconAddRound.png";
+
+
 // import IconAddRound from "../assets/logo/IconAddRound.png";
 import { useNavigate } from "react-router-dom";
 // import { useNavigate } from "react-router-dom";
@@ -76,7 +80,12 @@ function ClinicProfile() {
     const onChange = (time, timeString) => {
       console.log(time, timeString);
     };
-
+    const workingHourInput = [];
+    const [workingHour, setWorkingHour] = useState(workingHourInput);
+    const addWorkingHour = () => {
+        setWorkingHour(tabs => {
+          return [ ...tabs, "end"];});
+      };
     
   return (
     <>
@@ -141,7 +150,9 @@ function ClinicProfile() {
         <TabPane onTabClick={callbackTabClicked} tab="Working days/hours" key="Working days/hours">
         <div className='home-tab'>
          <h1 className='profile-text'> Working days/hours</h1>
+         <p style={{color:"#702cc7",marginLeft:"-9px" }}>Add working days/hours details form  <img alt="" src={ IconAddRound} onClick={addWorkingHour} style={{marginLeft:"100px"}}/> </p> 
           <form>  
+
             <div style={{display:"flex"}}>
               <div style={{display:"flex",flexDirection:"column",alignItems:"flex-start",position:'relative',left:"23px",marginRight:"5px"}}>
               <label style={{color:"#702cc7",paddingLeft:"4px",fontSize:"14px",paddingBottom:"10px"}}>Day  </label>  
@@ -192,9 +203,10 @@ function ClinicProfile() {
                     />
               </div>
               </div>  
+
               <div style={{display:"flex"}}>
-              <div style={{display:"flex",flexDirection:"column",alignItems:"flex-start",position:'relative',left:"23px",marginRight:"5px"}}>
-              <label style={{color:"#702cc7",paddingLeft:"4px",fontSize:"14px",paddingBottom:"10px"}}> </label>  
+                <div style={{display:"flex",flexDirection:"column",alignItems:"flex-start",position:'relative',left:"23px",marginRight:"5px"}}>
+                  <label style={{color:"#702cc7",paddingLeft:"4px",fontSize:"14px",paddingBottom:"10px"}}> </label>  
               
                <Select
                   // defaultValue="Tuesday"
@@ -214,7 +226,7 @@ function ClinicProfile() {
                </Select> 
               </div>
               <br />
-              <div style={{display:"flex",flexDirection:"column",marginRight:'6px',alignItems:"flex-start",marginBottom:'120px',position:'relative',left:"23px"}}>
+              <div style={{display:"flex",flexDirection:"column",marginRight:'6px',alignItems:"flex-start",marginBottom:'0px',position:'relative',left:"23px"}}>
               <label style={{color:"#702cc7",paddingLeft:"4px",fontSize:"14px",paddingBottom:"10px"}}> </label>  
               <TimePicker
                     use12Hours
@@ -228,7 +240,7 @@ function ClinicProfile() {
                     />
               </div>
               <br />
-              <div style={{display:"flex",flexDirection:"column",alignItems:"flex-start",marginBottom:'120px',position:'relative',left:"23px"}}>
+              <div style={{display:"flex",flexDirection:"column",alignItems:"flex-start",marginBottom:'0px',position:'relative',left:"23px"}}>
               <label style={{color:"#702cc7",paddingLeft:"4px",fontSize:"14px",paddingBottom:"10px"}}> </label>  
               <TimePicker
                     use12Hours
@@ -242,9 +254,225 @@ function ClinicProfile() {
                     />
               </div>
               </div>  
-         
+
+              <div style={{display:"flex"}}>
+              <div style={{display:"flex",flexDirection:"column",alignItems:"flex-start",position:'relative',left:"23px",marginRight:"5px"}}>
+              <label style={{color:"#702cc7",paddingLeft:"4px",fontSize:"14px",paddingBottom:"10px"}}> </label>  
+              
+               <Select
+                  // defaultValue="Tuesday"
+                  style={{
+                    width: 140,
+                    height:40
+                  }}
+                  onChange={handleChange2}
+                  placeholder="Wednesday"
+                >
+                    <Option disabled={isView} value="Monday">Monday</Option>
+                    <Option disabled={isView} value="Tuesday">Tuesday </Option>
+                    <Option disabled={isView} value="Wednesday">Wednesday</Option>
+                    <Option disabled={isView} value="Thursday">Thursday </Option>
+                    <Option disabled={isView} value="Friday">Friday</Option>
+                    <Option disabled={isView} value="Saturday">Saturday </Option>
+               </Select> 
+              </div>
+              <br />
+              <div style={{display:"flex",flexDirection:"column",marginRight:'6px',alignItems:"flex-start",marginBottom:'0px',position:'relative',left:"23px"}}>
+              <label style={{color:"#702cc7",paddingLeft:"4px",fontSize:"14px",paddingBottom:"10px"}}> </label>  
+              <TimePicker
+                    use12Hours
+                    format="h:mm A"
+                    placeholder='From'
+                    onChange={onChange}
+                    style={{
+                      width: 102,height:47,borderWidth:"2px",borderRadius:'5px',borderColor:"lightgray",borderStyle:"solid"
+                      
+                    }}
+                    />
+              </div>
+              <br />
+              <div style={{display:"flex",flexDirection:"column",alignItems:"flex-start",marginBottom:'0px',position:'relative',left:"23px"}}>
+              <label style={{color:"#702cc7",paddingLeft:"4px",fontSize:"14px",paddingBottom:"10px"}}> </label>  
+              <TimePicker
+                    use12Hours
+                    format="h:mm A"
+                    placeholder='To'
+                    onChange={onChange}
+                    style={{
+                      width: 102,height:47,borderWidth:"2px",borderRadius:'5px',borderColor:"lightgray",borderStyle:"solid"
+                      
+                    }}
+                    />
+              </div>
+              </div>  
+
+              <div style={{display:"flex"}}>
+                <div style={{display:"flex",flexDirection:"column",alignItems:"flex-start",position:'relative',left:"23px",marginRight:"5px"}}>
+                  <label style={{color:"#702cc7",paddingLeft:"4px",fontSize:"14px",paddingBottom:"10px"}}> </label>  
+              
+               <Select
+                  // defaultValue="Tuesday"
+                  style={{
+                    width: 140,
+                    height:40
+                  }}
+                  onChange={handleChange2}
+                  placeholder="Thursday"
+                >
+                    <Option disabled={isView} value="Monday">Monday</Option>
+                    <Option disabled={isView} value="Tuesday">Tuesday </Option>
+                    <Option disabled={isView} value="Wednesday">Wednesday</Option>
+                    <Option disabled={isView} value="Thursday">Thursday </Option>
+                    <Option disabled={isView} value="Friday">Friday</Option>
+                    <Option disabled={isView} value="Saturday">Saturday </Option>
+               </Select> 
+              </div>
+              <br />
+              <div style={{display:"flex",flexDirection:"column",marginRight:'6px',alignItems:"flex-start",marginBottom:'0px',position:'relative',left:"23px"}}>
+              <label style={{color:"#702cc7",paddingLeft:"4px",fontSize:"14px",paddingBottom:"10px"}}> </label>  
+              <TimePicker
+                    use12Hours
+                    format="h:mm A"
+                    placeholder='From'
+                    onChange={onChange}
+                    style={{
+                      width: 102,height:47,borderWidth:"2px",borderRadius:'5px',borderColor:"lightgray",borderStyle:"solid"
+                      
+                    }}
+                    />
+              </div>
+              <br />
+              <div style={{display:"flex",flexDirection:"column",alignItems:"flex-start",marginBottom:'0px',position:'relative',left:"23px"}}>
+              <label style={{color:"#702cc7",paddingLeft:"4px",fontSize:"14px",paddingBottom:"10px"}}> </label>  
+              <TimePicker
+                    use12Hours
+                    format="h:mm A"
+                    placeholder='To'
+                    onChange={onChange}
+                    style={{
+                      width: 102,height:47,borderWidth:"2px",borderRadius:'5px',borderColor:"lightgray",borderStyle:"solid"
+                      
+                    }}
+                    />
+              </div>
+              </div>  
+
+           
+
+              <div style={{display:"flex"}}>
+              <div style={{display:"flex",flexDirection:"column",alignItems:"flex-start",position:'relative',left:"23px",marginRight:"5px"}}>
+              <label style={{color:"#702cc7",paddingLeft:"4px",fontSize:"14px",paddingBottom:"10px"}}> </label>  
+              
+               <Select
+                  // defaultValue="Tuesday"
+                  style={{
+                    width: 140,
+                    height:40
+                  }}
+                  onChange={handleChange2}
+                  placeholder="Friday"
+                >
+                    <Option disabled={isView} value="Monday">Monday</Option>
+                    <Option disabled={isView} value="Tuesday">Tuesday </Option>
+                    <Option disabled={isView} value="Wednesday">Wednesday</Option>
+                    <Option disabled={isView} value="Thursday">Thursday </Option>
+                    <Option disabled={isView} value="Friday">Friday</Option>
+                    <Option disabled={isView} value="Saturday">Saturday </Option>
+               </Select> 
+              </div>
+              <br />
+              <div style={{display:"flex",flexDirection:"column",marginRight:'6px',alignItems:"flex-start",marginBottom:'0px',position:'relative',left:"23px"}}>
+              <label style={{color:"#702cc7",paddingLeft:"4px",fontSize:"14px",paddingBottom:"10px"}}> </label>  
+              <TimePicker
+                    use12Hours
+                    format="h:mm A"
+                    placeholder='From'
+                    onChange={onChange}
+                    style={{
+                      width: 102,height:47,borderWidth:"2px",borderRadius:'5px',borderColor:"lightgray",borderStyle:"solid"
+                      
+                    }}
+                    />
+              </div>
+              <br />
+              <div style={{display:"flex",flexDirection:"column",alignItems:"flex-start",marginBottom:'0px',position:'relative',left:"23px"}}>
+              <label style={{color:"#702cc7",paddingLeft:"4px",fontSize:"14px",paddingBottom:"10px"}}> </label>  
+              <TimePicker
+                    use12Hours
+                    format="h:mm A"
+                    placeholder='To'
+                    onChange={onChange}
+                    style={{
+                      width: 102,height:47,borderWidth:"2px",borderRadius:'5px',borderColor:"lightgray",borderStyle:"solid"
+                      
+                    }}
+                    />
+              </div>
+              </div>  
+              <div>
+    {workingHour.map((item, i) => {
+               return (
+                <div style={{display:"flex",marginTop:'5px'}}>
+                <div style={{display:"flex",flexDirection:"column",alignItems:"flex-start",position:'relative',left:"23px",marginRight:"5px"}}>
+              
+                <Select
+                    // defaultValue="Monday"
+                    style={{
+                      width: 140,
+                      height:40
+                    }}
+                    placeholder="Monday"
+                    onChange={handleChange}
+                  >
+                      <Option disabled={isView} style={{fontSize:"18px"}} value="Monday">Monday</Option>
+                      <Option disabled={isView} style={{fontSize:"18px"}}  value="Tuesday">Tuesday </Option>
+                      <Option disabled={isView} style={{fontSize:"18px"}}  value="Wednesday">Wednesday</Option>
+                      <Option disabled={isView} style={{fontSize:"18px"}}  value="Thursday">Thursday </Option>
+                      <Option disabled={isView} style={{fontSize:"18px"}}  value="Friday">Friday</Option>
+                      <Option disabled={isView} style={{fontSize:"18px"}}  value="Saturday">Saturday </Option>
+                      <Option disabled={isView} style={{fontSize:"18px"}}  value="Sunday">Sunday </Option>
+                 </Select>
+                </div>
+                <br />
+                <div style={{display:"flex",flexDirection:"column",marginRight:'6px',alignItems:"flex-start",position:'relative',left:"23px"}}>
+             
+                <TimePicker
+                      use12Hours
+                      format="h:mm A"
+                      placeholder='From'
+                      onChange={onChange}
+                      style={{
+                        width: 102,height:47,borderWidth:"2px",borderRadius:'5px',borderColor:"lightgray",borderStyle:"solid"
+                        
+                      }}
+                      />
+                </div>
+                <br />
+                <div style={{display:"flex",flexDirection:"column",alignItems:"flex-start",position:'relative',left:"23px"}}>
+             
+             
+                <TimePicker
+                      use12Hours
+                      format="h:mm A"
+                      placeholder='To'
+                      onChange={onChange}
+                      style={{
+                        width: 102,height:47,borderWidth:"2px",borderRadius:'5px',borderColor:"lightgray",borderStyle:"solid"
+                        
+                      }}
+                      />
+                </div>
+                </div> 
+                 
+                    );
+                  })}
+          </div>
+
+
+        <div style={{paddingTop:'4rem'}}>
           <Button className='btn save-btn'>Save  <img src={ IconSave } alt="" style={{marginLeft:"80px"}} /></Button>
           <Button className='btn next-btn' onClick={handleSelect1}>Next <img src={ IconNextArrow } alt="" style={{marginLeft:"80px"}}/></Button>
+         </div>
           </form>
         </div>
 
@@ -260,9 +488,10 @@ function ClinicProfile() {
                 {/* < img src={LocationIcon} alt="" style={{width:"30px",fontSize:"20px",backgroundColor:"red"}}/> */}
                </div>
                  
-           
+       
             <Button className='btn save-btn'>Save  <img src={ IconSave } alt="" style={{marginLeft:"80px"}} /></Button>
             <Button className='btn next-btn'  onClick={() => history("/clinic-profile-details")}>Next <img src={ IconNextArrow } alt="" style={{marginLeft:"80px"}}/></Button>
+    
             </form>
           </div>
 

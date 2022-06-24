@@ -87,18 +87,38 @@ button{
     background-color: #ffffff;
   }
     
-button:focus{
+/* button:focus{
     color: #702cc7;
-  }
+    
+  } */
 .profile-text {
     font-size: 15px;
     font-family: 'Noto Sans', sans-serif;
     font-weight: bold;
     padding-bottom: 8px;
     border:none;
+    
 }
 ::after {
     color: #702cc7;
+}
+.profile-text-work-home {
+  font-size: 15px;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: bold;
+  padding-bottom: 8px;
+  border:none;
+
+  color: black;
+}
+.profile-text-change {
+  font-size: 15px;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: bold;
+  padding-bottom: 8px;
+  border:none;
+
+  
 }
 .form-input-field {
     width: 355px;
@@ -125,6 +145,19 @@ button:focus{
     height: 67px;
     background-color: white;
 }
+.phone-number-radius-align1 {
+  padding: 20.4px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-weight: 100;
+}
+.phone-number-radius-align2 {
+    width: 282px;
+    margin-left: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-left: 0px;
+}
 .ant-input-group .ant-input {
   float: left;
   width: 16%;
@@ -136,7 +169,7 @@ button:focus{
   border-bottom-left-radius: 8px;
 }
 .ant-input-group.ant-input-group-compact > *:last-child, .ant-input-group.ant-input-group-compact > .ant-select:last-child > .ant-select-selector, .ant-input-group.ant-input-group-compact > .ant-cascader-picker:last-child .ant-input, .ant-input-group.ant-input-group-compact > .ant-cascader-picker-focused:last-child .ant-input {
-  border-right-width: 3px;
+  border-right-width: 2px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 11px;
   margin-bottom: 19px;

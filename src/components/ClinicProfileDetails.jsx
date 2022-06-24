@@ -5,32 +5,25 @@ import React from 'react';
 // import DefaultAvatar from "../assets/icon/DefaultAvatar.svg";
 // import AvatarCamera from "../assets/icon/AvatarCamera.svg";
 // import { useNavigate } from "react-router-dom";
+
 import {Button } from 'antd';
 import IconSave from "../assets/icon/IconSave.svg";
 import IconNextArrow from "../assets/icon/IconNextArrow.svg";
-import LocationIcon from "../assets/icon/LocationIcon.svg";
-import AvatarCamera from "../assets/icon/AvatarCamera.svg";
+// import LocationIcon from "../assets/icon/LocationIcon.svg";
+// import AvatarCamera from "../assets/icon/AvatarCamera.svg";
 
 import { useNavigate } from "react-router-dom";
-
+// import { Header } from 'antd/lib/layout/layout';
+import Header from './Header';
 
 function ClinicProfileDetails() {  
     const history = useNavigate();
     return(
          <>
-           <div className='container'>
-         <div className='bg-container1' style={{top:'-100px',position:"absolute"}}>
-            
-         <div className='location-profile-bg' style={{position:"absolute",right:'145px',top:"59px"}}>
-            <div className='location-card' style={{position:"absolute",right:'8px',top:"8px"}}>               
-                <img alt='' src={LocationIcon}/>
-             </div>
-            </div>
-            <img alt="" src={ AvatarCamera } className="camera"/>
-             </div>
-             </div>
-          <div className='tab-align' >
+         <Header />
+           <div className='tab-align' >
            <div className='user-profile-bg' >
+        <div style={{overflowY:"scroll",height:"35rem"}}>
             <div>
             <div className='add-location-titles'>Address</div>
             <div style={{marginLeft:'13px'}}>
@@ -107,13 +100,13 @@ function ClinicProfileDetails() {
                     </div>   
                     </div>  
                 
-                    <div style={{textAlign:"center",marginTop:"37px",paddingBottom:"27px"}}>
+                    <div style={{textAlign:"center",marginTop:"37px",paddingBottom:"18rem"}}>
                     <Button className='btn save-btn'>Save  <img src={ IconSave } alt="" style={{marginLeft:"80px"}} /></Button>
                     <Button className='btn next-btn' onClick={() => history("/clinic-success")} >Next <img src={ IconNextArrow } alt="" style={{marginLeft:"80px"}}/></Button>
                     </div>
-
+              </div> 
         </div>
-        </div>
+        </div> 
           
 
          </>

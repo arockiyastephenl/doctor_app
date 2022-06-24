@@ -6,7 +6,7 @@ import '../../Style.css'
 // import { useNavigate } from "react-router-dom";
 
 import IconNaviHome from "../../assets/myPatientIcons/IconNaviHome.svg";
-import IconNaviConsultation from "../../assets/myPatientIcons/IconNaviConsultation.svg";
+import IconNavichangeConsultation from "../../assets/myPatientIcons/IconNavichangeConsultation.svg";
 
 import FooterSection from "../MyPatientsFolder/FooterSection";
 // import MyPatientsHeader from './Headers/TitleHeaders/MyPatientsHeader';
@@ -30,7 +30,7 @@ function MyPatients() {
                  <img src={IconNaviHome}  alt='' style={{width:"20px"}}/>  
                  </div>
                  <div className='icon-home-container'>
-                 <img src={IconNaviConsultation}  alt='' style={{width:"20px"}}/>  
+                 <img src={IconNavichangeConsultation }  alt='' style={{width:"20px"}}/>  
                  </div>
                
 

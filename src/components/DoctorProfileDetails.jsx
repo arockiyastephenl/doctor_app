@@ -18,6 +18,7 @@ function DoctorProfileDetails() {
           <Header style={{zIndex:"2",top:"2px",position:"fixed"}}/>
           <div className='tab-align' style={{position:"absolute",top:"352px",zIndex:"0"}} >
            <div className='user-profile-bg' >
+           <div style={{height:'146rem'}}>
             <div style={{backgroundColor:"white"}}>
             <div className='user-profile-titles'>Profile</div>
             <div className='user-details'></div>
@@ -47,15 +48,15 @@ function DoctorProfileDetails() {
                 <div className='user-profile-titles'>Education details</div>
                 <div className='user-details'></div>
                 <div>
-                <h1 style={{fontSize:"16px", marginLeft:'25px',marginTop:'0px', color:'darkgrey'}}>Education 1</h1>
+                <h1 style={{fontSize:"16px", marginLeft:'25px',marginTop:'0px', color:'darkgrey'}}>University/College</h1>
                 <p  style={{fontSize:"15px", marginLeft:'25px'}}>MBBS</p>  
                 </div>
                 <div>
-                <h1 style={{fontSize:"16px", marginLeft:'25px',marginTop:'0px', color:'darkgrey'}}>Education 2</h1>
+                <h1 style={{fontSize:"16px", marginLeft:'25px',marginTop:'0px', color:'darkgrey'}}>Studies</h1>
                 <p  style={{fontSize:"15px", marginLeft:'25px'}}>MD</p>     
                 </div>
                 <div>
-                <h1 style={{fontSize:"16px", marginLeft:'25px',marginTop:'0px', color:'darkgrey'}}>Education 3</h1>
+                <h1 style={{fontSize:"16px", marginLeft:'25px',marginTop:'0px', color:'darkgrey'}}>City</h1>
                 <p  style={{fontSize:"15px", marginLeft:'25px'}}>DNB</p>     
                 </div>
             
@@ -150,7 +151,7 @@ function DoctorProfileDetails() {
                     <Button className='btn save-btn'>Save  <img src={ IconSave } alt="" style={{marginLeft:"80px"}} /></Button>
                     <Button className='btn next-btn' onClick={() => history("/successPage")} >Next <img src={ IconNextArrow } alt="" style={{marginLeft:"80px"}}/></Button>
                     </div>
-
+                    </div>
         </div>
         </div>
           
