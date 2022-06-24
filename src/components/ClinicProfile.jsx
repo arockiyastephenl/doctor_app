@@ -40,7 +40,7 @@ const handleChange2 = (value) => {
 // eslint-disable-next-line
 function ClinicProfile() {
   const history = useNavigate();
-
+  const navigate = useNavigate();
   const [currentTab, setCurrentTab] = useState("Address");
   function callback(key) {
     console.log(key);
@@ -96,7 +96,7 @@ function ClinicProfile() {
     
     <div className='container'>
          <div className='bg-container1' >
-             <img alt="" src={Backdrop}  style={{position:'absolute'}}/>
+             <img onClick={() => navigate(-1)} alt="" src={Backdrop}  style={{position:'absolute'}}/>
             <Row className='header-arrow'>
             <img src={BackArrow} alt=''  className='arrow-size'/>
                     <h1 className='header-title'>Add New Clinic</h1>       
@@ -469,7 +469,7 @@ function ClinicProfile() {
           </div>
 
 
-        <div style={{paddingTop:'4rem'}}>
+        <div style={{paddingTop:'4rem',paddingBottom:"24rem"}}>
           <Button className='btn save-btn'>Save  <img src={ IconSave } alt="" style={{marginLeft:"80px"}} /></Button>
           <Button className='btn next-btn' onClick={handleSelect1}>Next <img src={ IconNextArrow } alt="" style={{marginLeft:"80px"}}/></Button>
          </div>
