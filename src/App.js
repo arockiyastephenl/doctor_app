@@ -11,15 +11,15 @@ import VerifyYourMobile from "./components/VerifyYourMobile";
 import VerificationYourMobile from "./components/VerificationYourMobile";
 
 
-import TabForm from "./components/TabForm";
-import UserProfileStore from "./components/UserProfileStore";
+import DoctorProfile from "./components/DoctorProfile";
+import DoctorProfileDetails from "./components/DoctorProfileDetails";
 import SuccessPage from "./components/SuccessPage";
-import AddClinic from "./components/AddClinic";
+import ClinicProfile from "./components/ClinicProfile";
 import ListOfClinics from "./components/ListOfClinics";
-import AddClinicSuccess from "./components/AddClinicSuccesss";
-import AddClinicDetails from "./components/AddClinicDetails";
-import Consultation from "./components/Consultation";
-import PersonProfile from "./components/PersonProfile";
+import ClinicSuccess from "./components/ClinicSuccess";
+import ClinicProfileDetails from "./components/ClinicProfileDetails";
+import DoctorConsult from "./components/DoctorConsult";
+import PatientProfile from "./components/PatientProfile";
 
 
 import MyPatients from "./components/MyPatientsFolder/MyPatients";
@@ -33,8 +33,8 @@ import AddVitalsPage from "./components/MyPatientsFolder/AddVitalsPage";
 import AddVitalsNewPulse from "./components/MyPatientsFolder/AddVitalsNewPulse";
 
 
-import MainPageMyAppoint from "./components/My Appointments/MainPageMyAppoint";
-import MainPageNamePatientDetails from "./components/NamePatientDetails/MainPageNamePatientDetails";
+import PatientAppointment from "./components/My Appointments/PatientAppointment";
+import PatientDetails from "./components/NamePatientDetails/PatientDetails";
 import AddVitalsNewSp02 from "./components/MyPatientsFolder/AddVitalsNewSp02";
 
 // import Header from "./components/Header";
@@ -58,21 +58,23 @@ function App() {
           <Route path="/verifiedmobile"element={<VerificationYourMobile />}/>
           
         
-{/* ==>ProfilePage (as) TabForm*/}    
+{/* ==>ProfilePage (as) DoctorProfile*/}    
 
-          <Route path="/tabForm"element={<TabForm />}/>
+          <Route path="/doctor-profile"element={<DoctorProfile />}/>
 
-{/* UserProfileStore (as) doctorProfile*/}   
-          <Route path="/userProfilestore"element={<UserProfileStore />}/>
+{/* UserProfileStore */}   
+          <Route path="/doctor-profile-details"element={<DoctorProfileDetails />}/>
           <Route path="/successPage"element={<SuccessPage />}/>
+
+          
           <Route path="/listOfClinics"element={<ListOfClinics/>}/>
-          <Route path="/addClinic"element={<AddClinic/>}/>
-          <Route path="/addClinicDetails"element={<AddClinicDetails/>}/>
-          <Route path="/addClinicSuccess"element={<AddClinicSuccess/>}/>
+          <Route path="/clinic-profiles"element={<ClinicProfile/>}/>
+          <Route path="/clinic-profile-details"element={<ClinicProfileDetails/>}/>
+          <Route path="/clinic-success"element={<ClinicSuccess/>}/>
        
           
          
-{/* ==>ProfilePage (as) TabForm*/}        
+{/* ==>ProfilePage (as) DoctorProfile*/}        
 
           <Route path="/myPatients" element={<MyPatients/>} />
           <Route path="/patientDetailCard" element={<PatientDetailCard/>} />
@@ -103,15 +105,15 @@ function App() {
    
 {/* ==>consult-and-personal-profile */}       
           
-          <Route path="/consultation" element={<Consultation/>} />
-         <Route path="/personProfile" element={<PersonProfile />} />   
+          <Route path="/doctor-consult" element={<DoctorConsult/>} />
+         <Route path="/patient-profile" element={<PatientProfile />} />   
 
 
 
      
 {/* ==>MyAppointment*/} 
-         <Route path="/mainPageMyAppoint" element={<MainPageMyAppoint/>} />       
-          <Route path="/mainPageNamePatientDetails" element={<MainPageNamePatientDetails/>} /> 
+         <Route path="/patient-appointment" element={<PatientAppointment/>} />       
+          <Route path="/patient-details" element={<PatientDetails/>} /> 
                 
                
                 

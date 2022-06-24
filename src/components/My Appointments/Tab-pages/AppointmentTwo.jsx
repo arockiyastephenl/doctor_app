@@ -55,7 +55,7 @@ function AppointmentTwo() {
             <hr />
           
             <div className='appointment-name-card' >
-                  <div onClick={() => history("/mainPageNamePatientDetails")}
+                  <div onClick={() => history("/patient-details")}
                   className='patient-details'>
                               <p   className='names'>Name</p>
                                  <p  className='appointment-content '>Cingireddy Narayana Reddy</p>

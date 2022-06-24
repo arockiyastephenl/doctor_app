@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-
+import "../App.css"
 // import { Tabs,Button } from 'antd';
 // import IconSave from "../assets/icon/IconSave.svg";
 // import IconNextArrow from "../assets/icon/IconNextArrow.svg";
@@ -10,7 +10,7 @@ import React, {useState} from 'react';
 // import AddressTab from './AddressTab';
 import Header from './Header';
 
-import {Button,  Tabs, Divider,Row,Input } from 'antd';
+import {Button,  Tabs, Divider,Row} from 'antd';
 import IconSave from "../assets/icon/IconSave.svg";
 import IconNextArrow from "../assets/icon/IconNextArrow.svg";
 import IconAddRound from "../assets/logo/IconAddRound.png";
@@ -23,7 +23,7 @@ const { TabPane } = Tabs;
 
 
 // eslint-disable-next-line
-function TabForm() {
+function DoctorProfile() {
  const history = useNavigate();
 
  const [type, setType] = useState('text');
@@ -122,7 +122,7 @@ function TabForm() {
         <TabPane onTabClick={callbackTabClicked} tab="Profile" key="Profile"  >
         <div className='home-tab'>
          <h1 className='profile-text'> Profile Details</h1>
-          <form>  
+          <form style={{marginBottom:"12rem"}}>  
             <input disabled={isView}  className='form-input-field' placeholder='First name'type="text" />
             <input disabled={isView}  className='form-input-field' placeholder='Last name' type="text" />
             <input disabled={isView}  className='form-input-field' type={type} placeholder='Date of birth' 
@@ -130,26 +130,17 @@ function TabForm() {
              onBlur={() => setType('text')}   />
             <input disabled={isView}  className='form-input-field' placeholder='Doctor license number' type="number"  />
             {/* <input disabled={isView}  className='form-input-field' placeholder='Phone number' type="number" /> */}
-            <Input.Group compact >
-              <Input disabled = "disabled"
-                 className='phone-number-text-input-field'
-                  style={{
-                    backgroundColor:"white"
-                    // width: '50px',
-                    // fontSize:"12px"
-                  }}
-                  defaultValue="+91"
-                />
-                <Input disabled={isView} type="number" placeholder='Phone number'
-                  className='phone-number-text-input-field'
-                  style={{
-                    width: '75%',
-                    height:"67px",
-                    backgroundColor:"white"
-                  }}
-                  Value=""
-                />
-             </Input.Group>
+        
+
+            <div class="input-group presuffix">
+             <span className='phone-number-text-input-field phone-number-radius-align1' >+91</span>
+              <input disabled={isView}  className='form-input-field  phone-number-radius-align2' style={{width:'282px',marginLeft:"0px"}}
+                    type="text"
+                placeholder="Phone Number"
+                name="input"/>      
+             </div>
+
+          
             <input disabled={isView}  className='form-input-field' placeholder='Email' type="email" />
          
         <Button className='btn save-btn'>Save  <img src={ IconSave } alt="" style={{marginLeft:"80px"}} /></Button>
@@ -166,24 +157,25 @@ function TabForm() {
          <h1 className='profile-text'> Education Details</h1>
           <form>  
               <p style={{color:"#702cc7"}}>Add education details form  <img alt="" src={ IconAddRound} onClick={addEduInput} style={{marginLeft:"146px"}}/> </p>  
-              <input disabled={isView}  className='form-input-field' placeholder='Education details 1'type="text" />
-              <input disabled={isView}  className='form-input-field' placeholder='Education details 2' type="text" />
-              <input disabled={isView}  className='form-input-field' placeholder='Education details 3' type="text" />
+              <input disabled={isView}  className='form-input-field' placeholder='University/College'type="text" />
+              <input disabled={isView}  className='form-input-field' placeholder='Studies' type="text" />
+              <input disabled={isView}  className='form-input-field' placeholder='City' type="text" />
               <div>
                 {educationAddField.map((item, i) => {
                   return (
-                    <input
-                      // value={item.value}
-                      // id={i}
-                      className="form-input-field"
-                      // type={item.type}  
-                       />
-                  );
+                    <>
+                    <input disabled={isView}  className='form-input-field' placeholder='University/College'type="text" />
+              <input disabled={isView}  className='form-input-field' placeholder='Studies' type="text" />
+              <input disabled={isView}  className='form-input-field' placeholder='City' type="text" />
+              </>
+                 );
                   })}
                    </div>
          
-          <Button className='btn save-btn'>Save  <img src={ IconSave } alt="" style={{marginLeft:"80px"}} /></Button>
-          <Button className='btn next-btn' onClick={handleSelect1}>Next <img src={ IconNextArrow } alt="" style={{marginLeft:"80px"}}/></Button>
+         <div style={{paddingBottom:"2rem"}}>
+           <Button className='btn save-btn'>Save  <img src={ IconSave } alt="" style={{marginLeft:"80px"}} /></Button>
+           <Button className='btn next-btn' onClick={handleSelect1}>Next <img src={ IconNextArrow } alt="" style={{marginLeft:"80px"}}/></Button>
+          </div>
           </form>
         </div>
 
@@ -192,45 +184,46 @@ function TabForm() {
         <TabPane onTabClick={callbackTabClicked} tab="Work History" key="Work History">
           <div className='home-tab'>
            <h1 className='profile-text'>Work History Details </h1>
-            <form>  
+            <form style={{marginBottom:"13rem"}}>  
                 <p style={{color:"#702cc7" }}>Add work history details form  <img alt="" src={ IconAddRound} onClick={addProfessInput} style={{marginLeft:"146px"}}/> </p>  
                 <input disabled={isView}  className='form-input-field' placeholder='Clinic name'type="text" />
                 <input disabled={isView}  className='form-input-field' placeholder='Clinic address' type="text" />
                 
-                <Input.Group compact >
-                 <Input disabled = "disabled"
-                 className='phone-number-text-input-field'
-                  style={{
-                    backgroundColor:"white"
-                    // width: '50px',
-                    // fontSize:"12px"
-                  }}
-                  defaultValue="+91"
-                />
-                <Input disabled={isView} type="number" placeholder='Phone number'
-                  className='phone-number-text-input-field'
-                  style={{
-                    width: '75%',
-                    height:"67px",
-                    backgroundColor:"white"
-                  }}
-                  Value="2"
-                />
-             </Input.Group>
+                <div class="input-group presuffix">
+             <span className='phone-number-text-input-field phone-number-radius-align1' >+91</span>
+              <input disabled={isView}  className='form-input-field  phone-number-radius-align2' style={{width:'282px',marginLeft:"0px"}}
+                    type="text"
+                placeholder="Phone Number"
+                name="input"/>      
+             </div>
                 <input disabled={isView}  className='form-input-field' placeholder='Notes' type="text" />
                   {/* input fields */}
-                  <div>
-                  {professionAddField.map((item, i) => {
-                    return (
-                      <input
-                        // value={item.value}
-                        // id={i}
-                        className="form-input-field"
-                        // type={item.type}  
-                        />
+          <div>
+    {professionAddField.map((item, i) => {
+               return (
+                   <form style={{marginBottom:"0rem"}}>  
+              
+                <input disabled={isView}  className='form-input-field' placeholder='Clinic name'type="text" />
+                <input disabled={isView}  className='form-input-field' placeholder='Clinic address' type="text" />
+                
+                <div class="input-group presuffix">
+             <span className='phone-number-text-input-field phone-number-radius-align1' >+91</span>
+              <input disabled={isView}  className='form-input-field  phone-number-radius-align2' style={{width:'282px',marginLeft:"0px"}}
+                    type="text"
+                placeholder="Phone Number"
+                name="input"/>      
+             </div>
+                <input disabled={isView}  className='form-input-field' placeholder='Notes' type="text" />
+                  {/* input fields */}
+                
+                
+            
+           
+           
+                     </form>
                     );
                   })}
-                </div>
+          </div>
            
             <Button className='btn save-btn'>Save  <img src={ IconSave } alt="" style={{marginLeft:"80px"}} /></Button>
             <Button className='btn next-btn' onClick={handleSelect2}>Next <img src={ IconNextArrow } alt="" style={{marginLeft:"80px"}}/></Button>
@@ -242,13 +235,14 @@ function TabForm() {
         <TabPane  onTabClick={callbackTabClicked} tab="Address" key="Address">
         <div className='home-tab'>
            <Row style={{justifyContent:"center"}}>
-     <button className='profile-text' onClick={homeBtnHandler} > Home</button>
+     <Button className={homeBtn ? 'profile-text-work-home': "profile-text-change"}
+     onClick={homeBtnHandler} > Home</Button>
      <Divider type='vertical' style={{backgroundColor:"black",width:"2px",height:'18px',marginTop:'5px'}}/>
-     <button className='profile-text' key="Work" onClick={workBtnHandler}> Work</button>
+     <Button className='profile-text' key="Work" onClick={workBtnHandler}> Work</Button>
             </Row>
    {homeBtn && (
     <div >
-     <form>  
+     <form style={{marginBottom:"12rem"}}>  
          <p style={{color:"#702cc7"}}>Address<img alt="" src={ IconAddRound} onClick={addHomeAddressInput} style={{marginLeft:"264px", marginRight:"-4px"}}/> </p>  
            <input disabled={isView} className='form-input-field' placeholder='Address 1'type="text" />
            <input disabled={isView} className='form-input-field' placeholder='Address 2' type="text" />
@@ -270,36 +264,23 @@ function TabForm() {
      
 
            <input disabled={isView}  className='form-input-field' placeholder='Country'type="text" />
-           <Input.Group compact >
-              <Input disabled = "disabled"
-                 className='phone-number-text-input-field'
-                  style={{
-                    backgroundColor:"white"
-                    // width: '50px',
-                    // fontSize:"12px"
-                  }}
-                  defaultValue="+91"
-                />
-                <Input disabled={isView} type="number" placeholder='Phone number'
-                  className='phone-number-text-input-field'
-                  style={{
-                    width: '75%',
-                    height:"67px",
-                    backgroundColor:"white"
-                  }}
-                  Value="2"
-                />
-             </Input.Group> 
+           <div class="input-group presuffix">
+             <span className='phone-number-text-input-field phone-number-radius-align1' >+91</span>
+              <input disabled={isView}  className='form-input-field  phone-number-radius-align2' style={{width:'282px',marginLeft:"0px"}}
+                    type="text"
+                placeholder="Phone Number"
+                name="input"/>      
+             </div>
     
      <Button className='btn save-btn'>Save  <img src={ IconSave } alt="" style={{marginLeft:"80px"}} /></Button>
-     <Button className='btn next-btn' onClick={() => history("/userProfilestore")}>Next <img src={ IconNextArrow } alt=""  style={{marginLeft:"80px"}}/></Button>
+     <Button className='btn next-btn' onClick={() => history("/doctor-profile-details")}>Next <img src={ IconNextArrow } alt=""  style={{marginLeft:"80px"}}/></Button>
      </form>
      </div>
      )} 
      {workBtn && ( 
      <div >
       
-     <form>  
+     <form style={{marginBottom:"12rem"}}>  
           <p style={{color:"#702cc7"}}>Address < img alt='' src={ IconAddRound} onClick={addWorkAddressInput} style={{marginLeft:"264px", marginRight:"-4px"}}/> </p>  
            <input disabled={isView} className='form-input-field' placeholder='Address 1'type="text" />
            <input disabled={isView} className='form-input-field' placeholder='Address 2' type="text" />
@@ -323,29 +304,16 @@ function TabForm() {
      
            <input disabled={isView}  className='form-input-field' placeholder='Country'type="text" />
           
-           <Input.Group compact >
-              <Input disabled = "disabled"
-                 className='phone-number-text-input-field'
-                  style={{
-                    backgroundColor:"white"
-                    // width: '50px',
-                    // fontSize:"12px"
-                  }}
-                  defaultValue="+91"
-                />
-                <Input disabled={isView} type="number" placeholder='Phone number'
-                  className='phone-number-text-input-field'
-                  style={{
-                    width: '75%',
-                    height:"67px",
-                    backgroundColor:"white"
-                  }}
-                  Value="2"
-                />
-             </Input.Group>
+           <div class="input-group presuffix">
+             <span className='phone-number-text-input-field phone-number-radius-align1' >+91</span>
+              <input disabled={isView}  className='form-input-field  phone-number-radius-align2' style={{width:'282px',marginLeft:"0px"}}
+                    type="text"
+                placeholder="Phone Number"
+                name="input"/>      
+             </div>
      
      <Button className='btn save-btn'>Save  <img src={ IconSave } alt="" style={{marginLeft:"80px"}} /></Button>
-     <Button className='btn next-btn' onClick={() => history("/userProfilestore")}>Next <img src={ IconNextArrow } alt="" style={{marginLeft:"80px"}}/></Button>
+     <Button className='btn next-btn' onClick={() => history("/doctor-profile-details")}>Next <img src={ IconNextArrow } alt="" style={{marginLeft:"80px"}}/></Button>
      </form>
      </div>
      )} 
@@ -365,4 +333,4 @@ function TabForm() {
  
 
 
-export default TabForm;
+export default DoctorProfile;

@@ -32,7 +32,7 @@ import IconBilling from "../assets/logo/IconBilling.svg";
 import IconOngoing from "../assets/logo/IconOngoing.svg";
 
 import IconEndConsultation from "../assets/logo/IconEndConsultation.svg";
-
+import FooterSection from '../components/MyPatientsFolder/FooterSection';
 import 'react-tabs/style/react-tabs.css'
 // import 'react-tabs/style/react-tabs.css';
 
@@ -44,7 +44,7 @@ const { TextArea } = Input;
 
 
 
-function PersonProfile() {  
+function PatientProfile() {  
     // const history = useNavigate();
 
 
@@ -85,23 +85,24 @@ function PersonProfile() {
                    
                    <Tab onClick={() => setHistoryTab(historyTab=> !historyTab)}  className='person-profile-page-round-bg'>
                    
-                       <img src={IconHistory} alt='' className='icons' />
+                       <img src={IconHistory} alt='' className='icons-container' />
                        <p className='icon-headings '>History</p>
                     
                   </Tab>
                        
                        
                   <Tab className='person-profile-page-round-bg'>
-                       <img src={IconPrescriptions} alt='' className='icons' />
+                       <img src={IconPrescriptions} alt='' className='icons-container' />
                        <p className='icon-headings '>Prescription</p>
                   </Tab>
             
                   <Tab className='person-profile-page-round-bg'>
-                       <img src={IconDiagnostics} alt='' className='icons' />
+                       <img src={IconDiagnostics} alt='' className='icons-container' />
                        <p className='icon-headings '>Diagnostics</p>
                   </Tab>
+
                   <Tab className='person-profile-page-round-bg'>
-                       <img src={IconReference} alt='' className='icons' />
+                       <img src={IconReference} alt='' className='icons-container' />
                        <p className='icon-headings '>References</p>
                   </Tab>
                  
@@ -926,8 +927,11 @@ function PersonProfile() {
            
              </div>
             </div>
+                  
+            <FooterSection/>
+           
         </>
       
     )
 }
-export default  PersonProfile;
+export default  PatientProfile;

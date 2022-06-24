@@ -63,7 +63,7 @@ function PatientConsult() {
 
                    </div>  
 
-                   <div onClick={() => history("/mainPageNamePatientDetails")}
+                   <div onClick={() => history("/patient-details")}
                     className='patient-cards-with-icon'>
                <img src={IconPatientDetails} alt="" style={{width:"27px",paddingTop:"25px"}}/> 
                <h1 className='startvisit'>View patient details</h1>

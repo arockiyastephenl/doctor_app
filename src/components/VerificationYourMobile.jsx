@@ -38,7 +38,7 @@ function VerificationYourMobile() {
           </div>
          
           <button
-             onClick={() => history("/tabForm")} 
+             onClick={() => history("/doctor-profile")} 
             className="sign-in-button" style={{ position: "absolute", left: "13px", top: "260px" }}
           >
             Continue

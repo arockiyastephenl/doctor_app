@@ -16,7 +16,7 @@ function ListOfClinics() {
     return(
         <>
       
-         <div className='bg-container1'>
+         <div className='bg-container1' style={{top:'0px'}}>
              <img alt="" src={Backdrop}  style={{position:'absolute'}} />
             <Row >
                 <ArrowLeftOutlined  style={{position:"absolute",top:'25px',left:"14px",fontSize:'26px',color:"white"}}/>
@@ -24,7 +24,7 @@ function ListOfClinics() {
             </Row>
             <div style={{width:"415px",height:"825px",backgroundColor:"white",position:"absolute",left:"-1px",top:'70px',padding:'12px'}}>
            <div style={{width:"392px",height:"42px",backgroundColor:"white",padding:"9px",boxShadow:"0px 5px white"}}>
-            <p style={{color:"#702cc7",fontSize:'21px',marginTop:"-4px",fontWeight:"bold"}}>Add new clinic  <img alt="" src={ IconAddRound} onClick={() => history("/addClinic")} style={{marginLeft:"176px"}}/> </p>  
+            <p style={{color:"#702cc7",fontSize:'21px',marginTop:"-4px",fontWeight:"bold"}}>Add new clinic  <img alt="" src={ IconAddRound} onClick={() => history("/clinic-profiles")} style={{marginLeft:"176px"}}/> </p>  
             </div>
            <div style={{display:"flex",marginTop:'22px'}}>
            <div className='location-profile-bg' >

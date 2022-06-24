@@ -8,12 +8,13 @@
     justify-content: center;
 }
 .bg-container1 {
-    display: flex;
-    background-color: #2ECC71;
-    background-size: cover;
-    width: 26rem;
-    height: 14rem;
-    position: relative;
+  display: flex;
+  background-color: #2ECC71;
+  background-size: cover;
+  width: 26rem;
+  height: 14rem;
+  position: fixed;
+  top: 27px;
     
 }
 .header-arrow {
@@ -40,9 +41,13 @@
     top: 12px;
 }
 .tab-align {
-    display: flex;
-    justify-content: center;
-    position: relative;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  z-index: 2;
+  right: 208px;
+  bottom: top;
+  top: 318px;
    
 
 }
@@ -51,6 +56,8 @@
     height: 550px;
     background-color: #F1ECFB;
     padding-top: 14px;
+    position: absolute;
+    top: -95px;
     
     
 
@@ -68,29 +75,50 @@
     width: 50px;
 }
 .home-tab {
-    background-color: #ffffff;
-    width: 26rem;
-    height: 36rem;
-    text-align: center;
-    padding: 14px;
+  background-color: #ffffff;
+  width: 26rem;
+  height: 36rem;
+  text-align: center;
+  overflow-y: scroll;
+  padding: 14px;
 }
 button{
     color: black;
     background-color: #ffffff;
   }
     
-button:focus{
+/* button:focus{
     color: #702cc7;
-  }
+    
+  } */
 .profile-text {
     font-size: 15px;
     font-family: 'Noto Sans', sans-serif;
     font-weight: bold;
     padding-bottom: 8px;
     border:none;
+    
 }
 ::after {
     color: #702cc7;
+}
+.profile-text-work-home {
+  font-size: 15px;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: bold;
+  padding-bottom: 8px;
+  border:none;
+
+  color: black;
+}
+.profile-text-change {
+  font-size: 15px;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: bold;
+  padding-bottom: 8px;
+  border:none;
+
+  
 }
 .form-input-field {
     width: 355px;
@@ -117,6 +145,19 @@ button:focus{
     height: 67px;
     background-color: white;
 }
+.phone-number-radius-align1 {
+  padding: 20.4px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-weight: 100;
+}
+.phone-number-radius-align2 {
+    width: 282px;
+    margin-left: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-left: 0px;
+}
 .ant-input-group .ant-input {
   float: left;
   width: 16%;
@@ -128,7 +169,7 @@ button:focus{
   border-bottom-left-radius: 8px;
 }
 .ant-input-group.ant-input-group-compact > *:last-child, .ant-input-group.ant-input-group-compact > .ant-select:last-child > .ant-select-selector, .ant-input-group.ant-input-group-compact > .ant-cascader-picker:last-child .ant-input, .ant-input-group.ant-input-group-compact > .ant-cascader-picker-focused:last-child .ant-input {
-  border-right-width: 3px;
+  border-right-width: 2px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 11px;
   margin-bottom: 19px;
@@ -211,9 +252,11 @@ ant-tabs-tab {
 
 .user-profile-bg{
   width: 417px;
-  height: 500px;
+  height: 141rem;
   background-color: white;
   /* padding-top: 14px; */
+  position: absolute;
+    top: -100px
 }
 .user-profile-titles{
   width: 417px;
@@ -234,12 +277,13 @@ ant-tabs-tab {
 }
 .success-bg-container1 {
   display: flex;
-  background-color: #2ECC71;
-  background-size: cover;
-  width: 26rem;
-  height: 53rem;
-  position: fixed;
-  overflow: hidden;
+    background-color: #2ECC71;
+    background-size: cover;
+    width: 26rem;
+    height: 57rem;
+    position: fixed;
+    overflow: hidden;
+    top: -6px;
   
   
 }
@@ -418,20 +462,23 @@ ant-tabs-tab {
 
 /* tab-css */
 .backdrop-container {
-    position: absolute;
-    width: 390px;
-    height: 40px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    background: #2EB96C;
+  position: absolute;
+  width: 414px;
+  height: 45px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  background: #2EB96C;
+  top: -24px;
+  left: 1px;
 
 }
 .backdrop-icon-container {
   position: absolute;
-  width: 390px;
+  width: 407px;
   height: 140px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   background: #2EB96C;
-  top: 77px
+  top: 76px;
+  left: 3px;
 
 }
 .menu-dot {
@@ -444,7 +491,7 @@ ant-tabs-tab {
 .consult-text {
   position: absolute;
   text-align: center;
-  top: 44px;
+  top: 31px;
   font-size: 22px;
   left: 137px;
   color: white;
@@ -477,8 +524,14 @@ ant-tabs-tab {
 }
 
 
-.icons {
-  width: 30px;
+.icons-container {
+  background-color: transparent;
+    /* width: 57px; */
+    /* height: 40px; */
+    position: absolute;
+    top: 26px;
+    /* padding-left: 9px; */
+    padding-top: 12px
   
 }
 .consult-number-container {
@@ -514,7 +567,7 @@ ant-tabs-tab {
 
 }
 .consult-description-page {
-  width: 390px;
+  width: 413px;
   height: 620px;
   background-color: white;
   display: flex;
@@ -666,7 +719,7 @@ ant-tabs-tab {
   margin-left: 15px;
     width: 358px;
     height: 52px;
-    background-color: grey;
+    background-color: #F1ECFB;
     text-align: center;
     border-top-left-radius: 11px;
     border-top-right-radius: 11px;

@@ -76,7 +76,7 @@ function AddressTab() {
            <input disabled={isView} className='form-input-field' placeholder='Mobile number' type="number"  />     
      </form>
      <Button className='btn save-btn'>Save  <img src={ IconSave } alt="" style={{marginLeft:"80px"}} /></Button>
-     <Button className='btn next-btn' onClick={() => history("/userProfilestore")}>Next <img src={ IconNextArrow } alt=""  style={{marginLeft:"80px"}}/></Button>
+     <Button className='btn next-btn' onClick={() => history("/doctor-profile-details")}>Next <img src={ IconNextArrow } alt=""  style={{marginLeft:"80px"}}/></Button>
      </div>
      )} 
      {workBtn && ( 
@@ -108,7 +108,7 @@ function AddressTab() {
            <input disabled={isView}   className='form-input-field' placeholder='Mobile number' type="number" />     
      </form>
      <Button className='btn save-btn'>Save  <img src={ IconSave } alt="" style={{marginLeft:"80px"}} /></Button>
-     <Button className='btn next-btn' onClick={() => history("/userProfilestore")}>Next <img src={ IconNextArrow } alt="" style={{marginLeft:"80px"}}/></Button>
+     <Button className='btn next-btn' onClick={() => history("/doctor-profile-details")}>Next <img src={ IconNextArrow } alt="" style={{marginLeft:"80px"}}/></Button>
      </div>
      )} 
    </div>

@@ -28,7 +28,7 @@ import { ReceiptsIconChange } from './Name-patient-Icons/ReceiptsIconChange';
 import IconAddRound from '../../assets/namePatientdetails/IconAddRound.png'
 // import {useNavigate} from 'react-router-dom'
 
-function MainPageNamePatientDetails() {
+function PatientDetails() {
   // const navigate = useNavigate();
     const [toggleState, setToggleState] = useState(1);
 
@@ -420,7 +420,7 @@ function MainPageNamePatientDetails() {
 
     )
 }
-export default MainPageNamePatientDetails;
+export default PatientDetails;
 
 
 
