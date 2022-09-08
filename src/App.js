@@ -18,7 +18,7 @@ import ClinicProfile from "./components/ClinicProfile";
 import ListOfClinics from "./components/ListOfClinics";
 import ClinicSuccess from "./components/ClinicSuccess";
 import ClinicProfileDetails from "./components/ClinicProfileDetails";
-// import DoctorConsult from "./components/DoctorConsult";
+import DoctorConsult from "./components/DoctorConsult";
 import PatientProfile from "./components/PatientProfile";
 
 
@@ -105,8 +105,7 @@ function App() {
    
 {/* ==>consult-and-personal-profile */}       
           
-          {/* <Route path="/doctor-consult" element={<DoctorConsult/>} />
-           */}
+          <Route path="/doctor-consult" element={<DoctorConsult/>} />
          <Route path="/patient-profile" element={<PatientProfile />} />   
 
 
